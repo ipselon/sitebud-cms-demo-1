@@ -32,6 +32,7 @@ const requestOptions: RequestOptions = {
 export const getStaticPaths: GetStaticPaths = async () => {
     initExternalModules({fsExtra: fs, path});
     let paths: Array<PagePathData> = await createPaths();
+    console.log('Paths: ', JSON.stringify(paths, null, 4));
     return {
         // We'll pre-render only these paths at build time.
         paths,
