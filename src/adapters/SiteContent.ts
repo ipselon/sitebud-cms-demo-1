@@ -80,6 +80,7 @@ export type Site_DataFields = {
  */
 export type SiteContent = {
     hasRestrictedAreas?: boolean;
+    baseUrl: string;
     availableLocales: Array<string>;
     tagsLinks: Record<string, string>;
     authorProfiles: Record<string, DocumentContentContext>;

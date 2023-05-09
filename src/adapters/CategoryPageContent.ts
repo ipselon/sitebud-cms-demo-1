@@ -74,6 +74,7 @@ export type CategoryPageContent = {
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
+    baseUrl: string;
     dataFields: CategoryPage_DataFields;
     documentAreas: CategoryPage_DocumentAreas;
 };

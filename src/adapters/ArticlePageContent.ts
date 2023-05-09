@@ -106,6 +106,7 @@ export type ArticlePageContent = {
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
+    baseUrl: string;
     dataFields: ArticlePage_DataFields;
     documentAreas: ArticlePage_DocumentAreas;
 };

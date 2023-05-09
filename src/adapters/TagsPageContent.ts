@@ -45,6 +45,7 @@ export type TagsPageContent = {
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
+    baseUrl: string;
     dataFields: TagsPage_DataFields;
     documentAreas: TagsPage_DocumentAreas;
 };

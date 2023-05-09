@@ -2,7 +2,7 @@ import { ContentAdapter } from '@sitebud/bridge-lib';
 import { ArticlePageContent, ArticlePage_DocumentAreas } from './types';
 export class ArticlePageContentAdapter extends ContentAdapter<ArticlePageContent> {
     adapt(): ArticlePageContent {
-        const { content, hasRestrictedAreas, path, locale } =
+        const { content, hasRestrictedAreas, baseUrl, path, locale } =
             this._documentData;
         const result: ArticlePageContent = {
             title: content?.title || 'undefined',
@@ -13,6 +13,7 @@ export class ArticlePageContentAdapter extends ContentAdapter<ArticlePageContent
             path: path || '',
             locale,
             hasRestrictedAreas,
+            baseUrl: baseUrl || '',
             dataFields: {},
             documentAreas: {
                 pageBody: [],

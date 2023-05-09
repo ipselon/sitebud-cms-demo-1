@@ -38,6 +38,7 @@ export type SearchPageContent = {
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
+    baseUrl: string;
     dataFields: SearchPage_DataFields;
     documentAreas: SearchPage_DocumentAreas;
 };

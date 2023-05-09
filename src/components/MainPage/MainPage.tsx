@@ -11,15 +11,13 @@ export function MainPage() {
     const {mainPageContent} = useAdaptedContent();
     if (mainPageContent) {
         const {
-            title,
             locale,
-            dataFields,
             documentAreas
         } = mainPageContent;
         const {pageBody} = documentAreas;
         return (
             <>
-                <MainPageHead dataFields={dataFields} title={title}/>
+                <MainPageHead />
                 <main>
                     <MainMenuLayout />
                     {pageBody.map((pageBodyBlocks, idx) => {

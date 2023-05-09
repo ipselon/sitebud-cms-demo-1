@@ -77,6 +77,7 @@ export type TagPageContent = {
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
+    baseUrl: string;
     dataFields: TagPage_DataFields;
     documentAreas: TagPage_DocumentAreas;
 };

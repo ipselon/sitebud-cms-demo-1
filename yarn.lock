@@ -301,24 +301,24 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
-"@sitebud/bridge-lib@1.0.0-alpha.6":
-  version "1.0.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@sitebud/bridge-lib/-/bridge-lib-1.0.0-alpha.6.tgz#d23fe415d2488e1e85e20fa9fdb3d89f0ca69ff1"
-  integrity sha512-Ufqui2Hq5ffJj5Ub1eR7MGFijmCG3HVGQDXVBNS2ZyTEAIZqiY1CDqCspkL9Vs6VPaiR0m91oE3FAVQaPntIkg==
+"@sitebud/bridge-lib@1.0.0-alpha.7":
+  version "1.0.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/@sitebud/bridge-lib/-/bridge-lib-1.0.0-alpha.7.tgz#1a96a4b2b217ceca428d4a5121755049cb4bff88"
+  integrity sha512-QR9SsIQM4M4n9dPdA9f+7ijRw42oL1T/wQxa87eWm7ZbkrsjiuEDcBgQuQntdPqRU4Q29dEfcdf96E91XpkbVA==
   dependencies:
     "@xmldom/xmldom" "0.8.7"
     idb "7.1.1"
     xpath "0.0.32"
 
-"@sitebud/domain-lib@1.0.0-alpha.5":
-  version "1.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@sitebud/domain-lib/-/domain-lib-1.0.0-alpha.5.tgz#217cea3801b2ebd40a6620f7bef780df34c691fd"
-  integrity sha512-9PWg2/C525hKgHj1MdVUlhdem0pGyiAdmp5Jt+fSKBDgred6mrkGbQ7VN3iX56xtcnNecDsLeIKPeT+2yd/86Q==
+"@sitebud/domain-lib@1.0.0-alpha.7":
+  version "1.0.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/@sitebud/domain-lib/-/domain-lib-1.0.0-alpha.7.tgz#826c313578f6ae5d4c7a0afb33f639dfcbfed1de"
+  integrity sha512-M+44BBJlQv176IlPUGxYEVfVVgNOExXGxonxeK4mYUzQEHQSurSa6y7jowZ1g2cvEgflCOqgXqWuKdGDYS7mGg==
 
-"@sitebud/sdk-lib@1.0.0-alpha.5":
-  version "1.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@sitebud/sdk-lib/-/sdk-lib-1.0.0-alpha.5.tgz#ec4d4cf509de4f4c7c05caa8982b8ebff76ad709"
-  integrity sha512-fI+cmx1JwB4MlXfbfIpgXXZH4/cp2ntaSCWG0oeVFWPzhS4VCTu02Q2jzDLFVtq4dL88tk0z8jtsF4bov7CS0Q==
+"@sitebud/sdk-lib@1.0.0-alpha.7":
+  version "1.0.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/@sitebud/sdk-lib/-/sdk-lib-1.0.0-alpha.7.tgz#fe88ddd1fa4c7a6ae814b541143bc191dd12836d"
+  integrity sha512-w67tXH7UPxp83rj9LMdM2wHmMrIExXASbpFpVbhVOdHxuwBXH7xhXOLY/bBXPim/INdwv3bujNOqAn+9OrnEZA==
   dependencies:
     "@rollup/plugin-commonjs" "24.0.0"
     "@rollup/plugin-node-resolve" "15.0.1"

@@ -2,10 +2,16 @@ import { ContentAdapter } from '@sitebud/bridge-lib';
 import { SiteContent, Site_DocumentAreas } from './types';
 export class SiteContentAdapter extends ContentAdapter<SiteContent> {
     adapt(): SiteContent {
-        const { content, hasRestrictedAreas, tagsLinks, availableLocales } =
-            this._documentData;
+        const {
+            content,
+            hasRestrictedAreas,
+            baseUrl,
+            tagsLinks,
+            availableLocales,
+        } = this._documentData;
         const result: SiteContent = {
             hasRestrictedAreas,
+            baseUrl: baseUrl || '',
             availableLocales: availableLocales || [],
             tagsLinks: tagsLinks || {},
             authorProfiles: {},

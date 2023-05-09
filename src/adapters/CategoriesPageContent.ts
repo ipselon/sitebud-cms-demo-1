@@ -45,6 +45,7 @@ export type CategoriesPageContent = {
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
+    baseUrl: string;
     dataFields: CategoriesPage_DataFields;
     documentAreas: CategoriesPage_DocumentAreas;
 };

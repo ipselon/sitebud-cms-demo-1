@@ -108,6 +108,7 @@ export type AuthorProfilePageContent = {
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
+    baseUrl: string;
     dataFields: AuthorProfilePage_DataFields;
     documentAreas: AuthorProfilePage_DocumentAreas;
 };

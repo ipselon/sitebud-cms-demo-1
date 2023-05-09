@@ -61,6 +61,7 @@ export type MainPageContent = {
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
+    baseUrl: string;
     dataFields: MainPage_DataFields;
     documentAreas: MainPage_DocumentAreas;
 };
