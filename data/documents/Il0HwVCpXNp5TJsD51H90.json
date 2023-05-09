@@ -1,0 +1,151 @@
+{
+  "id": "Il0HwVCpXNp5TJsD51H90",
+  "type": "page",
+  "documentClass": "SearchPage",
+  "contents": {
+    "en-US": {
+      "title": "Search",
+      "slug": "search",
+      "includeInSiteMap": true,
+      "statusMap": {},
+      "isCustomSlug": true,
+      "tags": {},
+      "dataFields": [
+        {
+          "name": "metaDescription",
+          "value": "Search Page",
+          "type": "string"
+        },
+        {
+          "name": "metaRobots",
+          "value": "noindex,nofollow",
+          "type": "string"
+        }
+      ],
+      "documentAreas": [
+        {
+          "name": "pageBody",
+          "blocks": [
+            {
+              "id": "om2uV5aIez5ChytBolKzD",
+              "name": "searchHeroBlock",
+              "components": [
+                {
+                  "name": "searchResultsListTitle",
+                  "instances": [
+                    {
+                      "id": "QCWvNXSijrez_QqtxZm2k",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h3>Search Results</h3>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "searchResultsEmptyListMessage",
+                  "instances": [
+                    {
+                      "id": "HqI1FtuuLPob-yXuoO9BJ",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>Nothing was found by your request</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ignoreNested": true
+        }
+      ],
+      "dateUpdated": 1682892671807,
+      "authors": {
+        "apustovalov@gmail.com": 1682892671807
+      }
+    },
+    "es-ES": {
+      "title": "Buscar",
+      "slug": "buscar",
+      "includeInSiteMap": true,
+      "statusMap": {},
+      "isCustomSlug": false,
+      "tags": {},
+      "dataFields": [
+        {
+          "name": "metaDescription",
+          "value": "Buscar",
+          "type": "string"
+        },
+        {
+          "name": "metaRobots",
+          "value": "noindex,nofollow",
+          "type": "string"
+        }
+      ],
+      "documentAreas": [
+        {
+          "name": "pageBody",
+          "blocks": [
+            {
+              "id": "AQ67jY4vRVHLdF0lSx-Ig",
+              "name": "searchHeroBlock",
+              "components": [
+                {
+                  "name": "searchResultsListTitle",
+                  "instances": [
+                    {
+                      "id": "NbxbEuSm4pMpGEpzuwC3g",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h3>Resultados de la búsqueda</h3>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "searchResultsEmptyListMessage",
+                  "instances": [
+                    {
+                      "id": "f74cjAgxEQ6m_z8NWP81i",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>No se encontró nada por su solicitud</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ignoreNested": true
+        }
+      ],
+      "dateUpdated": 1682894243402,
+      "authors": {
+        "apustovalov@gmail.com": 1682894243402
+      }
+    }
+  }
+}

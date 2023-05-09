@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-prose h1 {
+    @apply font-heading leading-tight font-light lg:font-light text-[40px] sm:text-[48px] lg:text-[56px] xl:text-[64px] px-0.5 ;
+}
+.custom-prose h2 {
+    @apply font-heading leading-tight font-light lg:font-light text-[30px] sm:text-[36px] lg:text-[42px] xl:text-[48px] px-0.5;
+}
+.custom-prose h3 {
+    @apply font-heading leading-tight font-light lg:font-light text-[24px] sm:text-[28px] lg:text-[32px] xl:text-[36px] px-0.5;
+}
+
+.custom-prose h4 {
+    @apply font-heading font-normal text-[20px] sm:text-[22px] lg:text-[24px] xl:text-[28px] px-0.5;
+}
+
+.custom-prose h5 {
+    @apply font-heading font-medium text-[18px] lg:text-[20px] xl:text-[22px] px-0.5;
+}
+
+.custom-prose h6 {
+    @apply font-heading font-medium text-[16px] lg:text-[18px] xl:text-[20px] px-0.5;
+}
+
+.custom-prose p {
+    @apply mb-4 font-normal text-[16px] lg:text-[18px] xl:text-[18px] leading-6 lg:leading-7;
+}
+
+.custom-prose p:empty::before {
+    content: '\00a0';
+}
+
+.custom-prose a {
+    @apply text-blue-500 hover:underline
+}

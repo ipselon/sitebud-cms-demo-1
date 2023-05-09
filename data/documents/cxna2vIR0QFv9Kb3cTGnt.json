@@ -1,0 +1,209 @@
+{
+  "id": "cxna2vIR0QFv9Kb3cTGnt",
+  "type": "page",
+  "documentClass": "CategoryPage",
+  "contents": {
+    "en-US": {
+      "title": "Probe Category",
+      "slug": "probe-category",
+      "includeInSiteMap": true,
+      "statusMap": {},
+      "isCustomSlug": false,
+      "tags": {},
+      "dataFields": [
+        {
+          "name": "metaDescription",
+          "value": "This is an article page",
+          "type": "string"
+        },
+        {
+          "name": "metaRobots",
+          "value": "index,follow",
+          "type": "string"
+        }
+      ],
+      "documentAreas": [
+        {
+          "name": "pageBody",
+          "blocks": [
+            {
+              "id": "F85IKOnUyeOyVdnrNo037",
+              "name": "articlesGalleryBlock",
+              "components": [
+                {
+                  "name": "galleryHeading",
+                  "instances": [
+                    {
+                      "id": "wit4gXIDsu8hhrL28yI9B",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h1>Probe Gallery</h1>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "galleryListing",
+                  "instances": [
+                    {
+                      "id": "_4HXDFd5IC3LnQEtZU9b0",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": false,
+                            "selectionMode": "selectDocuments",
+                            "allowedDocumentClasses": [
+                              "ArticlePage"
+                            ],
+                            "documentsIds": [
+                              "WMf_Few6budQJ30h4mpRJ"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "documentsByParentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": false,
+                            "selectionMode": "selectChildrenDocuments",
+                            "allowedDocumentClasses": [
+                              "CategoryPage"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "tagsList",
+                          "type": "TagsList",
+                          "fieldContent": {
+                            "isRequired": false
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ignoreNested": true
+        },
+        {
+          "name": "card",
+          "blocks": []
+        }
+      ],
+      "dateUpdated": 1682584719390,
+      "authors": {
+        "apustovalov@gmail.com": 1682584719390
+      }
+    },
+    "es-ES": {
+      "title": "Probe Category (copy for es-ES)",
+      "slug": "probe-category-(copy-for-es-es)",
+      "includeInSiteMap": true,
+      "statusMap": {},
+      "isCustomSlug": false,
+      "tags": {},
+      "dataFields": [
+        {
+          "name": "metaDescription",
+          "value": "This is an article page",
+          "type": "string"
+        },
+        {
+          "name": "metaRobots",
+          "value": "index,follow",
+          "type": "string"
+        }
+      ],
+      "documentAreas": [
+        {
+          "name": "pageBody",
+          "blocks": [
+            {
+              "id": "-PQ6b2pZrpVesGon3Xthk",
+              "name": "articlesGalleryBlock",
+              "components": [
+                {
+                  "name": "galleryHeading",
+                  "instances": [
+                    {
+                      "id": "A5_RK4B0ywyBtSQYS1L5U",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h1>Probe Gallery</h1>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "galleryListing",
+                  "instances": [
+                    {
+                      "id": "st3Pnw4OaSDs9qz1eUcXa",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": false,
+                            "selectionMode": "selectDocuments",
+                            "allowedDocumentClasses": [
+                              "ArticlePage"
+                            ],
+                            "documentsIds": [
+                              "WMf_Few6budQJ30h4mpRJ"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "documentsByParentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": false,
+                            "selectionMode": "selectChildrenDocuments",
+                            "allowedDocumentClasses": [
+                              "CategoryPage"
+                            ]
+                          }
+                        },
+                        {
+                          "name": "tagsList",
+                          "type": "TagsList",
+                          "fieldContent": {
+                            "isRequired": false
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ignoreNested": true
+        },
+        {
+          "name": "card",
+          "blocks": []
+        }
+      ],
+      "dateUpdated": 1682584740034,
+      "authors": {
+        "apustovalov@gmail.com": 1682584740036
+      }
+    }
+  }
+}

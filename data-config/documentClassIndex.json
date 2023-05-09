@@ -1,0 +1,1833 @@
+{
+  "ArticlePage": {
+    "type": "page",
+    "label": "Article",
+    "defaultTitle": "Article",
+    "description": "A page where individual article resides, rich with engaging content, images, and videos. It's a creative hub for sharing insights, ideas, and stories, inviting readers to interact, learn, and be inspired while exploring the author's thoughts.",
+    "imageName": "article-document.webp",
+    "dataFields": {
+      "metaDescription": {
+        "label": "Page Description Meta Tag",
+        "indexNumber": 0,
+        "dataType": "string",
+        "inputType": "text",
+        "defaultValue": "This is an article page"
+      },
+      "metaRobots": {
+        "label": "Robots Meta Tag",
+        "indexNumber": 1,
+        "dataType": "string",
+        "inputType": "select",
+        "defaultValue": "index,follow",
+        "variants": [
+          {
+            "label": "Allow indexing and following links",
+            "value": "index,follow"
+          },
+          {
+            "label": "Prevent indexing and following links",
+            "value": "noindex,nofollow"
+          },
+          {
+            "label": "Allow indexing but prevent following links",
+            "value": "index,nofollow"
+          },
+          {
+            "label": "Prevent indexing but allow following links",
+            "value": "noindex,follow"
+          }
+        ]
+      }
+    },
+    "documentAreas": {
+      "pageBody": {
+        "indexNumber": 0,
+        "label": "Page Body",
+        "helpText": "The webpage body in an article is the central content area, containing the article's text, images, and multimedia elements. It's designed to captivate readers, providing valuable insights and ideas while encouraging interaction and fostering engagement.",
+        "imageName": "article-page-body.webp",
+        "blocks": {
+          "articleHeroBlock": {
+            "label": "Hero Block",
+            "description": "The page's hero is a crucial element of your page design, as it captures the attention of your visitors and conveys the primary message of your content.",
+            "imageName": "article-hero-block.webp",
+            "components": {
+              "heroTitle": {
+                "indexNumber": 0,
+                "label": "Hero Title",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the hero title...</h1>"
+                    }
+                  }
+                }
+              },
+              "heroImage": {
+                "indexNumber": 1,
+                "label": "Hero Image",
+                "props": {
+                  "image": {
+                    "indexNumber": 0,
+                    "type": "Image",
+                    "fieldContent": {}
+                  }
+                }
+              }
+            }
+          },
+          "defaultHeadingBlock": {
+            "label": "Heading Block",
+            "description": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
+            "imageName": "default-heading-block.webp",
+            "components": {
+              "defaultHeading": {
+                "indexNumber": 0,
+                "label": "Heading",
+                "helpText": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
+                "imageName": "",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the heading text here...</h1>"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "defaultParagraphBlock": {
+            "label": "Paragraph Block",
+            "description": "The paragraph is a section within the main content of a web page that contains a block of text, usually conveying a single idea or concept.",
+            "imageName": "paragraph-block.webp",
+            "components": {
+              "defaultParagraph": {
+                "indexNumber": 0,
+                "label": "Paragraph",
+                "helpText": "The paragraph is a section within the main content of a web page that contains a block of text, usually conveying a single idea or concept. It helps readers to easily digest the content by breaking it into smaller, manageable chunks.",
+                "imageName": "paragraph-block.webp",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "ParagraphText",
+                    "fieldContent": {
+                      "htmlText": "<p>Type the paragraph text here...</p>"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "defaultImageBlock": {
+            "label": "Image Block",
+            "description": "An image adds a visual touch to the article.",
+            "imageName": "default-image-block.webp",
+            "components": {
+              "defaultImage": {
+                "indexNumber": 0,
+                "label": "Image",
+                "helpText": "An image adds a visual touch to the article. It makes the text more enjoyable to read, grabs attention, and helps explain ideas or topics by giving a picture that goes hand-in-hand with the words.",
+                "imageName": "default-image-block.webp",
+                "props": {
+                  "image": {
+                    "indexNumber": 0,
+                    "type": "Image",
+                    "fieldContent": {}
+                  }
+                }
+              }
+            }
+          },
+          "codeBlock": {
+            "label": "Code Block",
+            "description": "A source code block on a webpage is a designated area used to display programming code snippets or examples.",
+            "imageName": "",
+            "components": {
+              "paragraph": {
+                "indexNumber": 0,
+                "label": "Paragraph with Source Code",
+                "helpText": "The text is formatted to accommodate the inclusion of programming code snippets or examples within the flow of the content.",
+                "imageName": "",
+                "props": {
+                  "text": {
+                    "indexNumber": 1,
+                    "label": "Text",
+                    "type": "ParagraphText",
+                    "fieldContent": {
+                      "htmlText": "<pre class=\"sb-code-block\"><code>Type the source code here...</code></pre>"
+                    }
+                  },
+                  "language": {
+                    "indexNumber": 0,
+                    "label": "Language",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "value": "javascript"
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "JavaScript",
+                        "fieldContent": {
+                          "value": "javascript"
+                        }
+                      },
+                      {
+                        "label": "TypeScript",
+                        "fieldContent": {
+                          "value": "typescript"
+                        }
+                      },
+                      {
+                        "label": "JSON",
+                        "fieldContent": {
+                          "value": "json"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "card": {
+        "indexNumber": 1,
+        "label": "Card",
+        "helpText": "A card on a webpage showcases a snapshot of page's content in a visually appealing, compact format. It typically includes an image, title, and brief description, making it easy for users to browse and select their desired destination.",
+        "imageName": "article-card.webp",
+        "blocks": {
+          "cardImageBlock": {
+            "label": "Card View Image Block",
+            "description": "A card image is a small, visually appealing picture featured on a compact preview of a webpage's content.",
+            "imageName": "card-image-block.webp",
+            "components": {
+              "cardViewImage": {
+                "indexNumber": 0,
+                "label": "Card View Image",
+                "helpText": "A card image is a small, visually appealing picture featured on a compact preview of a webpage's content.",
+                "imageName": "card-image-block-card-view-image.webp",
+                "props": {
+                  "image": {
+                    "indexNumber": 0,
+                    "type": "Image",
+                    "fieldContent": {}
+                  }
+                }
+              }
+            }
+          },
+          "cardTitleBlock": {
+            "label": "Card Title Block",
+            "description": "A card title is a concise, eye-catching headline displayed on a compact preview of a webpage's content.",
+            "imageName": "card-title-block.webp",
+            "components": {
+              "cardTitle": {
+                "indexNumber": 0,
+                "label": "Card Title",
+                "helpText": "A card title is a concise, eye-catching headline displayed on a compact preview of a webpage's content.",
+                "imageName": "card-title-block-card-title.webp",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "ParagraphText",
+                    "label": "",
+                    "fieldContent": {
+                      "htmlText": "<h5>Type the card title...</h5>"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "cardExcerptBlock": {
+            "label": "Card Excerpt Block",
+            "description": "A card excerpt is a brief, informative description accompanying the title on a compact preview of a webpage's content.",
+            "imageName": "card-excerpt-block.webp",
+            "components": {
+              "cardExcerpt": {
+                "indexNumber": 0,
+                "label": "Card Excerpt",
+                "helpText": "A card excerpt is a brief, informative description accompanying the title on a compact preview of a webpage's content.",
+                "imageName": "card-excerpt-block.webp",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "ParagraphText",
+                    "label": "Excerpt Text",
+                    "fieldContent": {
+                      "htmlText": "<p>Type the excerpt from the page content...</p>"
+                    }
+                  },
+                  "readMoreLabel": {
+                    "indexNumber": 1,
+                    "type": "StringValue",
+                    "label": "Read More Link Label",
+                    "fieldContent": {
+                      "value": "Read More"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "AuthorProfilePage": {
+    "type": "page",
+    "label": "Author Profile",
+    "defaultTitle": "Author Name",
+    "description": "A page that showcases the personal and professional details of a content creator or writer. It typically includes the author's name, photo, biography, social media links, and a list of their published articles or posts.",
+    "imageName": "author-profile-document.webp",
+    "dataFields": {
+      "metaDescription": {
+        "label": "Page Description Meta Tag",
+        "indexNumber": 0,
+        "dataType": "string",
+        "inputType": "text",
+        "defaultValue": "This is an article page"
+      },
+      "metaRobots": {
+        "label": "Robots Meta Tag",
+        "indexNumber": 1,
+        "dataType": "string",
+        "inputType": "select",
+        "defaultValue": "index,follow",
+        "variants": [
+          {
+            "label": "Allow indexing and following links",
+            "value": "index,follow"
+          },
+          {
+            "label": "Prevent indexing and following links",
+            "value": "noindex,nofollow"
+          },
+          {
+            "label": "Allow indexing but prevent following links",
+            "value": "index,nofollow"
+          },
+          {
+            "label": "Prevent indexing but allow following links",
+            "value": "noindex,follow"
+          }
+        ]
+      }
+    },
+    "documentAreas": {
+      "pageBody": {
+        "indexNumber": 0,
+        "label": "Page Body",
+        "helpText": "The webpage body is the central content area, containing the article's text, images, and multimedia elements. It's designed to captivate readers, providing valuable insights and ideas while encouraging interaction and fostering engagement.",
+        "imageName": "author-profile-page-body.webp",
+        "blocks": {
+          "authorProfileHeroBlock": {
+            "label": "Hero Block",
+            "description": "The page's hero is a crucial element of your page design, as it captures the attention of your visitors and conveys the primary message of your content.",
+            "imageName": "author-profile-hero-block.webp",
+            "components": {
+              "authorName": {
+                "indexNumber": 0,
+                "label": "Author Name",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the author name title...</h1>"
+                    }
+                  }
+                }
+              },
+              "description": {
+                "indexNumber": 1,
+                "label": "Description",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "ParagraphText",
+                    "fieldContent": {
+                      "htmlText": "<p>Type the description...</p>"
+                    }
+                  }
+                }
+              },
+              "authorPicture": {
+                "indexNumber": 2,
+                "label": "Author Picture",
+                "props": {
+                  "image": {
+                    "indexNumber": 0,
+                    "type": "Image",
+                    "fieldContent": {}
+                  }
+                }
+              }
+            }
+          },
+          "authorProfileSocialLinksBlock": {
+            "label": "Social Links",
+            "description": "The social links block is a designated area that contains clickable icons or links directing users to the website's or authors's social media profiles.",
+            "imageName": "author-profile-social-links-block.webp",
+            "components": {
+              "socialLinks": {
+                "isArray": true,
+                "indexNumber": 0,
+                "label": "Social Links",
+                "helpText": "When adding social network links to a website, you will need to create a new item for each social network you want to include. First, select the appropriate social network from the provided dropdown field, such as Facebook, Twitter, or Instagram. Then, simply enter the URL address of your profile on that specific social network. By following these steps, you'll be able to incorporate social links into your website, allowing visitors to easily find and connect with your profiles across various platforms.",
+                "props": {
+                  "network": {
+                    "indexNumber": 0,
+                    "label": "Social Network",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "value": "twitter",
+                      "isRequired": true
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "Twitter",
+                        "fieldContent": {
+                          "value": "twitter"
+                        }
+                      },
+                      {
+                        "label": "Facebook",
+                        "fieldContent": {
+                          "value": "facebook"
+                        }
+                      },
+                      {
+                        "label": "Instagram",
+                        "fieldContent": {
+                          "value": "instagram"
+                        }
+                      }
+                    ]
+                  },
+                  "link": {
+                    "indexNumber": 1,
+                    "label": "Network Profile URL",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "articlesGalleryBlock": {
+            "label": "Gallery of Articles Block",
+            "description": "A display of article thumbnails creates a visually organized collection of compact previews.",
+            "imageName": "articles-gallery-block.webp",
+            "components": {
+              "galleryHeading": {
+                "indexNumber": 0,
+                "label": "Gallery Title",
+                "helpText": "A concise and informative heading that describes a collection or showcase of related articles on a webpage.",
+                "imageName": "",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the gallery title...</h1>"
+                    }
+                  }
+                }
+              },
+              "galleryListing": {
+                "indexNumber": 1,
+                "label": "Gallery of Articles",
+                "helpText": "The list of selected documents for a gallery is a curated collection of items, chosen based on relevance or importance, to be showcased within the gallery.",
+                "imageName": "",
+                "props": {
+                  "documentsList": {
+                    "indexNumber": 0,
+                    "type": "DocumentsList",
+                    "label": "",
+                    "fieldContent": {
+                      "isRequired": false,
+                      "selectionMode": "selectDocuments",
+                      "allowedDocumentClasses": [
+                        "ArticlePage"
+                      ],
+                      "selectDocumentAreas": [
+                        "card"
+                      ]
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "Select Documents",
+                        "fieldContent": {
+                          "selectionMode": "selectDocuments",
+                          "allowedDocumentClasses": [
+                            "ArticlePage"
+                          ],
+                          "selectDocumentAreas": [
+                            "card"
+                          ]
+                        }
+                      },
+                      {
+                        "label": "Select By Parent Documents",
+                        "fieldContent": {
+                          "selectionMode": "selectChildrenDocuments",
+                          "selectDocumentAreas": [
+                            "card"
+                          ],
+                          "allowedDocumentClasses": [
+                            "CategoryPage"
+                          ]
+                        }
+                      },
+                      {
+                        "label": "Select By Tags",
+                        "fieldContent": {
+                          "selectionMode": "selectTags",
+                          "selectDocumentAreas": [
+                            "card"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "defaultHeadingBlock": {
+            "label": "Heading Block",
+            "description": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
+            "imageName": "default-heading-block.webp",
+            "components": {
+              "defaultHeading": {
+                "indexNumber": 0,
+                "label": "Heading",
+                "helpText": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
+                "imageName": "",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the heading text here...</h1>"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "defaultImageBlock": {
+            "label": "Image Block",
+            "description": "An image adds a visual touch to the article.",
+            "imageName": "default-image-block.webp",
+            "components": {
+              "defaultImage": {
+                "indexNumber": 0,
+                "label": "Image",
+                "helpText": "An image adds a visual touch to the article. It makes the text more enjoyable to read, grabs attention, and helps explain ideas or topics by giving a picture that goes hand-in-hand with the words.",
+                "imageName": "default-image-block.webp",
+                "props": {
+                  "image": {
+                    "indexNumber": 0,
+                    "type": "Image",
+                    "fieldContent": {}
+                  }
+                }
+              }
+            }
+          },
+          "defaultParagraphBlock": {
+            "label": "Paragraph Block",
+            "description": "The paragraph is a section within the main content of a web page that contains a block of text, usually conveying a single idea or concept.",
+            "imageName": "paragraph-block.webp",
+            "components": {
+              "defaultParagraph": {
+                "indexNumber": 0,
+                "label": "Paragraph",
+                "helpText": "The paragraph is a section within the main content of a web page that contains a block of text, usually conveying a single idea or concept. It helps readers to easily digest the content by breaking it into smaller, manageable chunks.",
+                "imageName": "paragraph-block.webp",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "ParagraphText",
+                    "fieldContent": {
+                      "htmlText": "<p>Type the paragraph text here...</p>"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "authorByline": {
+        "indexNumber": 1,
+        "label": "Author Byline",
+        "helpText": "A brief section that attributes the content to its creator by displaying the author's name. It often appears near the beginning or end of an article or post and may include a link to the author's profile. The byline acknowledges the writer's work and offers readers an opportunity to explore more about the author and their other contributions.",
+        "imageName": "author-profile-author-byline.webp",
+        "blocks": {
+          "authorProfileAvatarBlock": {
+            "label": "Author Avatar",
+            "description": "A small graphical representation, often a profile picture or an icon, used to visually represent a user, author, or member. Avatars personalize the user experience, making it easier for visitors to recognize and connect with content creators or other users in online interactions, such as in comments, forums, or author bylines.",
+            "imageName": "author-profile-avatar-block.webp",
+            "components": {
+              "avatar": {
+                "indexNumber": 0,
+                "label": "",
+                "props": {
+                  "image": {
+                    "indexNumber": 0,
+                    "type": "Image",
+                    "fieldContent": {}
+                  }
+                }
+              }
+            }
+          },
+          "authorProfileInfoBlock": {
+            "label": "Author Info",
+            "description": "The author name and email",
+            "imageName": "author-profile-info-block.webp",
+            "components": {
+              "info": {
+                "indexNumber": 0,
+                "label": "",
+                "props": {
+                  "fullName": {
+                    "indexNumber": 0,
+                    "label": "Full Name",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  },
+                  "email": {
+                    "indexNumber": 0,
+                    "label": "Email",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "CategoriesPage": {
+    "type": "page",
+    "label": "Categories",
+    "defaultTitle": "Categories",
+    "description": "A categories page organizes categories by topic or theme, making it easy for users to find and explore related content.",
+    "imageName": "categories-document.webp",
+    "dataFields": {
+      "metaDescription": {
+        "label": "Page Description Meta Tag",
+        "indexNumber": 0,
+        "dataType": "string",
+        "inputType": "text",
+        "defaultValue": "This is an article page"
+      },
+      "metaRobots": {
+        "label": "Robots Meta Tag",
+        "indexNumber": 1,
+        "dataType": "string",
+        "inputType": "select",
+        "defaultValue": "index,follow",
+        "variants": [
+          {
+            "label": "Allow indexing and following links",
+            "value": "index,follow"
+          },
+          {
+            "label": "Prevent indexing and following links",
+            "value": "noindex,nofollow"
+          },
+          {
+            "label": "Allow indexing but prevent following links",
+            "value": "index,nofollow"
+          },
+          {
+            "label": "Prevent indexing but allow following links",
+            "value": "noindex,follow"
+          }
+        ]
+      }
+    },
+    "documentAreas": {
+      "pageBody": {
+        "indexNumber": 0,
+        "label": "Page Body",
+        "helpText": "The content on a categories page typically includes list of categories.",
+        "imageName": "",
+        "blocks": {
+          "defaultHeadingBlock": {
+            "label": "Heading Block",
+            "description": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
+            "imageName": "default-heading-block.webp",
+            "components": {
+              "defaultHeading": {
+                "indexNumber": 0,
+                "label": "Heading",
+                "helpText": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
+                "imageName": "",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the heading text here...</h1>"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "categoriesGalleryBlock": {
+            "label": "Gallery of Categories Block",
+            "description": "A display of category thumbnails, each representing a specific topic, creates a visually organized collection of compact previews. This easy-to-browse gallery allows users to quickly identify and navigate to their desired content within each category.",
+            "imageName": "categories-gallery-block.webp",
+            "components": {
+              "galleryListing": {
+                "indexNumber": 0,
+                "label": "Gallery of Categories",
+                "helpText": "A display of category thumbnails, each representing a specific topic, creates a visually organized collection of compact previews. This easy-to-browse gallery allows users to quickly identify and navigate to their desired content within each category.",
+                "imageName": "categories-gallery-block.webp",
+                "props": {
+                  "documentsList": {
+                    "indexNumber": 1,
+                    "type": "DocumentsList",
+                    "label": "",
+                    "fieldContent": {
+                      "isRequired": false,
+                      "selectionMode": "selectDocuments",
+                      "allowedDocumentClasses": [
+                        "CategoryPage"
+                      ],
+                      "selectDocumentAreas": [
+                        "card"
+                      ]
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "Select Documents",
+                        "fieldContent": {
+                          "selectionMode": "selectDocuments",
+                          "allowedDocumentClasses": [
+                            "CategoryPage"
+                          ],
+                          "selectDocumentAreas": [
+                            "card"
+                          ]
+                        }
+                      },
+                      {
+                        "label": "Select By Parent Documents",
+                        "fieldContent": {
+                          "selectionMode": "selectChildrenDocuments",
+                          "selectDocumentAreas": [
+                            "card"
+                          ]
+                        }
+                      },
+                      {
+                        "label": "Select By Tags",
+                        "fieldContent": {
+                          "selectionMode": "selectTags",
+                          "selectDocumentAreas": [
+                            "card"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "CategoryPage": {
+    "type": "page",
+    "label": "Category",
+    "defaultTitle": "Category",
+    "description": "A category page organizes articles by topic or theme, making it easy for users to find and explore related content.",
+    "imageName": "category-document.webp",
+    "dataFields": {
+      "metaDescription": {
+        "label": "Page Description Meta Tag",
+        "indexNumber": 0,
+        "dataType": "string",
+        "inputType": "text",
+        "defaultValue": "This is an article page"
+      },
+      "metaRobots": {
+        "label": "Robots Meta Tag",
+        "indexNumber": 1,
+        "dataType": "string",
+        "inputType": "select",
+        "defaultValue": "index,follow",
+        "variants": [
+          {
+            "label": "Allow indexing and following links",
+            "value": "index,follow"
+          },
+          {
+            "label": "Prevent indexing and following links",
+            "value": "noindex,nofollow"
+          },
+          {
+            "label": "Allow indexing but prevent following links",
+            "value": "index,nofollow"
+          },
+          {
+            "label": "Prevent indexing but allow following links",
+            "value": "noindex,follow"
+          }
+        ]
+      }
+    },
+    "documentAreas": {
+      "pageBody": {
+        "indexNumber": 0,
+        "label": "Page Body",
+        "helpText": "The content on a category page typically includes category hero and list of articles.",
+        "imageName": "",
+        "blocks": {
+          "defaultHeroBlock": {
+            "label": "Hero Block",
+            "description": "The page's hero is a crucial element of your page design, as it captures the attention of your visitors and conveys the primary message of your content.",
+            "imageName": "default-hero-block.webp",
+            "components": {
+              "heroTitle": {
+                "indexNumber": 0,
+                "label": "Hero Title",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the hero title...</h1>"
+                    }
+                  }
+                }
+              },
+              "heroDescription": {
+                "indexNumber": 1,
+                "label": "Hero Description",
+                "props": {
+                  "text": {
+                    "indexNumber": 1,
+                    "type": "ParagraphText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the hero description...</h1>"
+                    }
+                  }
+                }
+              },
+              "heroImage": {
+                "indexNumber": 2,
+                "label": "Hero Image",
+                "props": {
+                  "image": {
+                    "indexNumber": 0,
+                    "type": "Image",
+                    "fieldContent": {}
+                  }
+                }
+              }
+            }
+          },
+          "articlesGalleryBlock": {
+            "label": "Gallery of Articles Block",
+            "description": "A display of article thumbnails creates a visually organized collection of compact previews.",
+            "imageName": "articles-gallery-block.webp",
+            "components": {
+              "galleryHeading": {
+                "indexNumber": 0,
+                "label": "Gallery Title",
+                "helpText": "A concise and informative heading that describes a collection or showcase of related articles on a webpage.",
+                "imageName": "",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the gallery title...</h1>"
+                    }
+                  }
+                }
+              },
+              "galleryListing": {
+                "indexNumber": 1,
+                "label": "Gallery of Articles",
+                "helpText": "The list of selected documents for a gallery is a curated collection of items, chosen based on relevance or importance, to be showcased within the gallery.",
+                "imageName": "",
+                "props": {
+                  "documentsList": {
+                    "indexNumber": 0,
+                    "type": "DocumentsList",
+                    "label": "",
+                    "fieldContent": {
+                      "isRequired": false,
+                      "selectionMode": "selectDocuments",
+                      "allowedDocumentClasses": [
+                        "ArticlePage"
+                      ],
+                      "selectDocumentAreas": [
+                        "card"
+                      ]
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "Select Documents",
+                        "fieldContent": {
+                          "selectionMode": "selectDocuments",
+                          "allowedDocumentClasses": [
+                            "ArticlePage"
+                          ],
+                          "selectDocumentAreas": [
+                            "card"
+                          ]
+                        }
+                      },
+                      {
+                        "label": "Select By Parent Documents",
+                        "fieldContent": {
+                          "selectionMode": "selectChildrenDocuments",
+                          "selectDocumentAreas": [
+                            "card"
+                          ],
+                          "allowedDocumentClasses": [
+                            "CategoryPage"
+                          ]
+                        }
+                      },
+                      {
+                        "label": "Select By Tags",
+                        "fieldContent": {
+                          "selectionMode": "selectTags",
+                          "selectDocumentAreas": [
+                            "card"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "card": {
+        "indexNumber": 1,
+        "label": "Card",
+        "helpText": "A card on a webpage showcases a snapshot of page's content in a visually appealing, compact format. It typically includes an image, title, and brief description, making it easy for users to browse and select their desired destination.",
+        "imageName": "",
+        "blocks": {
+          "cardImageBlock": {
+            "label": "Card View Image Block",
+            "description": "A card image is a small, visually appealing picture featured on a compact preview of a webpage's content.",
+            "imageName": "card-image-block.webp",
+            "components": {
+              "cardViewImage": {
+                "indexNumber": 0,
+                "label": "Card View Image",
+                "helpText": "A card image is a small, visually appealing picture featured on a compact preview of a webpage's content.",
+                "imageName": "card-image-block-card-view-image.webp",
+                "props": {
+                  "image": {
+                    "indexNumber": 0,
+                    "type": "Image",
+                    "fieldContent": {}
+                  }
+                }
+              }
+            }
+          },
+          "cardTitleBlock": {
+            "label": "Card Title Block",
+            "description": "A card title is a concise, eye-catching headline displayed on a compact preview of a webpage's content.",
+            "imageName": "card-title-block.webp",
+            "components": {
+              "cardTitle": {
+                "indexNumber": 0,
+                "label": "Card Title",
+                "helpText": "A card title is a concise, eye-catching headline displayed on a compact preview of a webpage's content.",
+                "imageName": "card-title-block-card-title.webp",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "ParagraphText",
+                    "label": "",
+                    "fieldContent": {
+                      "htmlText": "<h5>Type the card title...</h5>"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "MainPage": {
+    "type": "main_page",
+    "label": "Main Page",
+    "defaultTitle": "Home",
+    "defaultSlug": "home",
+    "description": "The main page, often called the \"homepage,\" is the entry point and central hub of a website. It provides an overview of the site's purpose, features key content and sections, and offers intuitive navigation.",
+    "dataFields": {
+      "metaDescription": {
+        "label": "Page Description Meta Tag",
+        "indexNumber": 0,
+        "dataType": "string",
+        "inputType": "text",
+        "defaultValue": "This is an article page"
+      },
+      "metaRobots": {
+        "label": "Robots Meta Tag",
+        "indexNumber": 1,
+        "dataType": "string",
+        "inputType": "select",
+        "defaultValue": "index,follow",
+        "variants": [
+          {
+            "label": "Allow indexing and following links",
+            "value": "index,follow"
+          },
+          {
+            "label": "Prevent indexing and following links",
+            "value": "noindex,nofollow"
+          },
+          {
+            "label": "Allow indexing but prevent following links",
+            "value": "index,nofollow"
+          },
+          {
+            "label": "Prevent indexing but allow following links",
+            "value": "noindex,follow"
+          }
+        ]
+      },
+      "twitterCardImage": {
+        "indexNumber": 2,
+        "label": "Twitter Card",
+        "inputType": "image",
+        "dataType": "string"
+      }
+    },
+    "imageName": "main-page-help.webp",
+    "documentAreas": {
+      "pageBody": {
+        "indexNumber": 0,
+        "label": "Page Body",
+        "helpText": "The part of a web page where the main content is displayed. It's like the canvas for a painting, containing text, images, videos, and other elements that make up the visible portion of a website.",
+        "imageName": "main-page-help.webp",
+        "blocks": {
+          "mainPageHeroBlock": {
+            "label": "Hero Block",
+            "description": "The Hero, featuring a captivating background image, is a critical component of your webpage design. It effectively captures your visitors' attention and conveys the primary message of your content, creating an engaging visual experience.",
+            "imageName": "main-page-hero-block.webp",
+            "components": {
+              "heroTitle": {
+                "indexNumber": 0,
+                "label": "Hero Title",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the hero title...</h1>"
+                    }
+                  }
+                }
+              },
+              "heroDescription": {
+                "indexNumber": 1,
+                "label": "Hero Description",
+                "props": {
+                  "text": {
+                    "indexNumber": 1,
+                    "type": "ParagraphText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the hero description...</h1>"
+                    }
+                  }
+                }
+              },
+              "heroBackgroundImage": {
+                "indexNumber": 2,
+                "label": "Hero Background Image",
+                "props": {
+                  "image": {
+                    "indexNumber": 0,
+                    "type": "Image",
+                    "fieldContent": {}
+                  }
+                }
+              }
+            }
+          },
+          "categoryGalleryBlock": {
+            "label": "Gallery of Categories Block",
+            "description": "A display of category thumbnails, each representing a specific topic, creates a visually organized collection of compact previews.",
+            "imageName": "category-gallery-block.webp",
+            "components": {
+              "galleryListing": {
+                "indexNumber": 2,
+                "label": "List of Documents Representing Categories in the Gallery",
+                "helpText": "The list of selected documents for a gallery is a curated collection of items, chosen based on relevance or importance, to be showcased within the gallery.",
+                "imageName": "",
+                "props": {
+                  "documentsList": {
+                    "indexNumber": 0,
+                    "type": "DocumentsList",
+                    "fieldContent": {
+                      "selectionMode": "selectDocuments",
+                      "selectDocumentAreas": [
+                        "card"
+                      ],
+                      "allowedDocumentClasses": [
+                        "CategoryPage"
+                      ]
+                    }
+                  }
+                }
+              },
+              "galleryHeading": {
+                "indexNumber": 0,
+                "label": "Gallery Title",
+                "helpText": "A concise and informative heading that describes a collection or showcase of related articles on a webpage.",
+                "imageName": "",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the gallery title...</h1>"
+                    }
+                  }
+                }
+              },
+              "fullGalleryLink": {
+                "indexNumber": 1,
+                "label": "Link to Full Gallery Document",
+                "helpText": "The link to the full gallery is a convenient navigation element that directs users to a dedicated document containing the complete collection of category thumbnails. By clicking on this link, users can easily access and explore the entire gallery of categories, ensuring they discover all available topics and content.",
+                "imageName": "",
+                "props": {
+                  "link": {
+                    "indexNumber": 0,
+                    "type": "DocumentsList",
+                    "label": "",
+                    "fieldContent": {
+                      "selectionMode": "selectDocuments",
+                      "itemsLimit": 1,
+                      "allowedDocumentClasses": [
+                        "CategoriesPage"
+                      ],
+                      "isRequired": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "articlesGalleryBlock": {
+            "label": "Gallery of Articles Block",
+            "description": "A display of article thumbnails creates a visually organized collection of compact previews.",
+            "imageName": "articles-gallery-block.webp",
+            "components": {
+              "galleryHeading": {
+                "indexNumber": 0,
+                "label": "Gallery Title",
+                "helpText": "A concise and informative heading that describes a collection or showcase of related articles on a webpage.",
+                "imageName": "",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the gallery title...</h1>"
+                    }
+                  }
+                }
+              },
+              "galleryListing": {
+                "indexNumber": 1,
+                "label": "Gallery of Articles",
+                "helpText": "The list of selected documents for a gallery is a curated collection of items, chosen based on relevance or importance, to be showcased within the gallery.",
+                "imageName": "",
+                "props": {
+                  "documentsList": {
+                    "indexNumber": 0,
+                    "type": "DocumentsList",
+                    "label": "",
+                    "fieldContent": {
+                      "isRequired": false,
+                      "selectionMode": "selectDocuments",
+                      "allowedDocumentClasses": [
+                        "ArticlePage"
+                      ],
+                      "selectDocumentAreas": [
+                        "card"
+                      ]
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "Select Documents",
+                        "fieldContent": {
+                          "selectionMode": "selectDocuments",
+                          "allowedDocumentClasses": [
+                            "ArticlePage"
+                          ],
+                          "selectDocumentAreas": [
+                            "card"
+                          ]
+                        }
+                      },
+                      {
+                        "label": "Select By Parent Documents",
+                        "fieldContent": {
+                          "selectionMode": "selectChildrenDocuments",
+                          "selectDocumentAreas": [
+                            "card"
+                          ],
+                          "allowedDocumentClasses": [
+                            "CategoryPage"
+                          ]
+                        }
+                      },
+                      {
+                        "label": "Select By Tags",
+                        "fieldContent": {
+                          "selectionMode": "selectTags",
+                          "selectDocumentAreas": [
+                            "card"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "SearchPage": {
+    "type": "page",
+    "label": "Search Page",
+    "defaultTitle": "Search",
+    "defaultSlug": "search",
+    "description": "A search webpage is a dedicated section of a website that allows users to input keywords or phrases to find specific content within the site. It typically features a search bar or box where users enter their query, and the search engine then returns a list of relevant results, often ranked by relevance.",
+    "imageName": "search-document.webp",
+    "dataFields": {
+      "metaDescription": {
+        "label": "Page Description Meta Tag",
+        "indexNumber": 0,
+        "dataType": "string",
+        "inputType": "text",
+        "defaultValue": "Search Page"
+      },
+      "metaRobots": {
+        "label": "Robots Meta Tag",
+        "indexNumber": 1,
+        "dataType": "string",
+        "inputType": "select",
+        "defaultValue": "noindex,nofollow",
+        "variants": [
+          {
+            "label": "Allow indexing and following links",
+            "value": "index,follow"
+          },
+          {
+            "label": "Prevent indexing and following links",
+            "value": "noindex,nofollow"
+          },
+          {
+            "label": "Allow indexing but prevent following links",
+            "value": "index,nofollow"
+          },
+          {
+            "label": "Prevent indexing but allow following links",
+            "value": "noindex,follow"
+          }
+        ]
+      }
+    },
+    "documentAreas": {
+      "pageBody": {
+        "indexNumber": 0,
+        "label": "Page Body",
+        "helpText": "The part of a web page where the main content is displayed. It's like the canvas for a painting, containing text, images, videos, and other elements that make up the visible portion of a website.",
+        "imageName": "",
+        "blocks": {
+          "searchHeroBlock": {
+            "label": "Search Hero",
+            "description": "The page's hero is a crucial element of your page design, as it captures the attention of your visitors and conveys the primary message of your content.",
+            "imageName": "search-hero-block.webp",
+            "components": {
+              "searchResultsListTitle": {
+                "indexNumber": 0,
+                "label": "Search Results List Title",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Search Results</h1>"
+                    }
+                  }
+                }
+              },
+              "searchResultsEmptyListMessage": {
+                "indexNumber": 0,
+                "label": "Message Text When the Result List is Empty",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "ParagraphText",
+                    "fieldContent": {
+                      "htmlText": "<h5>Nothing was found by your request</h5>"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "Site": {
+    "type": "site",
+    "label": "Site",
+    "description": "Global site content refers to elements consistently applied to each page on a website, ensuring a cohesive browsing experience. This may include headers, footers, navigation menus, logos, and contact information, which provide uniformity and easy access to essential resources.",
+    "dataFields": {
+      "siteTitle": {
+        "label": "Global Site Title",
+        "indexNumber": 0,
+        "dataType": "string",
+        "inputType": "text"
+      },
+      "siteLogo": {
+        "indexNumber": 1,
+        "label": "Site Logo",
+        "dataType": "string",
+        "inputType": "image"
+      }
+    },
+    "documentAreas": {
+      "mainMenu": {
+        "indexNumber": 0,
+        "label": "Main Menu",
+        "helpText": "Main menu is a structured menu of hyperlinks connecting key pages, ensuring swift access to essential content. It simplifies browsing by providing a clear path to various sections, enabling users to efficiently explore and locate desired information.",
+        "imageName": "",
+        "blocks": {
+          "menuLinksBlock": {
+            "label": "Menu Links Block",
+            "description": "A structured menu of hyperlinks connecting external pages.",
+            "imageName": "menu-documents-block.webp",
+            "components": {
+              "menuLinks": {
+                "indexNumber": 0,
+                "isArray": true,
+                "label": "Menu Links",
+                "helpText": "A structured menu of hyperlinks connecting external pages.",
+                "imageName": "menu-documents-block.webp",
+                "props": {
+                  "link": {
+                    "indexNumber": 0,
+                    "type": "Link",
+                    "label": "Link",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  },
+                  "label": {
+                    "indexNumber": 1,
+                    "type": "StringValue",
+                    "label": "Link Label",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "menuDocumentsBlock": {
+            "label": "Menu Documents Block",
+            "description": "A structured menu of hyperlinks connecting key pages of this website.",
+            "imageName": "menu-documents-block.webp",
+            "components": {
+              "menuDocuments": {
+                "indexNumber": 0,
+                "label": "Menu Documents",
+                "helpText": "A structured menu of hyperlinks connecting key pages of this website.",
+                "imageName": "menu-documents-block.webp",
+                "props": {
+                  "documentsList": {
+                    "indexNumber": 0,
+                    "type": "DocumentsList",
+                    "fieldContent": {
+                      "isRequired": true,
+                      "selectionMode": "selectDocuments"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "footer": {
+        "indexNumber": 1,
+        "label": "Footer",
+        "helpText": "A website footer is the lower section of a web page that typically contains supplementary information such as copyright notices, contact details, privacy policy, terms of service, social media links, and site navigation options. It serves as a consistent element across all pages, providing easy access to important information and enhancing user experience.",
+        "imageName": "",
+        "blocks": {
+          "menuLinksBlock": {
+            "label": "Menu Links Block",
+            "description": "A structured menu of hyperlinks connecting external pages.",
+            "imageName": "menu-documents-block.webp",
+            "components": {
+              "menuLinks": {
+                "indexNumber": 0,
+                "isArray": true,
+                "label": "Menu Links",
+                "helpText": "A structured menu of hyperlinks connecting external pages.",
+                "imageName": "menu-documents-block.webp",
+                "props": {
+                  "link": {
+                    "indexNumber": 0,
+                    "type": "Link",
+                    "label": "Link",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  },
+                  "label": {
+                    "indexNumber": 1,
+                    "type": "StringValue",
+                    "label": "Link Label",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "menuDocumentsBlock": {
+            "label": "Menu Documents Block",
+            "description": "A structured menu of hyperlinks connecting key pages of this website.",
+            "imageName": "menu-documents-block.webp",
+            "components": {
+              "menuDocuments": {
+                "indexNumber": 0,
+                "label": "Menu Documents",
+                "helpText": "A structured menu of hyperlinks connecting key pages of this website.",
+                "imageName": "menu-documents-block.webp",
+                "props": {
+                  "documentsList": {
+                    "indexNumber": 0,
+                    "type": "DocumentsList",
+                    "fieldContent": {
+                      "isRequired": true,
+                      "selectionMode": "selectDocuments"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "copyrightBlock": {
+            "label": "Copyright Block",
+            "description": "Copyright on a web page refers to the legal protection granted to the creator or owner of original content, such as text, images, videos, or designs, published on the website. It prevents unauthorized copying, distribution, or modification of the content without the permission of the copyright holder.",
+            "imageName": "copyright-block.webp",
+            "components": {
+              "copyright": {
+                "indexNumber": 0,
+                "label": "Copyright",
+                "helpText": "Copyright on a web page refers to the legal protection granted to the creator or owner of original content, such as text, images, videos, or designs, published on the website. It prevents unauthorized copying, distribution, or modification of the content without the permission of the copyright holder.",
+                "imageName": "copy-right-block.wwebp",
+                "props": {
+                  "year": {
+                    "indexNumber": 0,
+                    "type": "StringValue",
+                    "label": "Copyright Year",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  },
+                  "text": {
+                    "indexNumber": 1,
+                    "type": "StringValue",
+                    "label": "Copyright Text",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  },
+                  "link": {
+                    "indexNumber": 2,
+                    "type": "Link",
+                    "label": "Copyright Document Link",
+                    "fieldContent": {
+                      "isRequired": false
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "paragraphBlock": {
+            "label": "Paragraph Block",
+            "description": "The paragraph is a section within the content of a web page that contains a block of text, usually conveying a single idea or concept.",
+            "imageName": "paragraph-block.webp",
+            "components": {
+              "paragraph": {
+                "indexNumber": 0,
+                "label": "Paragraph",
+                "helpText": "The paragraph is a section within the content of a web page that contains a block of text, usually conveying a single idea or concept. It helps readers to easily digest the content by breaking it into smaller, manageable chunks.",
+                "imageName": "paragraph-block.webp",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "ParagraphText",
+                    "fieldContent": {
+                      "htmlText": "<p>Type the paragraph text here...</p>"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "TagPage": {
+    "type": "page",
+    "label": "Tag",
+    "defaultTitle": "Tag",
+    "description": "A webpage dedicated to a single tag displays a gallery of articles that share the same associated keyword or topic. By grouping articles under a specific tag, the webpage enhances user experience by simplifying navigation and helping visitors discover content relevant to their interests.",
+    "imageName": "tag-document.webp",
+    "dataFields": {
+      "metaDescription": {
+        "label": "Page Description Meta Tag",
+        "indexNumber": 0,
+        "dataType": "string",
+        "inputType": "text",
+        "defaultValue": "This is an article page"
+      },
+      "metaRobots": {
+        "label": "Robots Meta Tag",
+        "indexNumber": 1,
+        "dataType": "string",
+        "inputType": "select",
+        "defaultValue": "index,follow",
+        "variants": [
+          {
+            "label": "Allow indexing and following links",
+            "value": "index,follow"
+          },
+          {
+            "label": "Prevent indexing and following links",
+            "value": "noindex,nofollow"
+          },
+          {
+            "label": "Allow indexing but prevent following links",
+            "value": "index,nofollow"
+          },
+          {
+            "label": "Prevent indexing but allow following links",
+            "value": "noindex,follow"
+          }
+        ]
+      }
+    },
+    "documentAreas": {
+      "pageBody": {
+        "indexNumber": 0,
+        "label": "Page Body",
+        "helpText": "The content on a tag page typically includes list of articles with associated tag.",
+        "imageName": "",
+        "blocks": {
+          "defaultHeadingBlock": {
+            "label": "Heading Block",
+            "description": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
+            "imageName": "default-heading-block.webp",
+            "components": {
+              "defaultHeading": {
+                "indexNumber": 0,
+                "label": "Heading",
+                "helpText": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
+                "imageName": "",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the heading text here...</h1>"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "tagArticlesGalleryBlock": {
+            "label": "Gallery of Articles with Associated Tag Block",
+            "description": "A display of article thumbnails creates a visually organized collection of compact previews. ",
+            "imageName": "tag-articles-gallery-block.webp",
+            "components": {
+              "galleryListing": {
+                "indexNumber": 0,
+                "label": "Tag associated with Documents Representing Articles",
+                "helpText": "Choose a tag that is associated with the articles you want to include in the gallery.",
+                "imageName": "tag-articles-gallery-block.webp",
+                "props": {
+                  "documentList": {
+                    "indexNumber": 1,
+                    "type": "DocumentsList",
+                    "fieldContent": {
+                      "isRequired": true,
+                      "selectionMode": "selectTags",
+                      "selectDocumentAreas": [
+                        "card"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "card": {
+        "indexNumber": 1,
+        "label": "Card",
+        "helpText": "A card on a webpage showcases a snapshot of page's content in a visually appealing, compact format. It typically includes an image, title, and brief description, making it easy for users to browse and select their desired destination.",
+        "blocks": {
+          "cardImageBlock": {
+            "label": "Card View Image Block",
+            "description": "A card image is a small, visually appealing picture featured on a compact preview of a webpage's content.",
+            "imageName": "card-image-block.webp",
+            "components": {
+              "cardViewImage": {
+                "indexNumber": 0,
+                "label": "Card View Image",
+                "helpText": "A card image is a small, visually appealing picture featured on a compact preview of a webpage's content.",
+                "imageName": "card-image-block-card-view-image.webp",
+                "props": {
+                  "image": {
+                    "indexNumber": 0,
+                    "type": "Image",
+                    "fieldContent": {}
+                  }
+                }
+              }
+            }
+          },
+          "cardTitleBlock": {
+            "label": "Card Title Block",
+            "description": "A card title is a concise, eye-catching headline displayed on a compact preview of a webpage's content.",
+            "imageName": "card-title-block.webp",
+            "components": {
+              "cardTitle": {
+                "indexNumber": 0,
+                "label": "Card Title",
+                "helpText": "A card title is a concise, eye-catching headline displayed on a compact preview of a webpage's content.",
+                "imageName": "card-title-block-card-title.webp",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "ParagraphText",
+                    "label": "",
+                    "fieldContent": {
+                      "htmlText": "<h5>Type the card title...</h5>"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "cardExcerptBlock": {
+            "label": "Card Excerpt Block",
+            "description": "A card excerpt is a brief, informative description accompanying the title on a compact preview of a webpage's content.",
+            "imageName": "card-excerpt-block.webp",
+            "components": {
+              "cardExcerpt": {
+                "indexNumber": 0,
+                "label": "Card Excerpt",
+                "helpText": "A card excerpt is a brief, informative description accompanying the title on a compact preview of a webpage's content.",
+                "imageName": "card-excerpt-block.webp",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "ParagraphText",
+                    "label": "Excerpt Text",
+                    "fieldContent": {
+                      "htmlText": "<p>Type the excerpt from the page content...</p>"
+                    }
+                  },
+                  "readMoreLabel": {
+                    "indexNumber": 1,
+                    "type": "StringValue",
+                    "label": "Read More Link Label",
+                    "fieldContent": {
+                      "value": "Read More"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "TagsPage": {
+    "type": "page",
+    "label": "Tags",
+    "defaultTitle": "Tags",
+    "description": "A tags page organizes tags, making it easy for users to find and explore related content.",
+    "imageName": "tags-document.webp",
+    "dataFields": {
+      "metaDescription": {
+        "label": "Page Description Meta Tag",
+        "indexNumber": 0,
+        "dataType": "string",
+        "inputType": "text",
+        "defaultValue": "This is an article page"
+      },
+      "metaRobots": {
+        "label": "Robots Meta Tag",
+        "indexNumber": 1,
+        "dataType": "string",
+        "inputType": "select",
+        "defaultValue": "index,follow",
+        "variants": [
+          {
+            "label": "Allow indexing and following links",
+            "value": "index,follow"
+          },
+          {
+            "label": "Prevent indexing and following links",
+            "value": "noindex,nofollow"
+          },
+          {
+            "label": "Allow indexing but prevent following links",
+            "value": "index,nofollow"
+          },
+          {
+            "label": "Prevent indexing but allow following links",
+            "value": "noindex,follow"
+          }
+        ]
+      }
+    },
+    "documentAreas": {
+      "pageBody": {
+        "indexNumber": 0,
+        "label": "Page Body",
+        "helpText": "The content on a tags page typically includes list of tags.",
+        "imageName": "",
+        "blocks": {
+          "defaultHeadingBlock": {
+            "label": "Heading Block",
+            "description": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
+            "imageName": "default-heading-block.webp",
+            "components": {
+              "defaultHeading": {
+                "indexNumber": 0,
+                "label": "Heading",
+                "helpText": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
+                "imageName": "",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "HeaderText",
+                    "fieldContent": {
+                      "htmlText": "<h1>Type the heading text here...</h1>"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "tagsGalleryBlock": {
+            "label": "Gallery of Tags Block",
+            "description": "A display of tag thumbnails, each representing a specific tag, creates a visually organized collection of compact previews. This easy-to-browse gallery allows users to quickly identify and navigate to their desired content within each tag.",
+            "imageName": "tags-gallery-block.webp",
+            "components": {
+              "galleryListing": {
+                "indexNumber": 0,
+                "label": "Gallery of Categories",
+                "helpText": "A display of tag thumbnails, each representing a specific tag, creates a visually organized collection of compact previews. This easy-to-browse gallery allows users to quickly identify and navigate to their desired content within each tag.",
+                "imageName": "tags-gallery-block.webp",
+                "props": {
+                  "documentsList": {
+                    "indexNumber": 1,
+                    "type": "DocumentsList",
+                    "label": "",
+                    "fieldContent": {
+                      "isRequired": false,
+                      "selectionMode": "selectDocuments",
+                      "selectDocumentAreas": [
+                        "card"
+                      ],
+                      "allowedDocumentClasses": [
+                        "TagPage"
+                      ]
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "Select Documents",
+                        "fieldContent": {
+                          "selectionMode": "selectDocuments",
+                          "selectDocumentAreas": [
+                            "card"
+                          ],
+                          "allowedDocumentClasses": [
+                            "TagPage"
+                          ]
+                        }
+                      },
+                      {
+                        "label": "Select By Parent Documents",
+                        "fieldContent": {
+                          "selectionMode": "selectChildrenDocuments",
+                          "selectDocumentAreas": [
+                            "card"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

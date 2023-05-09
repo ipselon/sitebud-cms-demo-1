@@ -1,0 +1,717 @@
+{
+  "id": "pxq-03E54XDpRP6U4DeSy",
+  "type": "page",
+  "documentClass": "ArticlePage",
+  "contents": {
+    "en-US": {
+      "title": "Ziggy the Zebra's Striped Surprise",
+      "slug": "ziggy-the-zebra's-striped-surprise",
+      "statusMap": {},
+      "isCustomSlug": false,
+      "tags": {
+        "Adventure": 1,
+        "Life lessons": 1
+      },
+      "dataFields": [
+        {
+          "name": "metaDescription",
+          "value": "Ziggy the Zebra's Striped Surprise",
+          "type": "string"
+        },
+        {
+          "name": "metaRobots",
+          "value": "index,follow",
+          "type": "string"
+        }
+      ],
+      "documentAreas": [
+        {
+          "name": "pageBody",
+          "blocks": [
+            {
+              "id": "b-3MTNhYYYEWYhP-I7kLJ",
+              "name": "articleHeroBlock",
+              "components": [
+                {
+                  "name": "heroTitle",
+                  "instances": [
+                    {
+                      "id": "rV2RYHfpYRJZ3yhF16GY0",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h1 style=\"text-align: center\">Ziggy the Zebra's Striped Surprise</h1>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "heroImage",
+                  "instances": [
+                    {
+                      "id": "Lik4aqU3Svw_n0TE8Tkik",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "/_assets/images/zebra_1.webp",
+                            "width": 1000,
+                            "height": 418,
+                            "alt": "Zebra Ziggy"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "yVZprbHrZlqinjY9UwpIq",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "jluYeRIrqNzudb1l3kMKA",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>In a serene corner of the savannah, there lived a curious young zebra named Ziggy. He was always fascinated by the mysterious tales and legends passed down from generation to generation. </p><p>One such story was about the \"Great Striped Tree,\" rumored to grant wishes to those who could find it.</p><p style=\"text-align: start\">One sunny morning, Ziggy decided to embark on an adventure to find the mythical tree. </p><p style=\"text-align: start\">He believed that if he discovered it, he could wish for the most spectacular stripes the savannah had ever seen. With great enthusiasm, Ziggy set off on his quest.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "LVy7uVM9pQEW8ANoBWk3P",
+              "name": "defaultImageBlock",
+              "components": [
+                {
+                  "name": "defaultImage",
+                  "instances": [
+                    {
+                      "id": "OYRHAOcNmbB2HlaxCp0TX",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "/_assets/images/zebra_3.webp",
+                            "width": 1000,
+                            "height": 702,
+                            "alt": "Zebras"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "yvRrcflQ-KbrhGdzJLtkB",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "i2bcNbIEuz9nLFKOl9NR-",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>Ziggy ventured through the grasslands, asking every animal he encountered if they knew the whereabouts of the Great Striped Tree. </p><p>Most had never heard of it, but a wise old elephant named Elara offered a clue: \"Look for the place where the sun kisses the earth.\"</p><p style=\"text-align: start\">Determined to find the tree, Ziggy followed the sun's path across the savannah. As the day wore on and the sun began to set, Ziggy finally reached a spot where the sun's rays seemed to touch the ground. To his delight, he found a magnificent tree adorned with brilliant, colorful stripes.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "S8CfOg2Lz2ZFlqQF3hyrS",
+              "name": "defaultImageBlock",
+              "components": [
+                {
+                  "name": "defaultImage",
+                  "instances": [
+                    {
+                      "id": "2np7FQaeBchyhsbJa2oXT",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "/_assets/images/zebra_4.webp",
+                            "width": 1000,
+                            "height": 651,
+                            "alt": "Zebra"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "jI-Jy71gdcurubc6B7lc3",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "kvM-ffTmDPZEad_Mi-zgD",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>Ziggy approached the tree and nervously whispered his wish: \"Great Striped Tree, I wish to have the most spectacular stripes in the entire savannah.\" To his surprise, the tree's leaves rustled, and a gentle breeze whispered, \"Your wish is granted, young zebra.\"</p><p style=\"text-align: start\">Excitedly, Ziggy raced back to his herd to show off his newfound stripes. But as he arrived, the other zebras stared in confusion. Ziggy's stripes hadn't changed at all. Disappointed, he asked Elara why his wish hadn't come true.</p><p style=\"text-align: start\">Elara smiled and said, \"Ziggy, the Great Striped Tree didn't change your stripes because it knew you were already unique and special just the way you are. Your curiosity, bravery, and kind heart are what make you truly spectacular.\"</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "1drJ3TZsDdNU0JEZ27fy5",
+              "name": "defaultImageBlock",
+              "components": [
+                {
+                  "name": "defaultImage",
+                  "instances": [
+                    {
+                      "id": "M7S-zbPpDN3jL3Ma4bPX_",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "/_assets/images/zebra_2.webp",
+                            "width": 1000,
+                            "height": 662,
+                            "alt": "Zebras"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pStP8UmQ5HS5a7eEvqAwg",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "3ubF0NcWKKAedH9JIrt8I",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>With a newfound appreciation for his own stripes, Ziggy realized the real treasure was the adventure he had embarked upon and the friendships he had made along the way.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FuZs5tMrtfHwoqXaxzVuY",
+              "name": "defaultHeadingBlock",
+              "components": [
+                {
+                  "name": "defaultHeading",
+                  "instances": [
+                    {
+                      "id": "NaDAm7bsT5po3wUT-8axV",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h3 style=\"text-align: center\">The End</h3>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ignoreNested": true
+        },
+        {
+          "name": "card",
+          "blocks": [
+            {
+              "id": "fvJaWTJDUtBzhnEjQd2w8",
+              "name": "cardImageBlock",
+              "components": [
+                {
+                  "name": "cardViewImage",
+                  "instances": [
+                    {
+                      "id": "e8i83RQbe3JcGzokFEqh3",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "/_assets/images/zebra_1.webp",
+                            "width": 1000,
+                            "height": 418,
+                            "alt": "Ziggy Zebra"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "jYBTvci-luIk3LIG0sAqZ",
+              "name": "cardTitleBlock",
+              "components": [
+                {
+                  "name": "cardTitle",
+                  "instances": [
+                    {
+                      "id": "Vkm9TJeFjWgop2nZuhyrg",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<h4>Ziggy the Zebra's Striped Surprise</h4>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "kd9byHYybBqlHrJ6sbUmU",
+              "name": "cardExcerptBlock",
+              "components": [
+                {
+                  "name": "cardExcerpt",
+                  "instances": [
+                    {
+                      "id": "XVFFJmZJqY1AVRVR4jjOO",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>As Ziggy trotted along the sunlit savannah, his eyes sparkled with curiosity and determination. The quest for the legendary Great Striped Tree had led him to meet countless new friends and face uncharted paths. Ziggy reveled in the adventure, his heart swelling with pride and excitement. </p><p>Little did he know that the journey itself would become his most treasured experience, and that the true magic of the Great Striped Tree lay in revealing the beauty of his own unique spirit.</p>"
+                          }
+                        },
+                        {
+                          "name": "readMoreLabel",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "value": "Read More"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateUpdated": 1682337384909,
+      "authors": {
+        "apustovalov@gmail.com": 1682337384909
+      },
+      "includeInSiteMap": true
+    },
+    "es-ES": {
+      "title": "La sorpresa rayada de Ziggy la cebra",
+      "slug": "la-sorpresa-rayada-de-ziggy-la-cebra",
+      "statusMap": {},
+      "isCustomSlug": false,
+      "tags": {
+        "Aventura": 1,
+        "Lecciones de vida": 1
+      },
+      "dataFields": [
+        {
+          "name": "metaDescription",
+          "value": "La sorpresa rayada de Ziggy la cebra",
+          "type": "string"
+        },
+        {
+          "name": "metaRobots",
+          "value": "index,follow",
+          "type": "string"
+        }
+      ],
+      "documentAreas": [
+        {
+          "name": "pageBody",
+          "blocks": [
+            {
+              "id": "TiJvk_j6q_cNh3zXgMCZW",
+              "name": "articleHeroBlock",
+              "components": [
+                {
+                  "name": "heroTitle",
+                  "instances": [
+                    {
+                      "id": "mUEKwfblTAWbKRe11lipm",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h1 style=\"text-align: center\">La sorpresa rayada de Ziggy la cebra</h1>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "heroImage",
+                  "instances": [
+                    {
+                      "id": "eIVOh6URotJTwAeKDTJXg",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "/_assets/images/zebra_1.webp",
+                            "width": 1000,
+                            "height": 418,
+                            "alt": "Zebra Ziggy"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "-X2C0XrUQF1ZMo2x_t-1V",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "anb3GffxATDfYHMX1rlVs",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>En una tranquila esquina de la sabana, vivía una joven cebra curiosa llamada Ziggy. Siempre estaba fascinada por los misteriosos cuentos y leyendas transmitidos de generación en generación.</p><p style=\"text-align: start\">Una de estas historias era sobre el \"Gran Árbol Rayado\", se rumoreaba que otorgaba deseos a aquellos que lo encontraban.</p><p style=\"text-align: start\">Una soleada mañana, Ziggy decidió embarcarse en una aventura para encontrar el árbol mítico.</p><p style=\"text-align: start\">Creía que si lo descubría, podría pedir las rayas más espectaculares que la sabana hubiera visto jamás. Con gran entusiasmo, Ziggy se embarcó en su búsqueda.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "YXRiImQSiyrHzM1QWhD4l",
+              "name": "defaultImageBlock",
+              "components": [
+                {
+                  "name": "defaultImage",
+                  "instances": [
+                    {
+                      "id": "kuw2BEbSZLcTCfLBqpNSJ",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "/_assets/images/zebra_3.webp",
+                            "width": 1000,
+                            "height": 702,
+                            "alt": "Zebras"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "GScv_N71PbfnSx_xWHB1I",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "RI_MXSlvW4EJIU16oP1c7",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>Ziggy se aventuró a través de las praderas, preguntando a cada animal que encontraba si conocían el paradero del Gran Árbol Rayado.</p><p style=\"text-align: start\">La mayoría nunca había oído hablar de él, pero una sabia elefanta vieja llamada Elara ofreció una pista: \"Busca el lugar donde el sol besa la tierra\".</p><p style=\"text-align: start\">Determinado a encontrar el árbol, Ziggy siguió el camino del sol a través de la sabana. A medida que pasaba el día y el sol comenzaba a ponerse, Ziggy finalmente llegó a un lugar donde los rayos del sol parecían tocar el suelo. Para su deleite, encontró un magnífico árbol adornado con rayas brillantes y coloridas.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RiUxZstzXx_1BOwr4qHMc",
+              "name": "defaultImageBlock",
+              "components": [
+                {
+                  "name": "defaultImage",
+                  "instances": [
+                    {
+                      "id": "_gIrcgOQCu7fTlPGvd8Vd",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "/_assets/images/zebra_4.webp",
+                            "width": 1000,
+                            "height": 651,
+                            "alt": "Zebra"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "lDSRNCvG4YSX64wolCPip",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "SA7xAQ0N6AVtksiCi0qsF",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>Ziggy se acercó al árbol y susurró nerviosamente su deseo: \"Gran Árbol a Rayas, deseo tener las rayas más espectaculares de toda la sabana\". Para su sorpresa, las hojas del árbol se movieron y una suave brisa susurró: \"Tu deseo se ha concedido, joven cebra\".</p><p style=\"text-align: start\">Emocionado, Ziggy corrió de regreso a su manada para mostrar sus nuevas rayas. Pero al llegar, las otras cebras lo miraron confundidas. Las rayas de Ziggy no habían cambiado en absoluto. Decepcionado, le preguntó a Elara por qué su deseo no se había hecho realidad.</p><p style=\"text-align: start\">Elara sonrió y dijo: \"Ziggy, el Gran Árbol a Rayas no cambió tus rayas porque sabía que ya eras único y especial tal como eres. Tu curiosidad, valentía y corazón amable son lo que te hacen realmente espectacular\".</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FECHND_XkShbTUyxbqHF0",
+              "name": "defaultImageBlock",
+              "components": [
+                {
+                  "name": "defaultImage",
+                  "instances": [
+                    {
+                      "id": "d3tWrbU-Y1A3sQK5ekCY7",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "/_assets/images/zebra_2.webp",
+                            "width": 1000,
+                            "height": 662,
+                            "alt": "Zebras"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ZETuU3ixCrUiW6nVJE7wc",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "ajMS30jEMTzYpN-5VI6ql",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>Con una nueva apreciación por sus propias rayas, Ziggy se dio cuenta de que el verdadero tesoro era la aventura en la que se había embarcado y las amistades que había hecho en el camino.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ppUslPY-5jODOtwCiqQIa",
+              "name": "defaultHeadingBlock",
+              "components": [
+                {
+                  "name": "defaultHeading",
+                  "instances": [
+                    {
+                      "id": "XDThUMKIAmLJNy5qUEZtz",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h3 style=\"text-align: center\">El fin</h3>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ignoreNested": true
+        },
+        {
+          "name": "card",
+          "blocks": [
+            {
+              "id": "YP_AiQJ7So15cCWWCSbgg",
+              "name": "cardImageBlock",
+              "components": [
+                {
+                  "name": "cardViewImage",
+                  "instances": [
+                    {
+                      "id": "2v3XlJBPlBvDpT2EdqUaO",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "/_assets/images/zebra_1.webp",
+                            "width": 1000,
+                            "height": 418,
+                            "alt": "Ziggy Zebra"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "zWcG5FUixWy-wQ6pxcdQu",
+              "name": "cardTitleBlock",
+              "components": [
+                {
+                  "name": "cardTitle",
+                  "instances": [
+                    {
+                      "id": "v7MqQd1t6KC0KqG5R5d0B",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<h4>La sorpresa rayada de Ziggy la cebra</h4>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "RLZQZdFNhWQHLZ3tVGmgz",
+              "name": "cardExcerptBlock",
+              "components": [
+                {
+                  "name": "cardExcerpt",
+                  "instances": [
+                    {
+                      "id": "qYMjKkwG5aRMKbssNkpBY",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>Mientras Ziggy trotaba por la soleada sabana, sus ojos brillaban con curiosidad y determinación. La búsqueda del legendario Gran Árbol de Rayas lo había llevado a conocer innumerables nuevos amigos y enfrentar senderos desconocidos. Ziggy se deleitaba en la aventura, su corazón hinchándose de orgullo y emoción.</p><p style=\"text-align: start\">Pero lo que él no sabía es que el propio viaje se convertiría en su experiencia más preciada, y que la verdadera magia del Gran Árbol de Rayas estaba en revelar la belleza de su propio espíritu único.</p>"
+                          }
+                        },
+                        {
+                          "name": "readMoreLabel",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "value": "Leer más"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateUpdated": 1682790413303,
+      "authors": {
+        "apustovalov@gmail.com": 1682790413303
+      },
+      "includeInSiteMap": true
+    }
+  }
+}
