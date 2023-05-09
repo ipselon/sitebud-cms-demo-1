@@ -301,10 +301,10 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
-"@sitebud/bridge-lib@1.0.0-alpha.5":
-  version "1.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@sitebud/bridge-lib/-/bridge-lib-1.0.0-alpha.5.tgz#d8462e84d45cdda161b09d7d5c6a15ab0995dd82"
-  integrity sha512-ia1dqZnoZ7GSy0YB6u1bqiWKCw3oPhta4dsFXwKTN7Y2yGycliCZMWUkYO++Bw0/GqQbY2pLirhLyv/yLDBWbg==
+"@sitebud/bridge-lib@1.0.0-alpha.6":
+  version "1.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/@sitebud/bridge-lib/-/bridge-lib-1.0.0-alpha.6.tgz#d23fe415d2488e1e85e20fa9fdb3d89f0ca69ff1"
+  integrity sha512-Ufqui2Hq5ffJj5Ub1eR7MGFijmCG3HVGQDXVBNS2ZyTEAIZqiY1CDqCspkL9Vs6VPaiR0m91oE3FAVQaPntIkg==
   dependencies:
     "@xmldom/xmldom" "0.8.7"
     idb "7.1.1"

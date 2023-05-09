@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@headlessui/react": "1.7.14",
-    "@sitebud/bridge-lib": "1.0.0-alpha.5",
+    "@sitebud/bridge-lib": "1.0.0-alpha.6",
     "@sitebud/domain-lib": "1.0.0-alpha.5",
     "@tailwindcss/typography": "0.5.9",
     "@types/fs-extra": "11.0.1",
