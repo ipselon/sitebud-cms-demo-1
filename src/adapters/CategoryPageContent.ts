@@ -7,7 +7,7 @@ export type CategoryPage_PageBody_DefaultHeroBlock = {
     heroTitle: { text: string };
     heroDescription: { text: string };
     heroImage: {
-        image: { src: string; alt: string; width: number; height: number };
+        image: { src: string; alt: string; focusX?: number; focusY?: number };
     };
 };
 /**
@@ -31,7 +31,7 @@ export type CategoryPage_PageBody = Array<{
 export type CategoryPage_Card_CardImageBlock = {
     __accessLevel?: number;
     cardViewImage: {
-        image: { src: string; alt: string; width: number; height: number };
+        image: { src: string; alt: string; focusX?: number; focusY?: number };
     };
 };
 /**

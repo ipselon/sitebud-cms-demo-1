@@ -15,13 +15,16 @@ export function TagCardLayout(props: TagCardViewLayoutProps) {
             <div className="relative overflow-hidden rounded-lg">
                 {card.map((cardBlocks, idx) => {
                     if (cardBlocks.cardImageBlock) {
-                        const {cardViewImage: {image: {src, alt}}} = cardBlocks.cardImageBlock;
+                        const {cardViewImage: {image: {src, alt, focusX, focusY}}} = cardBlocks.cardImageBlock;
                         return (
                             <img
                                 key={`cardImageBlock_${idx}`}
-                                className="w-full object-cover object-center h-80 transition-all duration-300 hover:scale-105"
+                                className="w-full object-cover h-80 transition-all duration-300 hover:scale-105"
                                 src={src}
                                 alt={alt}
+                                style={{
+                                    objectPosition: `${focusX || 50}% ${focusY || 50}%`
+                                }}
                             />
                         );
                     } else if (cardBlocks.cardTitleBlock) {

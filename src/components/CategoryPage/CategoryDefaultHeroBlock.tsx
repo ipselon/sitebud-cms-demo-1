@@ -20,6 +20,9 @@ export function CategoryDefaultHeroBlock(props: CategoryPageDefaultHeroBlockProp
                         <img className="object-cover w-full h-full max-w-2xl rounded-md"
                              src={heroImage.image.src}
                              alt={heroImage.image.alt}
+                             style={{
+                                 objectPosition: `${heroImage.image.focusX || 50}% ${heroImage.image.focusY || 50}%`
+                             }}
                         />
                     </div>
                 </div>

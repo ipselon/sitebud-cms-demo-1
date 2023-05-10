@@ -17,9 +17,12 @@ export function AuthorProfileImageBlock(props: AuthorProfileImageBlockProps) {
             <div className="container">
                 <div className="w-full">
                     <img
-                        className="object-cover object-center w-full rounded-xl"
+                        className="object-cover w-full rounded-xl"
                         src={defaultImage.image.src}
                         alt={defaultImage.image.alt}
+                        style={{
+                            objectPosition: `${defaultImage.image.focusX || 50}% ${defaultImage.image.focusY || 50}%`
+                        }}
                     />
                 </div>
             </div>

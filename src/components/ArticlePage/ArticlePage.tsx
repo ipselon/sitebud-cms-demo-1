@@ -66,15 +66,18 @@ export function ArticlePage() {
                                 </section>
                             );
                         } else if (pageBodyBlocks.defaultImageBlock) {
-                            const {defaultImage: {image: {src, alt}}} = pageBodyBlocks.defaultImageBlock;
+                            const {defaultImage: {image: {src, alt, focusX, focusY}}} = pageBodyBlocks.defaultImageBlock;
                             return (
                                 <section key={`defaultImageBlock_${idx}`} className="w-full pt-8">
                                     <div className="container xl:px-64">
                                         <div className="w-full">
                                             <img
-                                                className="object-cover object-center w-full rounded-xl"
+                                                className="object-cover w-full rounded-xl"
                                                 src={src}
                                                 alt={alt}
+                                                style={{
+                                                    objectPosition: `${focusX || 50}% ${focusY || 50}%`
+                                                }}
                                             />
                                         </div>
                                     </div>

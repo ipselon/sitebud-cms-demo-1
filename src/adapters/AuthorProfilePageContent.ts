@@ -7,7 +7,7 @@ export type AuthorProfilePage_PageBody_AuthorProfileHeroBlock = {
     authorName: { text: string };
     description: { text: string };
     authorPicture: {
-        image: { src: string; alt: string; width: number; height: number };
+        image: { src: string; alt: string; focusX?: number; focusY?: number };
     };
 };
 /**
@@ -38,7 +38,7 @@ export type AuthorProfilePage_PageBody_DefaultHeadingBlock = {
 export type AuthorProfilePage_PageBody_DefaultImageBlock = {
     __accessLevel?: number;
     defaultImage: {
-        image: { src: string; alt: string; width: number; height: number };
+        image: { src: string; alt: string; focusX?: number; focusY?: number };
     };
 };
 /**
@@ -65,7 +65,7 @@ export type AuthorProfilePage_PageBody = Array<{
 export type AuthorProfilePage_AuthorByline_AuthorProfileAvatarBlock = {
     __accessLevel?: number;
     avatar: {
-        image: { src: string; alt: string; width: number; height: number };
+        image: { src: string; alt: string; focusX?: number; focusY?: number };
     };
 };
 /**

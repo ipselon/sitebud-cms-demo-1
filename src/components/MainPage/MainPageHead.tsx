@@ -1,10 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
 import {useAdaptedContent} from '@/adapters';
+import {useSiteTitle} from '@/components/Site/hooks';
 
 export function MainPageHead() {
-    const {mainPageContent, siteContent} = useAdaptedContent();
-    if (mainPageContent && siteContent) {
+    const {mainPageContent} = useAdaptedContent();
+    if (mainPageContent) {
         const {
             title,
             locale,
@@ -15,8 +16,7 @@ export function MainPageHead() {
                 twitterCardImage
             },
         } = mainPageContent;
-        const {dataFields: {siteTitle}} = siteContent;
-        let pageTitle: string = `${title} | ${siteTitle?.value}`;
+        let pageTitle: string = useSiteTitle(title);
         return (
             <>
                 <Head>

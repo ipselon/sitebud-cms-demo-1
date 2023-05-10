@@ -28,14 +28,17 @@ export function ArticleCardLayout(props: ArticleCardViewLayoutProps) {
         <div className="flex flex-col">
             {card.map((cardBlocks, idx) => {
                 if (cardBlocks.cardImageBlock) {
-                    const {cardViewImage: {image: {alt, src}}} = cardBlocks.cardImageBlock;
+                    const {cardViewImage: {image: {alt, src, focusX, focusY}}} = cardBlocks.cardImageBlock;
                     return (
                         <div key={`cardImageBlock_${idx}`}>
                             <img
 
-                                className="object-cover object-center w-full h-64 rounded-lg lg:h-80"
+                                className="object-cover w-full h-64 rounded-lg lg:h-80"
                                 src={src}
                                 alt={alt}
+                                style={{
+                                    objectPosition: `${focusX || 50}% ${focusY || 50}%`
+                                }}
                             />
                         </div>
                     );

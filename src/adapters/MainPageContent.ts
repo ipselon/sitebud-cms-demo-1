@@ -7,7 +7,7 @@ export type MainPage_PageBody_MainPageHeroBlock = {
     heroTitle: { text: string };
     heroDescription: { text: string };
     heroBackgroundImage: {
-        image: { src: string; alt: string; width: number; height: number };
+        image: { src: string; alt: string; focusX?: number; focusY?: number };
     };
 };
 /**

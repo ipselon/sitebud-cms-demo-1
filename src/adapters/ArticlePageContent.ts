@@ -6,7 +6,7 @@ export type ArticlePage_PageBody_ArticleHeroBlock = {
     __accessLevel?: number;
     heroTitle: { text: string };
     heroImage: {
-        image: { src: string; alt: string; width: number; height: number };
+        image: { src: string; alt: string; focusX?: number; focusY?: number };
     };
 };
 /**
@@ -29,7 +29,7 @@ export type ArticlePage_PageBody_DefaultParagraphBlock = {
 export type ArticlePage_PageBody_DefaultImageBlock = {
     __accessLevel?: number;
     defaultImage: {
-        image: { src: string; alt: string; width: number; height: number };
+        image: { src: string; alt: string; focusX?: number; focusY?: number };
     };
 };
 /**
@@ -55,7 +55,7 @@ export type ArticlePage_PageBody = Array<{
 export type ArticlePage_Card_CardImageBlock = {
     __accessLevel?: number;
     cardViewImage: {
-        image: { src: string; alt: string; width: number; height: number };
+        image: { src: string; alt: string; focusX?: number; focusY?: number };
     };
 };
 /**

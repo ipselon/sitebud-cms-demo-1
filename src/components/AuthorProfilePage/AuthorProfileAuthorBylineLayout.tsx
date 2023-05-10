@@ -18,9 +18,12 @@ export function AuthorProfileAuthorBylineLayout(props: AuthorProfileAuthorByline
                         return (
                             <img
                                 key={`authorProfileAvatarBlock_${idx}`}
-                                className="object-cover object-top w-8 h-8 rounded-full"
+                                className="object-cover w-8 h-8 rounded-full"
                                 src={avatar.image.src}
                                 alt={avatar.image.alt}
+                                style={{
+                                    objectPosition: `${avatar.image.focusX || 50}% ${avatar.image.focusY || 50}%`
+                                }}
                             />
                         );
                     } else if (authorBylineBlock.authorProfileInfoBlock) {

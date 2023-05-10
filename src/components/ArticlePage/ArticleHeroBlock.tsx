@@ -23,6 +23,10 @@ export function ArticleHeroBlock(props: ArticlePageHeroBlockProps) {
                             className="object-cover object-center w-full h-80 rounded-xl"
                             src={heroImage.image.src}
                             alt={heroImage.image.alt}
+                            style={{
+                                objectFit: 'cover',
+                                objectPosition: `${heroImage.image.focusX || 50}% ${heroImage.image.focusY || 50}%`
+                            }}
                         />
                     </div>
             </div>

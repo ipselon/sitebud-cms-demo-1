@@ -21,7 +21,8 @@ export function MainHeroBlock(props: MainHeroBlockProps) {
             <div
                 className="w-full absolute inset-0 bg-center bg-cover bg-no-repeat h-full -z-10"
                 style={{
-                    backgroundImage: `url("${heroBackgroundImage.image.src}")`
+                    backgroundImage: `url("${heroBackgroundImage.image.src}")`,
+                    backgroundPosition: `${heroBackgroundImage.image.focusX || 50}% ${heroBackgroundImage.image.focusY || 50}%`
                 }}
             >
                 <div className="w-full h-full opacity-[0.5] bg-gradient-to-b from-blue-900 to-transparent"/>

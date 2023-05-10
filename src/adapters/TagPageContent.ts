@@ -26,7 +26,7 @@ export type TagPage_PageBody = Array<{
 export type TagPage_Card_CardImageBlock = {
     __accessLevel?: number;
     cardViewImage: {
-        image: { src: string; alt: string; width: number; height: number };
+        image: { src: string; alt: string; focusX?: number; focusY?: number };
     };
 };
 /**
