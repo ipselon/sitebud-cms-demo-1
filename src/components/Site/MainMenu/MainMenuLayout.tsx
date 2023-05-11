@@ -42,7 +42,7 @@ export function MainMenuLayout() {
                         <div className="flex items-center">
                             <Link href="/" className="mx-auto" locale={locale} prefetch={false}>
                                 <img
-                                    className="w-auto h-6 sm:h-7"
+                                    className="w-auto h-6 rounded-full sm:h-7"
                                     src={siteLogo?.value}
                                     alt={`Logo of ${siteTitle?.value}`}
                                 />

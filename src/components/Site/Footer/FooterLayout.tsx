@@ -20,7 +20,7 @@ export function FooterLayout() {
             <div className="container">
                 <div className="flex flex-col items-center">
                     <Link href="/" locale={locale}>
-                        <img className="w-auto h-10" src={siteLogo?.value} alt={ `Logo of ${siteTitle?.value}`} />
+                        <img className="w-auto h-10 rounded-full" src={siteLogo?.value} alt={ `Logo of ${siteTitle?.value}`} />
                     </Link>
                     <div className="custom-prose mt-3 flex flex-col justify-start">
                         {documentAreas.footer.map((footerContentItem, idx) => {
