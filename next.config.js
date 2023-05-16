@@ -5,6 +5,19 @@ const {generateSearchIndex, generateSiteMapXML} = require('@sitebud/sdk-lib');
 
 const nextConfig = {
   reactStrictMode: true,
+  async headers() {
+    return [
+      {
+        source: "/_assets/images/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+    ];
+  },
   swcMinify: true,
   i18n,
   generateBuildId: async () => {
