@@ -1,5 +1,5 @@
 import React from 'react';
-import {CategoryPage_PageBody_ArticlesGalleryBlock, DocumentContentContext} from '@/adapters';
+import {CategoryPage_PageBody_ArticlesGalleryBlock} from '@/adapters';
 import {ArticleCardLayout} from '@/components/ArticlePage/ArticleCardLayout';
 
 interface CategoryArticlesGalleryBlockProps {
@@ -15,7 +15,6 @@ export function CategoryArticlesGalleryBlock(props: CategoryArticlesGalleryBlock
             documentsList,
         }
     }} = props;
-    const joinedList: Array<DocumentContentContext> = [...documentsList];
     return (
         <section id="blog-posts-gallery" className="w-full">
             <div className="container flex flex-col justify-start">
@@ -23,7 +22,7 @@ export function CategoryArticlesGalleryBlock(props: CategoryArticlesGalleryBlock
                     <div dangerouslySetInnerHTML={{__html: galleryTitle}} />
                 </div>
                 <div className="grid grid-cols-1 gap-8 xl:gap-12 md:grid-cols-2 xl:grid-cols-3 auto-rows-fr">
-                    {joinedList.map((documentContentItem, idx) => {
+                    {documentsList.entries?.map((documentContentItem, idx) => {
                         if (documentContentItem.articlePageContent) {
                             return (
                                 <ArticleCardLayout

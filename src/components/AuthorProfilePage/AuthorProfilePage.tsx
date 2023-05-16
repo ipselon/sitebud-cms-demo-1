@@ -13,11 +13,11 @@ import {AuthorProfileParagraphBlock} from '@/components/AuthorProfilePage/Author
 export function AuthorProfilePage() {
     const {authorProfilePageContent} = useAdaptedContent();
     if (authorProfilePageContent) {
-        const {dataFields, title, locale, documentAreas} = authorProfilePageContent;
+        const {locale, documentAreas} = authorProfilePageContent;
         const {pageBody} = documentAreas;
         return (
             <>
-                <AuthorProfilePageHead title={title} dataFields={dataFields}/>
+                <AuthorProfilePageHead />
                 <main>
                     <MainMenuLayout />
                     {pageBody.map((pageBodyBlocks, idx) => {

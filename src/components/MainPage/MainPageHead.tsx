@@ -8,28 +8,43 @@ export function MainPageHead() {
         const {
             title,
             locale,
-            baseUrl,
-            dataFields: {
-                metaDescription,
-                metaRobots,
-                twitterCardImage
-            },
+            baseUrl
         } = mainPageContent;
-        const {dataFields: {siteTitle}} = siteContent;
-        let pageTitle: string = `${title} | ${siteTitle?.value}`;
+        let pageTitle: string = title;
+        if (siteContent.documentAreas.metaData) {
+            for(const metaDataItem of siteContent.documentAreas.metaData) {
+                const {menuLogoBlock} = metaDataItem;
+                if (menuLogoBlock?.logoTitle.text) {
+                    pageTitle += ' | ' + menuLogoBlock?.logoTitle.text;
+                }
+            }
+        }
+        let metaDescription: string = '';
+        let metaRobots: string = '';
+        if (mainPageContent.documentAreas.metaData) {
+            for (const metaDataItem of mainPageContent.documentAreas.metaData) {
+                const {basicSeoDataBlock} = metaDataItem;
+                if (basicSeoDataBlock?.metaDataFields) {
+                    metaDescription += basicSeoDataBlock.metaDataFields.description + ' ';
+                    metaRobots = basicSeoDataBlock.metaDataFields.robots || '';
+                }
+            }
+        }
+        metaDescription = metaDescription.trim();
+
         return (
             <>
                 <Head>
-                    <meta name="description" content={metaDescription?.value || ''}/>
-                    <meta name="robots" content={metaRobots?.value || 'noindex, nofollow'}/>
+                    <meta name="description" content={metaDescription}/>
+                    <meta name="robots" content={metaRobots || 'noindex, nofollow'}/>
                     {/* Open Graph Data */}
-                    <meta property="og:description" content={metaDescription?.value || ''}/>
+                    <meta property="og:description" content={metaDescription}/>
                     <meta property="og:locale" content={locale}/>
                     {/* Twitter summary card */}
                     <meta name="twitter:card" content="summary_large_image"/>
                     <meta name="twitter:title" content={pageTitle}/>
-                    <meta name="twitter:description" content={metaDescription?.value || ''}/>
-                    <meta name="twitter:image" content={`${baseUrl}${twitterCardImage?.value}`}/>
+                    <meta name="twitter:description" content={metaDescription}/>
+                    {/*<meta name="twitter:image" content={`${baseUrl}${twitterCardImage?.value}`}/>*/}
                     <title>{pageTitle}</title>
                 </Head>
             </>

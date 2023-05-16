@@ -1,41 +1,55 @@
 import React from 'react';
 import Head from 'next/head';
-import {CategoriesPage_DataFields} from '@/adapters';
-import {useSiteTitle} from '@/components/Site/hooks';
+import {useAdaptedContent} from '@/adapters';
 
-interface CategoriesPageHeadProps {
-    title: string;
-    dataFields: CategoriesPage_DataFields;
-}
 
-export function CategoriesPageHead(props: CategoriesPageHeadProps) {
-    const {
-        title,
-        dataFields: {
-            metaDescription,
-            metaRobots
-        },
-    } = props;
-    let pageTitle: string = useSiteTitle(title);
-    return (
-        <>
-            <Head>
-                <meta name="description" content={metaDescription?.value || ''}/>
-                <meta name="robots" content={metaRobots?.value || 'noindex, nofollow'} />
-                {/* Open Graph Data */}
-                <meta property="og:description" content={metaDescription?.value || ''} />
-                {/*<meta property="og:locale" content={locale as string}/>*/}
-                {/*<meta property="og:locale:alternate" content={locale} />*/}
-                {/*<meta property="og:locale:alternate" content={locale} />*/}
-                {/*<meta property="og:locale:alternate" content={locale} />*/}
-                {/*<meta property="og:locale:alternate" content={locale} />*/}
-                {/* Twitter summary card */}
-                {/*<meta name="twitter:card" content={pageData.twitterCard.card}/>*/}
-                <meta name="twitter:title" content={pageTitle}/>
-                <meta name="twitter:description" content={metaDescription?.value || ''}/>
-                {/*<meta name="twitter:image" content={pageData.twitterCard.image as string}/>*/}
-                <title>{pageTitle}</title>
-            </Head>
-        </>
-    );
+export function CategoriesPageHead() {
+    const {categoriesPageContent, siteContent} = useAdaptedContent();
+    if (categoriesPageContent && siteContent) {
+        const {
+            title,
+            locale,
+            baseUrl
+        } = categoriesPageContent;
+        let pageTitle: string = title;
+        if (siteContent.documentAreas.metaData) {
+            for(const metaDataItem of siteContent.documentAreas.metaData) {
+                const {menuLogoBlock} = metaDataItem;
+                if (menuLogoBlock?.logoTitle.text) {
+                    pageTitle += ' | ' + menuLogoBlock?.logoTitle.text;
+                }
+            }
+        }
+        let metaDescription: string = '';
+        let metaRobots: string = '';
+        if (categoriesPageContent.documentAreas.metaData) {
+            for (const metaDataItem of categoriesPageContent.documentAreas.metaData) {
+                const {basicSeoDataBlock} = metaDataItem;
+                if (basicSeoDataBlock?.metaDataFields) {
+                    metaDescription += basicSeoDataBlock.metaDataFields.description + ' ';
+                    metaRobots = basicSeoDataBlock.metaDataFields.robots || '';
+                }
+            }
+        }
+        metaDescription = metaDescription.trim();
+
+        return (
+            <>
+                <Head>
+                    <meta name="description" content={metaDescription}/>
+                    <meta name="robots" content={metaRobots || 'noindex, nofollow'}/>
+                    {/* Open Graph Data */}
+                    <meta property="og:description" content={metaDescription}/>
+                    <meta property="og:locale" content={locale}/>
+                    {/* Twitter summary card */}
+                    <meta name="twitter:card" content="summary_large_image"/>
+                    <meta name="twitter:title" content={pageTitle}/>
+                    <meta name="twitter:description" content={metaDescription}/>
+                    {/*<meta name="twitter:image" content={`${baseUrl}${twitterCardImage?.value}`}/>*/}
+                    <title>{pageTitle}</title>
+                </Head>
+            </>
+        );
+    }
+    return null;
 }

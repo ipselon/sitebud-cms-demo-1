@@ -34,30 +34,25 @@ export const articlesGalleryBlock: BlockConfig = {
                         isRequired: false,
                         selectionMode: 'selectDocuments',
                         allowedDocumentClasses: ['ArticlePage'],
-                        selectDocumentAreas: ['card'],
+                        selectDocumentAreas: ['card', 'metaData'],
                     },
                     fieldContentVariants: [
                         {
                             label: 'Select Documents',
                             fieldContent: {
                                 selectionMode: 'selectDocuments',
+                                selectDocumentClasses: ['ArticlePage'],
                                 allowedDocumentClasses: ['ArticlePage'],
-                                selectDocumentAreas: ['card'],
+                                selectDocumentAreas: ['card', 'metaData'],
                             }
                         },
                         {
                             label: 'Select By Parent Documents',
                             fieldContent: {
                                 selectionMode: 'selectChildrenDocuments',
-                                selectDocumentAreas: ['card'],
+                                selectDocumentAreas: ['card', 'metaData'],
+                                selectDocumentClasses: ['ArticlePage'],
                                 allowedDocumentClasses: ['CategoryPage']
-                            }
-                        },
-                        {
-                            label: 'Select By Tags',
-                            fieldContent: {
-                                selectionMode: 'selectTags',
-                                selectDocumentAreas: ['card'],
                             }
                         }
                     ]

@@ -27,9 +27,9 @@ export function MainCategoryGalleryBlock(props: MainPageCategoryGalleryBlockProp
                         <div dangerouslySetInnerHTML={{__html: galleryHeading.text}}/>
                     </div>
                     <div>
-                        {fullGalleryLink.link.map((documentContext, idx) => {
-                            if (documentContext.categoriesPageContent) {
-                                const {path, title} = documentContext.categoriesPageContent;
+                        {fullGalleryLink.link.entries?.map((documentContentContextItem, idx) => {
+                            if (documentContentContextItem.categoriesPageContent) {
+                                const {path, title} = documentContentContextItem.categoriesPageContent;
                                 return (
                                     <Link
                                         key={`categoriesPageContent_${idx}`}
@@ -46,11 +46,11 @@ export function MainCategoryGalleryBlock(props: MainPageCategoryGalleryBlockProp
                     </div>
                 </div>
                 <div className="grid grid-cols-1 gap-8 xl:gap-12 md:grid-cols-3 lg:grid-cols-4 auto-rows-fr">
-                    {documentsList.map((documentContentItem, idx) => {
-                        if (documentContentItem.categoryPageContent) {
+                    {documentsList.entries?.map((documentContentContextItem, idx) => {
+                        if (documentContentContextItem.categoryPageContent) {
                             return (
                                 <CategoryCardLayout key={`categoryPageContent_${idx}`}
-                                                    content={documentContentItem.categoryPageContent}/>
+                                                    content={documentContentContextItem.categoryPageContent}/>
                             );
                         }
                     })}

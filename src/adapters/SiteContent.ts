@@ -1,17 +1,36 @@
-import { DocumentContentContext, DataFieldType } from './types';
+import {
+    DocumentContentContext,
+    DocumentsListField,
+    ImageField,
+    LinkField,
+} from './types';
+/**
+ * From Site_MetaData
+ */
+export type Site_MetaData_MenuLogoBlock = {
+    __accessLevel?: number;
+    logoImage: { image: ImageField };
+    logoTitle: { text: string };
+};
+/**
+ * From Document Areas
+ */
+export type Site_MetaData = Array<{
+    menuLogoBlock?: Site_MetaData_MenuLogoBlock;
+}>;
 /**
  * From Site_MainMenu
  */
 export type Site_MainMenu_MenuLinksBlock = {
     __accessLevel?: number;
-    menuLinks: Array<{ link: { href: string; target: string }; label: string }>;
+    menuLinks: Array<{ link: LinkField; label: string }>;
 };
 /**
  * From Site_MainMenu
  */
 export type Site_MainMenu_MenuDocumentsBlock = {
     __accessLevel?: number;
-    menuDocuments: { documentsList: Array<DocumentContentContext> };
+    menuDocuments: { documentsList: DocumentsListField };
 };
 /**
  * From Document Areas
@@ -25,25 +44,21 @@ export type Site_MainMenu = Array<{
  */
 export type Site_Footer_MenuLinksBlock = {
     __accessLevel?: number;
-    menuLinks: Array<{ link: { href: string; target: string }; label: string }>;
+    menuLinks: Array<{ link: LinkField; label: string }>;
 };
 /**
  * From Site_Footer
  */
 export type Site_Footer_MenuDocumentsBlock = {
     __accessLevel?: number;
-    menuDocuments: { documentsList: Array<DocumentContentContext> };
+    menuDocuments: { documentsList: DocumentsListField };
 };
 /**
  * From Site_Footer
  */
 export type Site_Footer_CopyrightBlock = {
     __accessLevel?: number;
-    copyright: {
-        year: string;
-        text: string;
-        link: { href: string; target: string };
-    };
+    copyright: { year: string; text: string; link: LinkField };
 };
 /**
  * From Site_Footer
@@ -65,15 +80,9 @@ export type Site_Footer = Array<{
  * Document Areas
  */
 export type Site_DocumentAreas = {
+    metaData: Site_MetaData;
     mainMenu: Site_MainMenu;
     footer: Site_Footer;
-};
-/**
- * Data Fields
- */
-export type Site_DataFields = {
-    siteTitle?: { value: string; type: DataFieldType };
-    siteLogo?: { value: string; type: DataFieldType };
 };
 /**
  * Document Content
@@ -82,8 +91,5 @@ export type SiteContent = {
     hasRestrictedAreas?: boolean;
     baseUrl: string;
     availableLocales: Array<string>;
-    tagsLinks: Record<string, string>;
-    authorProfiles: Record<string, DocumentContentContext>;
-    dataFields: Site_DataFields;
     documentAreas: Site_DocumentAreas;
 };

@@ -8,11 +8,11 @@ import {FooterLayout} from '@/components/Site/Footer/FooterLayout';
 export function CategoriesPage() {
     const {categoriesPageContent} = useAdaptedContent();
     if (categoriesPageContent) {
-        const {dataFields, title, documentAreas} = categoriesPageContent;
+        const {documentAreas} = categoriesPageContent;
         const {pageBody} = documentAreas;
         return (
             <>
-                <CategoriesPageHead title={title} dataFields={dataFields}/>
+                <CategoriesPageHead />
                 <main>
                     <MainMenuLayout />
                     <section id="groups-gallery" className="w-full pb-10">

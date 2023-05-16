@@ -19,8 +19,8 @@ export function MainMenuMobile(props: MainMenuMobileProps) {
 
     const menuItems: Array<JSX.Element> = [];
     let index: number = 0;
-    if (menuDocumentsBlock?.menuDocuments.documentsList) {
-        for (const menuDocumentItem of menuDocumentsBlock.menuDocuments.documentsList) {
+    if (menuDocumentsBlock?.menuDocuments.documentsList.entries) {
+        for (const menuDocumentItem of menuDocumentsBlock.menuDocuments.documentsList.entries) {
             menuItems.push(
                 <Menu.Item key={`menuDocument_${index}`}>
                     {() => (

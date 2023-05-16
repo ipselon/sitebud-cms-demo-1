@@ -2,7 +2,8 @@ import React from 'react';
 import {
     Site_Footer_MenuDocumentsBlock,
     Site_MainMenu_MenuLinksBlock,
-    useAdaptedContent
+    useAdaptedContent,
+    ImageField
 } from '@/adapters';
 import Link from 'next/link';
 import {MainMenuLinksBlock} from '@/components/Site/MainMenu/MainMenuLinksBlock';
@@ -19,13 +20,20 @@ export function MainMenuLayout() {
         return null;
     }
 
-    const {dataFields, documentAreas} = siteContent;
-    const {siteLogo, siteTitle} = dataFields;
+    let siteLogoImage: ImageField | undefined = undefined;
+    let siteTitle: string | undefined = undefined;
+    if (siteContent.documentAreas.metaData) {
+        for(const metaDataItem of siteContent.documentAreas.metaData) {
+            const {menuLogoBlock} = metaDataItem;
+            siteLogoImage = menuLogoBlock?.logoImage.image;
+            siteTitle = menuLogoBlock?.logoTitle.text;
+        }
+    }
 
     let menuDocumentsBlock: Site_Footer_MenuDocumentsBlock | undefined = undefined;
     let menuLinksBlock: Site_MainMenu_MenuLinksBlock | undefined = undefined;
 
-    for (const contentItem of documentAreas.mainMenu) {
+    for (const contentItem of siteContent.documentAreas.mainMenu) {
         if (contentItem.menuDocumentsBlock) {
             menuDocumentsBlock = contentItem.menuDocumentsBlock;
         }
@@ -42,9 +50,9 @@ export function MainMenuLayout() {
                         <div className="flex items-center">
                             <Link href="/" className="mx-auto" locale={locale} prefetch={false}>
                                 <img
-                                    className="w-auto h-6 rounded-full sm:h-7"
-                                    src={siteLogo?.value}
-                                    alt={`Logo of ${siteTitle?.value}`}
+                                    className="w-auto h-6 sm:h-7"
+                                    src={siteLogoImage?.src}
+                                    alt={siteTitle}
                                 />
                             </Link>
                             <Link
@@ -53,7 +61,7 @@ export function MainMenuLayout() {
                                 className="mx-4 text-2xl text-gray-500"
                                 prefetch={false}
                             >
-                                {siteTitle?.value}
+                                {siteTitle}
                             </Link>
                         </div>
                         <div className="flex items-center">

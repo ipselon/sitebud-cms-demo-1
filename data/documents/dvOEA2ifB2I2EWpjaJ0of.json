@@ -26,6 +26,107 @@
       ],
       "documentAreas": [
         {
+          "name": "metaData",
+          "blocks": [
+            {
+              "id": "DbNKmoO3U4f67x1xIMJaV",
+              "name": "basicSeoDataBlock",
+              "components": [
+                {
+                  "name": "metaDataFields",
+                  "instances": [
+                    {
+                      "id": "603aI1Po0ec9z7AlmUq65",
+                      "props": [
+                        {
+                          "name": "description",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "Ella's Unexpected Talent Show"
+                          }
+                        },
+                        {
+                          "name": "robots",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "value": "index,follow"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pB4srXFrauDRejFBHaR-q",
+              "name": "authorsBylinesBlock",
+              "components": [
+                {
+                  "name": "authorsBylines",
+                  "instances": [
+                    {
+                      "id": "MZ-mmF2rgGK6U3OAU8RUS",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "selectionMode": "selectDocuments",
+                            "allowedDocumentClasses": [
+                              "AuthorProfilePage"
+                            ],
+                            "selectDocumentAreas": [
+                              "authorByline"
+                            ],
+                            "documentsIds": [
+                              "ZTRCPYewVwABi4xt3dTgf"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "r6F4VjgAsvAJasywDD9Zn",
+              "name": "tagsListBlock",
+              "components": [
+                {
+                  "name": "tags",
+                  "instances": [
+                    {
+                      "id": "q95UyBACsj9fuZ0ahc56u",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "selectionMode": "selectDocuments",
+                            "allowedDocumentClasses": [
+                              "TagPage"
+                            ],
+                            "documentsIds": [
+                              "YyTpPZqnaHgvvUjUzMIgU",
+                              "oa5NgHBjmdN08cwzO8qyX",
+                              "lrh3lqeUR6dc7RNwMGod6"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "pageBody",
           "blocks": [
             {
@@ -62,7 +163,32 @@
                             "src": "/_assets/images/elephant_1.webp",
                             "width": 1000,
                             "height": 477,
-                            "alt": "Elephant"
+                            "alt": "Elephant",
+                            "focusX": 26.05,
+                            "focusY": 44.57
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "wu9pvivO-IA4awcP3ug65",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "88WC0a4_QYwjfxZbCsoqM",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>In a lush, green forest, there lived a young elephant named Ella. She loved to play with her friends and explore the wonders of the jungle.</p><p>One day, while splashing around in the river, Ella discovered a hidden talent – she could create beautiful melodies by blowing water through her trunk.</p><p style=\"text-align: start\">Ella's newfound musical gift quickly spread throughout the forest, and soon all the animals wanted to hear her play.</p><p style=\"text-align: start\">Excited by the attention, Ella decided to organize a talent show and invited the entire jungle to participate.</p>"
                           }
                         }
                       ]
@@ -89,29 +215,6 @@
                             "width": 1000,
                             "height": 546,
                             "alt": "Elephants blowing"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "wu9pvivO-IA4awcP3ug65",
-              "name": "defaultParagraphBlock",
-              "components": [
-                {
-                  "name": "defaultParagraph",
-                  "instances": [
-                    {
-                      "id": "88WC0a4_QYwjfxZbCsoqM",
-                      "props": [
-                        {
-                          "name": "text",
-                          "type": "ParagraphText",
-                          "fieldContent": {
-                            "htmlText": "<p>In a lush, green forest, there lived a young elephant named Ella. She loved to play with her friends and explore the wonders of the jungle.</p><p>One day, while splashing around in the river, Ella discovered a hidden talent – she could create beautiful melodies by blowing water through her trunk.</p><p style=\"text-align: start\">Ella's newfound musical gift quickly spread throughout the forest, and soon all the animals wanted to hear her play.</p><p style=\"text-align: start\">Excited by the attention, Ella decided to organize a talent show and invited the entire jungle to participate.</p>"
                           }
                         }
                       ]
@@ -303,9 +406,9 @@
           ]
         }
       ],
-      "dateUpdated": 1683191674436,
+      "dateUpdated": 1684243241119,
       "authors": {
-        "apustovalov@gmail.com": 1683191674436
+        "apustovalov@gmail.com": 1684243241119
       },
       "includeInSiteMap": true
     },
@@ -331,6 +434,106 @@
         }
       ],
       "documentAreas": [
+        {
+          "name": "metaData",
+          "blocks": [
+            {
+              "id": "eBWRn8Qp3EHp0Iuyhdzyy",
+              "name": "basicSeoDataBlock",
+              "components": [
+                {
+                  "name": "metaDataFields",
+                  "instances": [
+                    {
+                      "id": "Mc-MhsvD43iW51bZ2wO0y",
+                      "props": [
+                        {
+                          "name": "description",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "El espectáculo de talentos inesperado de Ella"
+                          }
+                        },
+                        {
+                          "name": "robots",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "value": "index,follow"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "Yvdlh7kL6sg81W0A8RR43",
+              "name": "authorsBylinesBlock",
+              "components": [
+                {
+                  "name": "authorsBylines",
+                  "instances": [
+                    {
+                      "id": "OXY1ysXVPCclMjsX3RmhB",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "selectionMode": "selectDocuments",
+                            "allowedDocumentClasses": [
+                              "AuthorProfilePage"
+                            ],
+                            "selectDocumentAreas": [
+                              "authorByline"
+                            ],
+                            "documentsIds": [
+                              "ZTRCPYewVwABi4xt3dTgf"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "91tO_kwvTOlN44N1xxG3o",
+              "name": "tagsListBlock",
+              "components": [
+                {
+                  "name": "tags",
+                  "instances": [
+                    {
+                      "id": "IugLE5CedB9d018_ngKOX",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "selectionMode": "selectDocuments",
+                            "allowedDocumentClasses": [
+                              "TagPage"
+                            ],
+                            "documentsIds": [
+                              "lrh3lqeUR6dc7RNwMGod6",
+                              "oa5NgHBjmdN08cwzO8qyX"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "name": "pageBody",
           "blocks": [
@@ -609,9 +812,9 @@
           ]
         }
       ],
-      "dateUpdated": 1682790357053,
+      "dateUpdated": 1684256271839,
       "authors": {
-        "apustovalov@gmail.com": 1682790357053
+        "apustovalov@gmail.com": 1684256271839
       },
       "includeInSiteMap": true
     }

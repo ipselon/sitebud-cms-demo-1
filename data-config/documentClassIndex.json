@@ -5,43 +5,128 @@
     "defaultTitle": "Article",
     "description": "A page where individual article resides, rich with engaging content, images, and videos. It's a creative hub for sharing insights, ideas, and stories, inviting readers to interact, learn, and be inspired while exploring the author's thoughts.",
     "imageName": "article-document.webp",
-    "dataFields": {
-      "metaDescription": {
-        "label": "Page Description Meta Tag",
-        "indexNumber": 0,
-        "dataType": "string",
-        "inputType": "text",
-        "defaultValue": "This is an article page"
-      },
-      "metaRobots": {
-        "label": "Robots Meta Tag",
-        "indexNumber": 1,
-        "dataType": "string",
-        "inputType": "select",
-        "defaultValue": "index,follow",
-        "variants": [
-          {
-            "label": "Allow indexing and following links",
-            "value": "index,follow"
-          },
-          {
-            "label": "Prevent indexing and following links",
-            "value": "noindex,nofollow"
-          },
-          {
-            "label": "Allow indexing but prevent following links",
-            "value": "index,nofollow"
-          },
-          {
-            "label": "Prevent indexing but allow following links",
-            "value": "noindex,follow"
-          }
-        ]
-      }
-    },
     "documentAreas": {
-      "pageBody": {
+      "metaData": {
         "indexNumber": 0,
+        "label": "Meta Data",
+        "helpText": "",
+        "blocks": {
+          "basicSeoDataBlock": {
+            "label": "SEO Data Block",
+            "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+            "imageName": "",
+            "components": {
+              "metaDataFields": {
+                "indexNumber": 0,
+                "label": "Meta Data Fields",
+                "helpText": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+                "imageName": "",
+                "props": {
+                  "description": {
+                    "indexNumber": 0,
+                    "label": "Description",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  },
+                  "robots": {
+                    "indexNumber": 0,
+                    "label": "Robots",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "value": "index,follow"
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "Allow indexing and following links",
+                        "fieldContent": {
+                          "value": "index,follow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing and following links",
+                        "fieldContent": {
+                          "value": "noindex,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Allow indexing but prevent following links",
+                        "fieldContent": {
+                          "value": "index,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing but allow following links",
+                        "fieldContent": {
+                          "value": "noindex,follow"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "authorsBylinesBlock": {
+            "label": "Authors Bylines Block",
+            "description": "A brief section that attributes the content to its creator by displaying the author's name. It often appears near the beginning or end of an article or post and may include a link to the author's profile. The byline acknowledges the writer's work and offers readers an opportunity to explore more about the author and their other contributions.",
+            "imageName": "author-profile-author-byline.webp",
+            "components": {
+              "authorsBylines": {
+                "indexNumber": 0,
+                "label": "Authors Bylines Links",
+                "helpText": "A brief section that attributes the content to its creator by displaying the author's name. It often appears near the beginning or end of an article or post and may include a link to the author's profile. The byline acknowledges the writer's work and offers readers an opportunity to explore more about the author and their other contributions.",
+                "imageName": "author-profile-author-byline.webp",
+                "props": {
+                  "documentsList": {
+                    "indexNumber": 0,
+                    "type": "DocumentsList",
+                    "fieldContent": {
+                      "isRequired": true,
+                      "selectionMode": "selectDocuments",
+                      "allowedDocumentClasses": [
+                        "AuthorProfilePage"
+                      ],
+                      "selectDocumentAreas": [
+                        "authorByline"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "tagsListBlock": {
+            "label": "Tags List Block",
+            "description": "A collection of keyword phrases that categorize and summarize the content of the webpage. Each tag is a link that, when clicked, takes you to a page showing all content associated with that tag. This makes it easier for visitors to find related content based on their interests.",
+            "imageName": "",
+            "components": {
+              "tags": {
+                "indexNumber": 0,
+                "label": "Tags List",
+                "helpText": "A collection of keyword phrases that categorize and summarize the content of the webpage. Each tag is a link that, when clicked, takes you to a page showing all content associated with that tag. This makes it easier for visitors to find related content based on their interests.",
+                "imageName": "",
+                "props": {
+                  "documentsList": {
+                    "indexNumber": 0,
+                    "type": "DocumentsList",
+                    "fieldContent": {
+                      "isRequired": true,
+                      "selectionMode": "selectDocuments",
+                      "allowedDocumentClasses": [
+                        "TagPage"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "pageBody": {
+        "indexNumber": 1,
         "label": "Page Body",
         "helpText": "The webpage body in an article is the central content area, containing the article's text, images, and multimedia elements. It's designed to captivate readers, providing valuable insights and ideas while encouraging interaction and fostering engagement.",
         "imageName": "article-page-body.webp",
@@ -195,7 +280,7 @@
         }
       },
       "card": {
-        "indexNumber": 1,
+        "indexNumber": 2,
         "label": "Card",
         "helpText": "A card on a webpage showcases a snapshot of page's content in a visually appealing, compact format. It typically includes an image, title, and brief description, making it easy for users to browse and select their desired destination.",
         "imageName": "article-card.webp",
@@ -284,43 +369,73 @@
     "defaultTitle": "Author Name",
     "description": "A page that showcases the personal and professional details of a content creator or writer. It typically includes the author's name, photo, biography, social media links, and a list of their published articles or posts.",
     "imageName": "author-profile-document.webp",
-    "dataFields": {
-      "metaDescription": {
-        "label": "Page Description Meta Tag",
-        "indexNumber": 0,
-        "dataType": "string",
-        "inputType": "text",
-        "defaultValue": "This is an article page"
-      },
-      "metaRobots": {
-        "label": "Robots Meta Tag",
-        "indexNumber": 1,
-        "dataType": "string",
-        "inputType": "select",
-        "defaultValue": "index,follow",
-        "variants": [
-          {
-            "label": "Allow indexing and following links",
-            "value": "index,follow"
-          },
-          {
-            "label": "Prevent indexing and following links",
-            "value": "noindex,nofollow"
-          },
-          {
-            "label": "Allow indexing but prevent following links",
-            "value": "index,nofollow"
-          },
-          {
-            "label": "Prevent indexing but allow following links",
-            "value": "noindex,follow"
-          }
-        ]
-      }
-    },
     "documentAreas": {
-      "pageBody": {
+      "metaData": {
         "indexNumber": 0,
+        "label": "Meta Data",
+        "helpText": "",
+        "blocks": {
+          "basicSeoDataBlock": {
+            "label": "SEO Data Block",
+            "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+            "imageName": "",
+            "components": {
+              "metaDataFields": {
+                "indexNumber": 0,
+                "label": "Meta Data Fields",
+                "helpText": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+                "imageName": "",
+                "props": {
+                  "description": {
+                    "indexNumber": 0,
+                    "label": "Description",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  },
+                  "robots": {
+                    "indexNumber": 0,
+                    "label": "Robots",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "value": "index,follow"
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "Allow indexing and following links",
+                        "fieldContent": {
+                          "value": "index,follow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing and following links",
+                        "fieldContent": {
+                          "value": "noindex,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Allow indexing but prevent following links",
+                        "fieldContent": {
+                          "value": "index,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing but allow following links",
+                        "fieldContent": {
+                          "value": "noindex,follow"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "pageBody": {
+        "indexNumber": 1,
         "label": "Page Body",
         "helpText": "The webpage body is the central content area, containing the article's text, images, and multimedia elements. It's designed to captivate readers, providing valuable insights and ideas while encouraging interaction and fostering engagement.",
         "imageName": "author-profile-page-body.webp",
@@ -458,7 +573,8 @@
                         "ArticlePage"
                       ],
                       "selectDocumentAreas": [
-                        "card"
+                        "card",
+                        "metaData"
                       ]
                     },
                     "fieldContentVariants": [
@@ -466,11 +582,15 @@
                         "label": "Select Documents",
                         "fieldContent": {
                           "selectionMode": "selectDocuments",
+                          "selectDocumentClasses": [
+                            "ArticlePage"
+                          ],
                           "allowedDocumentClasses": [
                             "ArticlePage"
                           ],
                           "selectDocumentAreas": [
-                            "card"
+                            "card",
+                            "metaData"
                           ]
                         }
                       },
@@ -479,19 +599,14 @@
                         "fieldContent": {
                           "selectionMode": "selectChildrenDocuments",
                           "selectDocumentAreas": [
-                            "card"
+                            "card",
+                            "metaData"
+                          ],
+                          "selectDocumentClasses": [
+                            "ArticlePage"
                           ],
                           "allowedDocumentClasses": [
                             "CategoryPage"
-                          ]
-                        }
-                      },
-                      {
-                        "label": "Select By Tags",
-                        "fieldContent": {
-                          "selectionMode": "selectTags",
-                          "selectDocumentAreas": [
-                            "card"
                           ]
                         }
                       }
@@ -568,7 +683,7 @@
         }
       },
       "authorByline": {
-        "indexNumber": 1,
+        "indexNumber": 2,
         "label": "Author Byline",
         "helpText": "A brief section that attributes the content to its creator by displaying the author's name. It often appears near the beginning or end of an article or post and may include a link to the author's profile. The byline acknowledges the writer's work and offers readers an opportunity to explore more about the author and their other contributions.",
         "imageName": "author-profile-author-byline.webp",
@@ -630,43 +745,73 @@
     "defaultTitle": "Categories",
     "description": "A categories page organizes categories by topic or theme, making it easy for users to find and explore related content.",
     "imageName": "categories-document.webp",
-    "dataFields": {
-      "metaDescription": {
-        "label": "Page Description Meta Tag",
-        "indexNumber": 0,
-        "dataType": "string",
-        "inputType": "text",
-        "defaultValue": "This is an article page"
-      },
-      "metaRobots": {
-        "label": "Robots Meta Tag",
-        "indexNumber": 1,
-        "dataType": "string",
-        "inputType": "select",
-        "defaultValue": "index,follow",
-        "variants": [
-          {
-            "label": "Allow indexing and following links",
-            "value": "index,follow"
-          },
-          {
-            "label": "Prevent indexing and following links",
-            "value": "noindex,nofollow"
-          },
-          {
-            "label": "Allow indexing but prevent following links",
-            "value": "index,nofollow"
-          },
-          {
-            "label": "Prevent indexing but allow following links",
-            "value": "noindex,follow"
-          }
-        ]
-      }
-    },
     "documentAreas": {
-      "pageBody": {
+      "metaData": {
         "indexNumber": 0,
+        "label": "Meta Data",
+        "helpText": "",
+        "blocks": {
+          "basicSeoDataBlock": {
+            "label": "SEO Data Block",
+            "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+            "imageName": "",
+            "components": {
+              "metaDataFields": {
+                "indexNumber": 0,
+                "label": "Meta Data Fields",
+                "helpText": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+                "imageName": "",
+                "props": {
+                  "description": {
+                    "indexNumber": 0,
+                    "label": "Description",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  },
+                  "robots": {
+                    "indexNumber": 0,
+                    "label": "Robots",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "value": "index,follow"
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "Allow indexing and following links",
+                        "fieldContent": {
+                          "value": "index,follow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing and following links",
+                        "fieldContent": {
+                          "value": "noindex,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Allow indexing but prevent following links",
+                        "fieldContent": {
+                          "value": "index,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing but allow following links",
+                        "fieldContent": {
+                          "value": "noindex,follow"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "pageBody": {
+        "indexNumber": 1,
         "label": "Page Body",
         "helpText": "The content on a categories page typically includes list of categories.",
         "imageName": "",
@@ -739,15 +884,6 @@
                             "card"
                           ]
                         }
-                      },
-                      {
-                        "label": "Select By Tags",
-                        "fieldContent": {
-                          "selectionMode": "selectTags",
-                          "selectDocumentAreas": [
-                            "card"
-                          ]
-                        }
                       }
                     ]
                   }
@@ -765,43 +901,73 @@
     "defaultTitle": "Category",
     "description": "A category page organizes articles by topic or theme, making it easy for users to find and explore related content.",
     "imageName": "category-document.webp",
-    "dataFields": {
-      "metaDescription": {
-        "label": "Page Description Meta Tag",
-        "indexNumber": 0,
-        "dataType": "string",
-        "inputType": "text",
-        "defaultValue": "This is an article page"
-      },
-      "metaRobots": {
-        "label": "Robots Meta Tag",
-        "indexNumber": 1,
-        "dataType": "string",
-        "inputType": "select",
-        "defaultValue": "index,follow",
-        "variants": [
-          {
-            "label": "Allow indexing and following links",
-            "value": "index,follow"
-          },
-          {
-            "label": "Prevent indexing and following links",
-            "value": "noindex,nofollow"
-          },
-          {
-            "label": "Allow indexing but prevent following links",
-            "value": "index,nofollow"
-          },
-          {
-            "label": "Prevent indexing but allow following links",
-            "value": "noindex,follow"
-          }
-        ]
-      }
-    },
     "documentAreas": {
-      "pageBody": {
+      "metaData": {
         "indexNumber": 0,
+        "label": "Meta Data",
+        "helpText": "",
+        "blocks": {
+          "basicSeoDataBlock": {
+            "label": "SEO Data Block",
+            "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+            "imageName": "",
+            "components": {
+              "metaDataFields": {
+                "indexNumber": 0,
+                "label": "Meta Data Fields",
+                "helpText": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+                "imageName": "",
+                "props": {
+                  "description": {
+                    "indexNumber": 0,
+                    "label": "Description",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  },
+                  "robots": {
+                    "indexNumber": 0,
+                    "label": "Robots",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "value": "index,follow"
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "Allow indexing and following links",
+                        "fieldContent": {
+                          "value": "index,follow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing and following links",
+                        "fieldContent": {
+                          "value": "noindex,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Allow indexing but prevent following links",
+                        "fieldContent": {
+                          "value": "index,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing but allow following links",
+                        "fieldContent": {
+                          "value": "noindex,follow"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "pageBody": {
+        "indexNumber": 1,
         "label": "Page Body",
         "helpText": "The content on a category page typically includes category hero and list of articles.",
         "imageName": "",
@@ -887,7 +1053,8 @@
                         "ArticlePage"
                       ],
                       "selectDocumentAreas": [
-                        "card"
+                        "card",
+                        "metaData"
                       ]
                     },
                     "fieldContentVariants": [
@@ -895,11 +1062,15 @@
                         "label": "Select Documents",
                         "fieldContent": {
                           "selectionMode": "selectDocuments",
+                          "selectDocumentClasses": [
+                            "ArticlePage"
+                          ],
                           "allowedDocumentClasses": [
                             "ArticlePage"
                           ],
                           "selectDocumentAreas": [
-                            "card"
+                            "card",
+                            "metaData"
                           ]
                         }
                       },
@@ -908,19 +1079,14 @@
                         "fieldContent": {
                           "selectionMode": "selectChildrenDocuments",
                           "selectDocumentAreas": [
-                            "card"
+                            "card",
+                            "metaData"
+                          ],
+                          "selectDocumentClasses": [
+                            "ArticlePage"
                           ],
                           "allowedDocumentClasses": [
                             "CategoryPage"
-                          ]
-                        }
-                      },
-                      {
-                        "label": "Select By Tags",
-                        "fieldContent": {
-                          "selectionMode": "selectTags",
-                          "selectDocumentAreas": [
-                            "card"
                           ]
                         }
                       }
@@ -933,7 +1099,7 @@
         }
       },
       "card": {
-        "indexNumber": 1,
+        "indexNumber": 2,
         "label": "Card",
         "helpText": "A card on a webpage showcases a snapshot of page's content in a visually appealing, compact format. It typically includes an image, title, and brief description, making it easy for users to browse and select their desired destination.",
         "imageName": "",
@@ -991,50 +1157,74 @@
     "defaultTitle": "Home",
     "defaultSlug": "home",
     "description": "The main page, often called the \"homepage,\" is the entry point and central hub of a website. It provides an overview of the site's purpose, features key content and sections, and offers intuitive navigation.",
-    "dataFields": {
-      "metaDescription": {
-        "label": "Page Description Meta Tag",
-        "indexNumber": 0,
-        "dataType": "string",
-        "inputType": "text",
-        "defaultValue": "This is an article page"
-      },
-      "metaRobots": {
-        "label": "Robots Meta Tag",
-        "indexNumber": 1,
-        "dataType": "string",
-        "inputType": "select",
-        "defaultValue": "index,follow",
-        "variants": [
-          {
-            "label": "Allow indexing and following links",
-            "value": "index,follow"
-          },
-          {
-            "label": "Prevent indexing and following links",
-            "value": "noindex,nofollow"
-          },
-          {
-            "label": "Allow indexing but prevent following links",
-            "value": "index,nofollow"
-          },
-          {
-            "label": "Prevent indexing but allow following links",
-            "value": "noindex,follow"
-          }
-        ]
-      },
-      "twitterCardImage": {
-        "indexNumber": 2,
-        "label": "Twitter Card",
-        "inputType": "image",
-        "dataType": "string"
-      }
-    },
     "imageName": "main-page-help.webp",
     "documentAreas": {
-      "pageBody": {
+      "metaData": {
         "indexNumber": 0,
+        "label": "Meta Data",
+        "helpText": "",
+        "blocks": {
+          "basicSeoDataBlock": {
+            "label": "SEO Data Block",
+            "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+            "imageName": "",
+            "components": {
+              "metaDataFields": {
+                "indexNumber": 0,
+                "label": "Meta Data Fields",
+                "helpText": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+                "imageName": "",
+                "props": {
+                  "description": {
+                    "indexNumber": 0,
+                    "label": "Description",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  },
+                  "robots": {
+                    "indexNumber": 0,
+                    "label": "Robots",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "value": "index,follow"
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "Allow indexing and following links",
+                        "fieldContent": {
+                          "value": "index,follow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing and following links",
+                        "fieldContent": {
+                          "value": "noindex,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Allow indexing but prevent following links",
+                        "fieldContent": {
+                          "value": "index,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing but allow following links",
+                        "fieldContent": {
+                          "value": "noindex,follow"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "pageBody": {
+        "indexNumber": 1,
         "label": "Page Body",
         "helpText": "The part of a web page where the main content is displayed. It's like the canvas for a painting, containing text, images, videos, and other elements that make up the visible portion of a website.",
         "imageName": "main-page-help.webp",
@@ -1184,7 +1374,8 @@
                         "ArticlePage"
                       ],
                       "selectDocumentAreas": [
-                        "card"
+                        "card",
+                        "metaData"
                       ]
                     },
                     "fieldContentVariants": [
@@ -1192,11 +1383,15 @@
                         "label": "Select Documents",
                         "fieldContent": {
                           "selectionMode": "selectDocuments",
+                          "selectDocumentClasses": [
+                            "ArticlePage"
+                          ],
                           "allowedDocumentClasses": [
                             "ArticlePage"
                           ],
                           "selectDocumentAreas": [
-                            "card"
+                            "card",
+                            "metaData"
                           ]
                         }
                       },
@@ -1205,19 +1400,14 @@
                         "fieldContent": {
                           "selectionMode": "selectChildrenDocuments",
                           "selectDocumentAreas": [
-                            "card"
+                            "card",
+                            "metaData"
+                          ],
+                          "selectDocumentClasses": [
+                            "ArticlePage"
                           ],
                           "allowedDocumentClasses": [
                             "CategoryPage"
-                          ]
-                        }
-                      },
-                      {
-                        "label": "Select By Tags",
-                        "fieldContent": {
-                          "selectionMode": "selectTags",
-                          "selectDocumentAreas": [
-                            "card"
                           ]
                         }
                       }
@@ -1238,40 +1428,6 @@
     "defaultSlug": "search",
     "description": "A search webpage is a dedicated section of a website that allows users to input keywords or phrases to find specific content within the site. It typically features a search bar or box where users enter their query, and the search engine then returns a list of relevant results, often ranked by relevance.",
     "imageName": "search-document.webp",
-    "dataFields": {
-      "metaDescription": {
-        "label": "Page Description Meta Tag",
-        "indexNumber": 0,
-        "dataType": "string",
-        "inputType": "text",
-        "defaultValue": "Search Page"
-      },
-      "metaRobots": {
-        "label": "Robots Meta Tag",
-        "indexNumber": 1,
-        "dataType": "string",
-        "inputType": "select",
-        "defaultValue": "noindex,nofollow",
-        "variants": [
-          {
-            "label": "Allow indexing and following links",
-            "value": "index,follow"
-          },
-          {
-            "label": "Prevent indexing and following links",
-            "value": "noindex,nofollow"
-          },
-          {
-            "label": "Allow indexing but prevent following links",
-            "value": "index,nofollow"
-          },
-          {
-            "label": "Prevent indexing but allow following links",
-            "value": "noindex,follow"
-          }
-        ]
-      }
-    },
     "documentAreas": {
       "pageBody": {
         "indexNumber": 0,
@@ -1320,23 +1476,52 @@
     "type": "site",
     "label": "Site",
     "description": "Global site content refers to elements consistently applied to each page on a website, ensuring a cohesive browsing experience. This may include headers, footers, navigation menus, logos, and contact information, which provide uniformity and easy access to essential resources.",
-    "dataFields": {
-      "siteTitle": {
-        "label": "Global Site Title",
-        "indexNumber": 0,
-        "dataType": "string",
-        "inputType": "text"
-      },
-      "siteLogo": {
-        "indexNumber": 1,
-        "label": "Site Logo",
-        "dataType": "string",
-        "inputType": "image"
-      }
-    },
     "documentAreas": {
-      "mainMenu": {
+      "metaData": {
         "indexNumber": 0,
+        "label": "Meta Data",
+        "blocks": {
+          "menuLogoBlock": {
+            "label": "Menu Logo Block",
+            "description": "The logo elements in the main menu of a website serve as key branding components that represent the website's identity.",
+            "imageName": "menu-logo-block.webp",
+            "components": {
+              "logoImage": {
+                "indexNumber": 0,
+                "label": "Logo Image",
+                "helpText": "The logo is a distinctive graphic symbol or design, while the logo title is the accompanying text, usually the website or company name.",
+                "imageName": "menu-logo-block.webp",
+                "props": {
+                  "image": {
+                    "indexNumber": 0,
+                    "type": "Image",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  }
+                }
+              },
+              "logoTitle": {
+                "indexNumber": 1,
+                "label": "Logo Title",
+                "helpText": "A logo title element in the main menu of a website is the textual representation of the website or company name, positioned alongside or near the logo.",
+                "imageName": "menu-logo-block.webp",
+                "props": {
+                  "text": {
+                    "indexNumber": 0,
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "mainMenu": {
+        "indexNumber": 1,
         "label": "Main Menu",
         "helpText": "Main menu is a structured menu of hyperlinks connecting key pages, ensuring swift access to essential content. It simplifies browsing by providing a clear path to various sections, enabling users to efficiently explore and locate desired information.",
         "imageName": "",
@@ -1399,7 +1584,7 @@
         }
       },
       "footer": {
-        "indexNumber": 1,
+        "indexNumber": 2,
         "label": "Footer",
         "helpText": "A website footer is the lower section of a web page that typically contains supplementary information such as copyright notices, contact details, privacy policy, terms of service, social media links, and site navigation options. It serves as a consistent element across all pages, providing easy access to important information and enhancing user experience.",
         "imageName": "",
@@ -1530,43 +1715,73 @@
     "defaultTitle": "Tag",
     "description": "A webpage dedicated to a single tag displays a gallery of articles that share the same associated keyword or topic. By grouping articles under a specific tag, the webpage enhances user experience by simplifying navigation and helping visitors discover content relevant to their interests.",
     "imageName": "tag-document.webp",
-    "dataFields": {
-      "metaDescription": {
-        "label": "Page Description Meta Tag",
-        "indexNumber": 0,
-        "dataType": "string",
-        "inputType": "text",
-        "defaultValue": "This is an article page"
-      },
-      "metaRobots": {
-        "label": "Robots Meta Tag",
-        "indexNumber": 1,
-        "dataType": "string",
-        "inputType": "select",
-        "defaultValue": "index,follow",
-        "variants": [
-          {
-            "label": "Allow indexing and following links",
-            "value": "index,follow"
-          },
-          {
-            "label": "Prevent indexing and following links",
-            "value": "noindex,nofollow"
-          },
-          {
-            "label": "Allow indexing but prevent following links",
-            "value": "index,nofollow"
-          },
-          {
-            "label": "Prevent indexing but allow following links",
-            "value": "noindex,follow"
-          }
-        ]
-      }
-    },
     "documentAreas": {
-      "pageBody": {
+      "metaData": {
         "indexNumber": 0,
+        "label": "Meta Data",
+        "helpText": "",
+        "blocks": {
+          "basicSeoDataBlock": {
+            "label": "SEO Data Block",
+            "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+            "imageName": "",
+            "components": {
+              "metaDataFields": {
+                "indexNumber": 0,
+                "label": "Meta Data Fields",
+                "helpText": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+                "imageName": "",
+                "props": {
+                  "description": {
+                    "indexNumber": 0,
+                    "label": "Description",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  },
+                  "robots": {
+                    "indexNumber": 0,
+                    "label": "Robots",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "value": "index,follow"
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "Allow indexing and following links",
+                        "fieldContent": {
+                          "value": "index,follow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing and following links",
+                        "fieldContent": {
+                          "value": "noindex,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Allow indexing but prevent following links",
+                        "fieldContent": {
+                          "value": "index,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing but allow following links",
+                        "fieldContent": {
+                          "value": "noindex,follow"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "pageBody": {
+        "indexNumber": 1,
         "label": "Page Body",
         "helpText": "The content on a tag page typically includes list of articles with associated tag.",
         "imageName": "",
@@ -1609,9 +1824,13 @@
                     "type": "DocumentsList",
                     "fieldContent": {
                       "isRequired": true,
-                      "selectionMode": "selectTags",
+                      "selectionMode": "selectDocuments",
                       "selectDocumentAreas": [
-                        "card"
+                        "card",
+                        "metaData"
+                      ],
+                      "allowedDocumentClasses": [
+                        "ArticlePage"
                       ]
                     }
                   }
@@ -1622,7 +1841,7 @@
         }
       },
       "card": {
-        "indexNumber": 1,
+        "indexNumber": 2,
         "label": "Card",
         "helpText": "A card on a webpage showcases a snapshot of page's content in a visually appealing, compact format. It typically includes an image, title, and brief description, making it easy for users to browse and select their desired destination.",
         "blocks": {
@@ -1710,43 +1929,73 @@
     "defaultTitle": "Tags",
     "description": "A tags page organizes tags, making it easy for users to find and explore related content.",
     "imageName": "tags-document.webp",
-    "dataFields": {
-      "metaDescription": {
-        "label": "Page Description Meta Tag",
-        "indexNumber": 0,
-        "dataType": "string",
-        "inputType": "text",
-        "defaultValue": "This is an article page"
-      },
-      "metaRobots": {
-        "label": "Robots Meta Tag",
-        "indexNumber": 1,
-        "dataType": "string",
-        "inputType": "select",
-        "defaultValue": "index,follow",
-        "variants": [
-          {
-            "label": "Allow indexing and following links",
-            "value": "index,follow"
-          },
-          {
-            "label": "Prevent indexing and following links",
-            "value": "noindex,nofollow"
-          },
-          {
-            "label": "Allow indexing but prevent following links",
-            "value": "index,nofollow"
-          },
-          {
-            "label": "Prevent indexing but allow following links",
-            "value": "noindex,follow"
-          }
-        ]
-      }
-    },
     "documentAreas": {
-      "pageBody": {
+      "metaData": {
         "indexNumber": 0,
+        "label": "Meta Data",
+        "helpText": "",
+        "blocks": {
+          "basicSeoDataBlock": {
+            "label": "SEO Data Block",
+            "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+            "imageName": "",
+            "components": {
+              "metaDataFields": {
+                "indexNumber": 0,
+                "label": "Meta Data Fields",
+                "helpText": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
+                "imageName": "",
+                "props": {
+                  "description": {
+                    "indexNumber": 0,
+                    "label": "Description",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "isRequired": true
+                    }
+                  },
+                  "robots": {
+                    "indexNumber": 0,
+                    "label": "Robots",
+                    "type": "StringValue",
+                    "fieldContent": {
+                      "value": "index,follow"
+                    },
+                    "fieldContentVariants": [
+                      {
+                        "label": "Allow indexing and following links",
+                        "fieldContent": {
+                          "value": "index,follow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing and following links",
+                        "fieldContent": {
+                          "value": "noindex,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Allow indexing but prevent following links",
+                        "fieldContent": {
+                          "value": "index,nofollow"
+                        }
+                      },
+                      {
+                        "label": "Prevent indexing but allow following links",
+                        "fieldContent": {
+                          "value": "noindex,follow"
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "pageBody": {
+        "indexNumber": 1,
         "label": "Page Body",
         "helpText": "The content on a tags page typically includes list of tags.",
         "imageName": "",

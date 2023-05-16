@@ -2,27 +2,25 @@ import { ContentAdapter } from '@sitebud/bridge-lib';
 import { SiteContent, Site_DocumentAreas } from './types';
 export class SiteContentAdapter extends ContentAdapter<SiteContent> {
     adapt(): SiteContent {
-        const {
-            content,
-            hasRestrictedAreas,
-            baseUrl,
-            tagsLinks,
-            availableLocales,
-        } = this._documentData;
+        const { content, hasRestrictedAreas, baseUrl, availableLocales } =
+            this._documentData;
         const result: SiteContent = {
             hasRestrictedAreas,
             baseUrl: baseUrl || '',
             availableLocales: availableLocales || [],
-            tagsLinks: tagsLinks || {},
-            authorProfiles: {},
-            dataFields: {},
             documentAreas: {
+                metaData: [],
                 mainMenu: [],
                 footer: [],
             },
         };
-        result.dataFields = this.processDataFields();
         result.documentAreas = this.processDocumentAreas({
+            metaData: {
+                menuLogoBlock: {
+                    logoImage: [{ name: 'image', type: 'Image' }],
+                    logoTitle: [{ name: 'text', type: 'StringValue' }],
+                },
+            },
             mainMenu: {
                 menuLinksBlock: {
                     menuLinks: [
@@ -60,7 +58,6 @@ export class SiteContentAdapter extends ContentAdapter<SiteContent> {
                 },
             },
         }) as Site_DocumentAreas;
-        result.authorProfiles = this.processAuthorsProfiles();
         return result;
     }
 }

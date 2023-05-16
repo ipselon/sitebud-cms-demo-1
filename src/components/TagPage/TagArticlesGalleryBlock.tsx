@@ -18,7 +18,7 @@ export function TagArticlesGalleryBlock(props: TagArticlesGalleryBlockProps) {
         <section id="blog-posts-gallery" className="w-full">
             <div className="container flex flex-col justify-start">
                 <div className="grid grid-cols-1 gap-8 xl:gap-12 md:grid-cols-2 xl:grid-cols-3 auto-rows-fr">
-                    {documentList.map((documentContentItem, idx) => {
+                    {documentList.entries?.map((documentContentItem, idx) => {
                         if (documentContentItem.articlePageContent) {
                             return (
                                 <ArticleCardLayout

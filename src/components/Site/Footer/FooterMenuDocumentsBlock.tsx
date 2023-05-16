@@ -16,15 +16,12 @@ export function FooterMenuDocumentsBlock(props: FooterMenuDocumentsBlockProps) {
     },
         locale
     } = props;
-
     let menuLinksElements: Array<JSX.Element> = [];
-    if (documentsList && documentsList.length > 0) {
-        documentsList.map((documentLinkItem, idx) => {
-            menuLinksElements.push(
-                <FooterDocumentLinkLayout key={`documentLinkItem_${idx}`} content={documentLinkItem} locale={locale} />
-            );
-        });
-    }
+    documentsList.entries?.forEach((documentLinkItem, idx) => {
+        menuLinksElements.push(
+            <FooterDocumentLinkLayout key={`documentLinkItem_${idx}`} content={documentLinkItem} locale={locale} />
+        );
+    });
 
     return (
         <>

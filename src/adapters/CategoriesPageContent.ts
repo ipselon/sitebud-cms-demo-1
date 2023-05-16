@@ -1,4 +1,22 @@
-import { DocumentContentContext, DataFieldType } from './types';
+import {
+    DocumentContentContext,
+    DocumentsListField,
+    ImageField,
+    LinkField,
+} from './types';
+/**
+ * From CategoriesPage_MetaData
+ */
+export type CategoriesPage_MetaData_BasicSeoDataBlock = {
+    __accessLevel?: number;
+    metaDataFields: { description: string; robots: string };
+};
+/**
+ * From Document Areas
+ */
+export type CategoriesPage_MetaData = Array<{
+    basicSeoDataBlock?: CategoriesPage_MetaData_BasicSeoDataBlock;
+}>;
 /**
  * From CategoriesPage_PageBody
  */
@@ -11,7 +29,7 @@ export type CategoriesPage_PageBody_DefaultHeadingBlock = {
  */
 export type CategoriesPage_PageBody_CategoriesGalleryBlock = {
     __accessLevel?: number;
-    galleryListing: { documentsList: Array<DocumentContentContext> };
+    galleryListing: { documentsList: DocumentsListField };
 };
 /**
  * From Document Areas
@@ -24,14 +42,8 @@ export type CategoriesPage_PageBody = Array<{
  * Document Areas
  */
 export type CategoriesPage_DocumentAreas = {
+    metaData: CategoriesPage_MetaData;
     pageBody: CategoriesPage_PageBody;
-};
-/**
- * Data Fields
- */
-export type CategoriesPage_DataFields = {
-    metaDescription?: { value: string; type: DataFieldType };
-    metaRobots?: { value: string; type: DataFieldType };
 };
 /**
  * Document Content
@@ -39,13 +51,11 @@ export type CategoriesPage_DataFields = {
 export type CategoriesPageContent = {
     title: string;
     slug: string;
-    tags: Record<string, number>;
     dateUpdated?: number;
     authors?: Record<string, number>;
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
     baseUrl: string;
-    dataFields: CategoriesPage_DataFields;
     documentAreas: CategoriesPage_DocumentAreas;
 };

@@ -1,4 +1,22 @@
-import { DocumentContentContext, DataFieldType } from './types';
+import {
+    DocumentContentContext,
+    DocumentsListField,
+    ImageField,
+    LinkField,
+} from './types';
+/**
+ * From AuthorProfilePage_MetaData
+ */
+export type AuthorProfilePage_MetaData_BasicSeoDataBlock = {
+    __accessLevel?: number;
+    metaDataFields: { description: string; robots: string };
+};
+/**
+ * From Document Areas
+ */
+export type AuthorProfilePage_MetaData = Array<{
+    basicSeoDataBlock?: AuthorProfilePage_MetaData_BasicSeoDataBlock;
+}>;
 /**
  * From AuthorProfilePage_PageBody
  */
@@ -6,9 +24,7 @@ export type AuthorProfilePage_PageBody_AuthorProfileHeroBlock = {
     __accessLevel?: number;
     authorName: { text: string };
     description: { text: string };
-    authorPicture: {
-        image: { src: string; alt: string; focusX?: number; focusY?: number };
-    };
+    authorPicture: { image: ImageField };
 };
 /**
  * From AuthorProfilePage_PageBody
@@ -23,7 +39,7 @@ export type AuthorProfilePage_PageBody_AuthorProfileSocialLinksBlock = {
 export type AuthorProfilePage_PageBody_ArticlesGalleryBlock = {
     __accessLevel?: number;
     galleryHeading: { text: string };
-    galleryListing: { documentsList: Array<DocumentContentContext> };
+    galleryListing: { documentsList: DocumentsListField };
 };
 /**
  * From AuthorProfilePage_PageBody
@@ -37,9 +53,7 @@ export type AuthorProfilePage_PageBody_DefaultHeadingBlock = {
  */
 export type AuthorProfilePage_PageBody_DefaultImageBlock = {
     __accessLevel?: number;
-    defaultImage: {
-        image: { src: string; alt: string; focusX?: number; focusY?: number };
-    };
+    defaultImage: { image: ImageField };
 };
 /**
  * From AuthorProfilePage_PageBody
@@ -64,9 +78,7 @@ export type AuthorProfilePage_PageBody = Array<{
  */
 export type AuthorProfilePage_AuthorByline_AuthorProfileAvatarBlock = {
     __accessLevel?: number;
-    avatar: {
-        image: { src: string; alt: string; focusX?: number; focusY?: number };
-    };
+    avatar: { image: ImageField };
 };
 /**
  * From AuthorProfilePage_AuthorByline
@@ -86,15 +98,9 @@ export type AuthorProfilePage_AuthorByline = Array<{
  * Document Areas
  */
 export type AuthorProfilePage_DocumentAreas = {
+    metaData: AuthorProfilePage_MetaData;
     pageBody: AuthorProfilePage_PageBody;
     authorByline: AuthorProfilePage_AuthorByline;
-};
-/**
- * Data Fields
- */
-export type AuthorProfilePage_DataFields = {
-    metaDescription?: { value: string; type: DataFieldType };
-    metaRobots?: { value: string; type: DataFieldType };
 };
 /**
  * Document Content
@@ -102,13 +108,11 @@ export type AuthorProfilePage_DataFields = {
 export type AuthorProfilePageContent = {
     title: string;
     slug: string;
-    tags: Record<string, number>;
     dateUpdated?: number;
     authors?: Record<string, number>;
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
     baseUrl: string;
-    dataFields: AuthorProfilePage_DataFields;
     documentAreas: AuthorProfilePage_DocumentAreas;
 };

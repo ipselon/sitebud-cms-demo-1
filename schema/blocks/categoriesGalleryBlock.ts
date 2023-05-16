@@ -36,13 +36,6 @@ export const categoriesGalleryBlock: BlockConfig = {
                                 selectionMode: 'selectChildrenDocuments',
                                 selectDocumentAreas: ['card'],
                             }
-                        },
-                        {
-                            label: 'Select By Tags',
-                            fieldContent: {
-                                selectionMode: 'selectTags',
-                                selectDocumentAreas: ['card'],
-                            }
                         }
                     ]
                 },

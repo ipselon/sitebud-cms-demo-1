@@ -1,4 +1,22 @@
-import { DocumentContentContext, DataFieldType } from './types';
+import {
+    DocumentContentContext,
+    DocumentsListField,
+    ImageField,
+    LinkField,
+} from './types';
+/**
+ * From MainPage_MetaData
+ */
+export type MainPage_MetaData_BasicSeoDataBlock = {
+    __accessLevel?: number;
+    metaDataFields: { description: string; robots: string };
+};
+/**
+ * From Document Areas
+ */
+export type MainPage_MetaData = Array<{
+    basicSeoDataBlock?: MainPage_MetaData_BasicSeoDataBlock;
+}>;
 /**
  * From MainPage_PageBody
  */
@@ -6,18 +24,16 @@ export type MainPage_PageBody_MainPageHeroBlock = {
     __accessLevel?: number;
     heroTitle: { text: string };
     heroDescription: { text: string };
-    heroBackgroundImage: {
-        image: { src: string; alt: string; focusX?: number; focusY?: number };
-    };
+    heroBackgroundImage: { image: ImageField };
 };
 /**
  * From MainPage_PageBody
  */
 export type MainPage_PageBody_CategoryGalleryBlock = {
     __accessLevel?: number;
-    galleryListing: { documentsList: Array<DocumentContentContext> };
+    galleryListing: { documentsList: DocumentsListField };
     galleryHeading: { text: string };
-    fullGalleryLink: { link: Array<DocumentContentContext> };
+    fullGalleryLink: { link: DocumentsListField };
 };
 /**
  * From MainPage_PageBody
@@ -25,7 +41,7 @@ export type MainPage_PageBody_CategoryGalleryBlock = {
 export type MainPage_PageBody_ArticlesGalleryBlock = {
     __accessLevel?: number;
     galleryHeading: { text: string };
-    galleryListing: { documentsList: Array<DocumentContentContext> };
+    galleryListing: { documentsList: DocumentsListField };
 };
 /**
  * From Document Areas
@@ -39,15 +55,8 @@ export type MainPage_PageBody = Array<{
  * Document Areas
  */
 export type MainPage_DocumentAreas = {
+    metaData: MainPage_MetaData;
     pageBody: MainPage_PageBody;
-};
-/**
- * Data Fields
- */
-export type MainPage_DataFields = {
-    metaDescription?: { value: string; type: DataFieldType };
-    metaRobots?: { value: string; type: DataFieldType };
-    twitterCardImage?: { value: string; type: DataFieldType };
 };
 /**
  * Document Content
@@ -55,13 +64,11 @@ export type MainPage_DataFields = {
 export type MainPageContent = {
     title: string;
     slug: string;
-    tags: Record<string, number>;
     dateUpdated?: number;
     authors?: Record<string, number>;
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
     baseUrl: string;
-    dataFields: MainPage_DataFields;
     documentAreas: MainPage_DocumentAreas;
 };

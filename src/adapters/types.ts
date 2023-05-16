@@ -28,3 +28,17 @@ export type DocumentContentContext = {
     tagPageContent?: TagPageContent;
     tagsPageContent?: TagsPageContent;
 };
+export type DocumentsListField = {
+    entriesByParent?: Array<{
+        portion: Array<DocumentContentContext>;
+        portionOrigin: any;
+    }>;
+    entries?: Array<DocumentContentContext>;
+};
+export type ImageField = {
+    src: string;
+    alt: string;
+    focusX?: number;
+    focusY?: number;
+};
+export type LinkField = { href: string; target: string };

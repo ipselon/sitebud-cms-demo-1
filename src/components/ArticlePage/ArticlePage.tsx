@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
-import {useAdaptedContent} from '@/adapters';
+import {useAdaptedContent, DocumentContentContext} from '@/adapters';
 import {ArticlePageHead} from '@/components/ArticlePage/ArticlePageHead';
 import {ArticleHeroBlock} from '@/components/ArticlePage/ArticleHeroBlock';
 import {MainMenuLayout} from '@/components/Site/MainMenu/MainMenuLayout';
@@ -25,14 +25,25 @@ function getLastAuthor(
 
 
 export function ArticlePage() {
-    const {articlePageContent, siteContent} = useAdaptedContent();
+    const {articlePageContent} = useAdaptedContent();
     if (articlePageContent) {
-        const {dataFields, title, documentAreas, tags, locale, authors, dateUpdated, hasRestrictedAreas} = articlePageContent;
-        const {pageBody} = documentAreas;
-        const authorEmail: string = getLastAuthor(authors) || 'unknown';
+        const {documentAreas, authors, dateUpdated, locale} = articlePageContent;
+        const {pageBody, metaData} = documentAreas;
+
+        let authorDocumentContent: DocumentContentContext | undefined = undefined;
+        let tagDocumentContentContexts: Array<DocumentContentContext> | undefined = undefined;
+        if (metaData && metaData.length > 0) {
+            for (const metaDataItem of metaData) {
+                const {authorsBylinesBlock, tagsListBlock} = metaDataItem;
+                if (authorsBylinesBlock?.authorsBylines.documentsList.entries) {
+                    authorDocumentContent = authorsBylinesBlock?.authorsBylines.documentsList.entries[0];
+                }
+                tagDocumentContentContexts = tagsListBlock?.tags.documentsList.entries;
+            }
+        }
         return (
             <>
-                <ArticlePageHead title={title} dataFields={dataFields}/>
+                <ArticlePageHead />
                 <main>
                     <MainMenuLayout />
                     {pageBody.map((pageBodyBlocks, idx) => {
@@ -95,14 +106,14 @@ export function ArticlePage() {
                             <div className="flex items-start justify-between">
                                 <div className="flex flex-col items-start">
                                     <div className="mb-4">
-                                        {siteContent?.authorProfiles[authorEmail]
+                                        {authorDocumentContent?.authorProfilePageContent
                                             ? (
                                                 <AuthorProfileAuthorBylineLayout
-                                                    content={siteContent?.authorProfiles[authorEmail].authorProfilePageContent}
+                                                    content={authorDocumentContent?.authorProfilePageContent}
                                                 />
                                             )
                                             : (
-                                                <p className="text-lg font-medium text-gray-700">{authorEmail}</p>
+                                                <p className="text-lg font-medium text-gray-700">[MISSING AUTHOR]</p>
                                             )
                                         }
                                     </div>
@@ -116,23 +127,18 @@ export function ArticlePage() {
                                     </div>
                                 </div>
                                 <div className="flex flex-row flex-wrap">
-                                    {Object.keys(tags).map((tagName, idx) => {
-                                        if (siteContent?.tagsLinks[tagName]) {
+                                    {tagDocumentContentContexts?.map((tagDocumentContentContextItem, idx) => {
+                                        if (tagDocumentContentContextItem.tagPageContent) {
+                                            const {title, path, slug} = tagDocumentContentContextItem.tagPageContent;
                                             return (
-                                                <Link key={`${tagName}_${idx}`} href={siteContent?.tagsLinks[tagName]} locale={locale} prefetch={false}>
+                                                <Link key={`${slug}_${idx}`} href={path} locale={locale} prefetch={false}>
                                                     <span
                                                         className="mr-3 px-3 py-1 text-[10px] text-blue-800 uppercase bg-blue-200 rounded-full">
-                                                        {tagName}
+                                                        {title}
                                                     </span>
                                                 </Link>
                                             );
                                         }
-                                        return (
-                                            <span key={`${tagName}_${idx}`}
-                                                  className="mr-3 px-3 py-1 text-[10px] text-blue-800 uppercase bg-blue-200 rounded-full">
-                                                {tagName}
-                                            </span>
-                                        );
                                     })}
                                 </div>
                             </div>

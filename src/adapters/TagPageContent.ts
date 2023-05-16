@@ -1,4 +1,22 @@
-import { DocumentContentContext, DataFieldType } from './types';
+import {
+    DocumentContentContext,
+    DocumentsListField,
+    ImageField,
+    LinkField,
+} from './types';
+/**
+ * From TagPage_MetaData
+ */
+export type TagPage_MetaData_BasicSeoDataBlock = {
+    __accessLevel?: number;
+    metaDataFields: { description: string; robots: string };
+};
+/**
+ * From Document Areas
+ */
+export type TagPage_MetaData = Array<{
+    basicSeoDataBlock?: TagPage_MetaData_BasicSeoDataBlock;
+}>;
 /**
  * From TagPage_PageBody
  */
@@ -11,7 +29,7 @@ export type TagPage_PageBody_DefaultHeadingBlock = {
  */
 export type TagPage_PageBody_TagArticlesGalleryBlock = {
     __accessLevel?: number;
-    galleryListing: { documentList: Array<DocumentContentContext> };
+    galleryListing: { documentList: DocumentsListField };
 };
 /**
  * From Document Areas
@@ -25,9 +43,7 @@ export type TagPage_PageBody = Array<{
  */
 export type TagPage_Card_CardImageBlock = {
     __accessLevel?: number;
-    cardViewImage: {
-        image: { src: string; alt: string; focusX?: number; focusY?: number };
-    };
+    cardViewImage: { image: ImageField };
 };
 /**
  * From TagPage_Card
@@ -55,15 +71,9 @@ export type TagPage_Card = Array<{
  * Document Areas
  */
 export type TagPage_DocumentAreas = {
+    metaData: TagPage_MetaData;
     pageBody: TagPage_PageBody;
     card: TagPage_Card;
-};
-/**
- * Data Fields
- */
-export type TagPage_DataFields = {
-    metaDescription?: { value: string; type: DataFieldType };
-    metaRobots?: { value: string; type: DataFieldType };
 };
 /**
  * Document Content
@@ -71,13 +81,11 @@ export type TagPage_DataFields = {
 export type TagPageContent = {
     title: string;
     slug: string;
-    tags: Record<string, number>;
     dateUpdated?: number;
     authors?: Record<string, number>;
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
     baseUrl: string;
-    dataFields: TagPage_DataFields;
     documentAreas: TagPage_DocumentAreas;
 };

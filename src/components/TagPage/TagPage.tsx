@@ -7,13 +7,13 @@ import {TagHeadingBlock} from './TagHeadingBlock';
 import {TagArticlesGalleryBlock} from './TagArticlesGalleryBlock';
 
 export function TagPage() {
-    const {tagPageContent, siteContent} = useAdaptedContent();
+    const {tagPageContent} = useAdaptedContent();
     if (tagPageContent) {
-        const {dataFields, title, documentAreas} = tagPageContent;
+        const {documentAreas} = tagPageContent;
         const {pageBody} = documentAreas;
         return (
             <>
-                <TagPageHead title={title} dataFields={dataFields}/>
+                <TagPageHead />
                 <main>
                     <MainMenuLayout/>
                     {pageBody.map((pageBodyBlocks, idx) => {

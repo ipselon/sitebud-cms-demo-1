@@ -8,11 +8,11 @@ import {SearchHeroBlock} from './SearchHeroBlock';
 export function SearchPage() {
     const {searchPageContent} = useAdaptedContent();
     if (searchPageContent) {
-        const {dataFields, title, documentAreas} = searchPageContent;
+        const {documentAreas} = searchPageContent;
         const {pageBody} = documentAreas;
         return (
             <>
-                <SearchPageHead title={title} dataFields={dataFields}/>
+                <SearchPageHead />
                 <main>
                     <MainMenuLayout/>
                     {pageBody.map((pageBodyBlocks, idx) => {

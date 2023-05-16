@@ -1,13 +1,45 @@
-import { DocumentContentContext, DataFieldType } from './types';
+import {
+    DocumentContentContext,
+    DocumentsListField,
+    ImageField,
+    LinkField,
+} from './types';
+/**
+ * From ArticlePage_MetaData
+ */
+export type ArticlePage_MetaData_BasicSeoDataBlock = {
+    __accessLevel?: number;
+    metaDataFields: { description: string; robots: string };
+};
+/**
+ * From ArticlePage_MetaData
+ */
+export type ArticlePage_MetaData_AuthorsBylinesBlock = {
+    __accessLevel?: number;
+    authorsBylines: { documentsList: DocumentsListField };
+};
+/**
+ * From ArticlePage_MetaData
+ */
+export type ArticlePage_MetaData_TagsListBlock = {
+    __accessLevel?: number;
+    tags: { documentsList: DocumentsListField };
+};
+/**
+ * From Document Areas
+ */
+export type ArticlePage_MetaData = Array<{
+    basicSeoDataBlock?: ArticlePage_MetaData_BasicSeoDataBlock;
+    authorsBylinesBlock?: ArticlePage_MetaData_AuthorsBylinesBlock;
+    tagsListBlock?: ArticlePage_MetaData_TagsListBlock;
+}>;
 /**
  * From ArticlePage_PageBody
  */
 export type ArticlePage_PageBody_ArticleHeroBlock = {
     __accessLevel?: number;
     heroTitle: { text: string };
-    heroImage: {
-        image: { src: string; alt: string; focusX?: number; focusY?: number };
-    };
+    heroImage: { image: ImageField };
 };
 /**
  * From ArticlePage_PageBody
@@ -28,9 +60,7 @@ export type ArticlePage_PageBody_DefaultParagraphBlock = {
  */
 export type ArticlePage_PageBody_DefaultImageBlock = {
     __accessLevel?: number;
-    defaultImage: {
-        image: { src: string; alt: string; focusX?: number; focusY?: number };
-    };
+    defaultImage: { image: ImageField };
 };
 /**
  * From ArticlePage_PageBody
@@ -54,9 +84,7 @@ export type ArticlePage_PageBody = Array<{
  */
 export type ArticlePage_Card_CardImageBlock = {
     __accessLevel?: number;
-    cardViewImage: {
-        image: { src: string; alt: string; focusX?: number; focusY?: number };
-    };
+    cardViewImage: { image: ImageField };
 };
 /**
  * From ArticlePage_Card
@@ -84,15 +112,9 @@ export type ArticlePage_Card = Array<{
  * Document Areas
  */
 export type ArticlePage_DocumentAreas = {
+    metaData: ArticlePage_MetaData;
     pageBody: ArticlePage_PageBody;
     card: ArticlePage_Card;
-};
-/**
- * Data Fields
- */
-export type ArticlePage_DataFields = {
-    metaDescription?: { value: string; type: DataFieldType };
-    metaRobots?: { value: string; type: DataFieldType };
 };
 /**
  * Document Content
@@ -100,13 +122,11 @@ export type ArticlePage_DataFields = {
 export type ArticlePageContent = {
     title: string;
     slug: string;
-    tags: Record<string, number>;
     dateUpdated?: number;
     authors?: Record<string, number>;
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
     baseUrl: string;
-    dataFields: ArticlePage_DataFields;
     documentAreas: ArticlePage_DocumentAreas;
 };

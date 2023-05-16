@@ -9,11 +9,11 @@ import {TagsGalleryBlock} from './TagsGalleryBlock';
 export function TagsPage() {
     const {tagsPageContent} = useAdaptedContent();
     if (tagsPageContent) {
-        const {dataFields, title, documentAreas} = tagsPageContent;
+        const {documentAreas} = tagsPageContent;
         const {pageBody} = documentAreas;
         return (
             <>
-                <TagsPageHead title={title} dataFields={dataFields}/>
+                <TagsPageHead />
                 <main>
                     <MainMenuLayout/>
                     {pageBody.map((pageBodyBlocks, idx) => {

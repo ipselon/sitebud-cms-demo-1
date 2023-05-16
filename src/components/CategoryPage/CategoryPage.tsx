@@ -9,11 +9,11 @@ import {FooterLayout} from '@/components/Site/Footer/FooterLayout';
 export function CategoryPage() {
     const {categoryPageContent} = useAdaptedContent();
     if (categoryPageContent) {
-        const {dataFields, title, documentAreas} = categoryPageContent;
+        const {documentAreas} = categoryPageContent;
         const {pageBody} = documentAreas;
         return (
             <>
-                <CategoryPageHead title={title} dataFields={dataFields}/>
+                <CategoryPageHead />
                 <main>
                     <MainMenuLayout />
                     {pageBody.map((pageBodyBlocks, idx) => {

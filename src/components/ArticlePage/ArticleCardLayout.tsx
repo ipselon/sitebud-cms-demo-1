@@ -1,29 +1,37 @@
 import React from 'react';
-import formatDistanceToNow from 'date-fns/formatDistanceToNow';
-import {ArticlePageContent, useAdaptedContent, useLastAuthor} from '@/adapters';
 import Link from 'next/link';
+import formatDistanceToNow from 'date-fns/formatDistanceToNow';
+import {ArticlePageContent, DocumentContentContext} from '@/adapters';
 import {AuthorProfileAuthorBylineLayout} from '@/components/AuthorProfilePage/AuthorProfileAuthorBylineLayout';
+import {useRouter} from 'next/router';
 
 interface ArticleCardViewLayoutProps {
     content: ArticlePageContent;
 }
 
 export function ArticleCardLayout(props: ArticleCardViewLayoutProps) {
-    const {siteContent} = useAdaptedContent();
     const {
         content: {
-            tags,
             path,
-            locale,
             dateUpdated,
             documentAreas: {
-                card
-            },
-            authors,
+                card,
+                metaData
+            }
         }
     } = props;
-
-    const authorEmail: string = useLastAuthor(authors) || 'unknown';
+    const {locale} = useRouter();
+    let authorDocumentContent: DocumentContentContext | undefined = undefined;
+    let tagDocumentContentContexts: Array<DocumentContentContext> | undefined = undefined;
+    if (metaData && metaData.length > 0) {
+        for (const metaDataItem of metaData) {
+            const {authorsBylinesBlock, tagsListBlock} = metaDataItem;
+            if (authorsBylinesBlock?.authorsBylines.documentsList.entries) {
+                authorDocumentContent = authorsBylinesBlock?.authorsBylines.documentsList.entries[0];
+            }
+            tagDocumentContentContexts = tagsListBlock?.tags.documentsList.entries;
+        }
+    }
     return (
         <div className="flex flex-col">
             {card.map((cardBlocks, idx) => {
@@ -46,7 +54,9 @@ export function ArticleCardLayout(props: ArticleCardViewLayoutProps) {
                     const {cardTitle: {text}} = cardBlocks.cardTitleBlock
                     return (
                         <div key={`cardTitleBlock_${idx}`}>
-                            <div className="custom-prose text-gray-800 mt-4" dangerouslySetInnerHTML={{__html: text}}/>
+                            <Link href={path} locale={locale} prefetch={false}>
+                                <div className="custom-prose text-gray-800 mt-4" dangerouslySetInnerHTML={{__html: text}}/>
+                            </Link>
                         </div>
                     );
                 } else if (cardBlocks.cardExcerptBlock) {
@@ -71,36 +81,31 @@ export function ArticleCardLayout(props: ArticleCardViewLayoutProps) {
             })}
             <div className="flex mt-6 items-start justify-between">
                 <div className="flex flex-row flex-wrap">
-                    {Object.keys(tags).map((tagName, idx) => {
-                        if (siteContent?.tagsLinks[tagName]) {
+                    {tagDocumentContentContexts?.map((tagDocumentContentContextItem, idx) => {
+                        if (tagDocumentContentContextItem.tagPageContent) {
+                            const {title, path, slug} = tagDocumentContentContextItem.tagPageContent;
                             return (
-                                <Link key={`${tagName}_${idx}`} locale={locale} href={siteContent?.tagsLinks[tagName]} prefetch={false}>
+                                <Link key={`${slug}_${idx}`} locale={locale} href={path} prefetch={false}>
                                     <span
                                         className="mr-3 px-3 py-1 text-[10px] text-blue-800 uppercase bg-blue-200 rounded-full">
-                                        {tagName}
+                                        {title}
                                     </span>
                                 </Link>
                             );
                         }
-                        return (
-                            <span key={`${tagName}_${idx}`}
-                                  className="mr-3 px-3 py-1 text-[10px] text-blue-800 uppercase bg-blue-200 rounded-full">
-                                {tagName}
-                            </span>
-                        );
                     })}
                 </div>
             </div>
             <div className="flex flex-row items-start justify-between mt-6">
                 <div>
-                    {siteContent?.authorProfiles[authorEmail]
+                    {authorDocumentContent?.authorProfilePageContent
                         ? (
                             <AuthorProfileAuthorBylineLayout
-                                content={siteContent?.authorProfiles[authorEmail].authorProfilePageContent}
+                                content={authorDocumentContent?.authorProfilePageContent}
                             />
                         )
                         : (
-                            <p className="text-lg font-medium text-gray-700">{authorEmail}</p>
+                            <p className="text-lg font-medium text-gray-700">[MISSING AUTHOR]</p>
                         )
                     }
                 </div>

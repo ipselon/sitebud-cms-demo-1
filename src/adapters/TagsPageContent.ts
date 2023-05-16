@@ -1,4 +1,22 @@
-import { DocumentContentContext, DataFieldType } from './types';
+import {
+    DocumentContentContext,
+    DocumentsListField,
+    ImageField,
+    LinkField,
+} from './types';
+/**
+ * From TagsPage_MetaData
+ */
+export type TagsPage_MetaData_BasicSeoDataBlock = {
+    __accessLevel?: number;
+    metaDataFields: { description: string; robots: string };
+};
+/**
+ * From Document Areas
+ */
+export type TagsPage_MetaData = Array<{
+    basicSeoDataBlock?: TagsPage_MetaData_BasicSeoDataBlock;
+}>;
 /**
  * From TagsPage_PageBody
  */
@@ -11,7 +29,7 @@ export type TagsPage_PageBody_DefaultHeadingBlock = {
  */
 export type TagsPage_PageBody_TagsGalleryBlock = {
     __accessLevel?: number;
-    galleryListing: { documentsList: Array<DocumentContentContext> };
+    galleryListing: { documentsList: DocumentsListField };
 };
 /**
  * From Document Areas
@@ -24,14 +42,8 @@ export type TagsPage_PageBody = Array<{
  * Document Areas
  */
 export type TagsPage_DocumentAreas = {
+    metaData: TagsPage_MetaData;
     pageBody: TagsPage_PageBody;
-};
-/**
- * Data Fields
- */
-export type TagsPage_DataFields = {
-    metaDescription?: { value: string; type: DataFieldType };
-    metaRobots?: { value: string; type: DataFieldType };
 };
 /**
  * Document Content
@@ -39,13 +51,11 @@ export type TagsPage_DataFields = {
 export type TagsPageContent = {
     title: string;
     slug: string;
-    tags: Record<string, number>;
     dateUpdated?: number;
     authors?: Record<string, number>;
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
     baseUrl: string;
-    dataFields: TagsPage_DataFields;
     documentAreas: TagsPage_DocumentAreas;
 };

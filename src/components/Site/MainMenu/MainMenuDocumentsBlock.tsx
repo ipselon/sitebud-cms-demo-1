@@ -16,13 +16,11 @@ export function MainMenuDocumentsBlock(props: MenuDocumentsBlockProps) {
     } = props;
 
     let menuLinksElements: Array<JSX.Element> = [];
-    if (documentsList && documentsList.length > 0) {
-        documentsList.map((documentLinkItem, idx) => {
-            menuLinksElements.push(
-                <MainMenuDocumentLinkLayout key={`documentLinkItem_${idx}`} content={documentLinkItem}/>
-            );
-        });
-    }
+    documentsList.entries?.forEach((documentLinkItem, idx) => {
+        menuLinksElements.push(
+            <MainMenuDocumentLinkLayout key={`documentLinkItem_${idx}`} content={documentLinkItem}/>
+        );
+    });
 
     return (
         <>

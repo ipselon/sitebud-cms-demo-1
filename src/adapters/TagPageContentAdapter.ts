@@ -7,21 +7,27 @@ export class TagPageContentAdapter extends ContentAdapter<TagPageContent> {
         const result: TagPageContent = {
             title: content?.title || 'undefined',
             slug: content?.slug || 'undefined',
-            tags: content?.tags || {},
             dateUpdated: content?.dateUpdated,
             authors: content?.authors,
             path: path || '',
             locale,
             hasRestrictedAreas,
             baseUrl: baseUrl || '',
-            dataFields: {},
             documentAreas: {
+                metaData: [],
                 pageBody: [],
                 card: [],
             },
         };
-        result.dataFields = this.processDataFields();
         result.documentAreas = this.processDocumentAreas({
+            metaData: {
+                basicSeoDataBlock: {
+                    metaDataFields: [
+                        { name: 'description', type: 'StringValue' },
+                        { name: 'robots', type: 'StringValue' },
+                    ],
+                },
+            },
             pageBody: {
                 defaultHeadingBlock: {
                     defaultHeading: [{ name: 'text', type: 'HeaderText' }],
