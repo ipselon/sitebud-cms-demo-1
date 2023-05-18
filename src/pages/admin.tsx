@@ -3,19 +3,15 @@ import {NextPage, InferGetStaticPropsType} from 'next';
 import {useRouter} from 'next/router';
 import {AdminRedirectError} from '@sitebud/bridge-lib';
 
-let siteBudCMSBaseURL: string = 'http://localhost:3030';
-if (process.env.NODE_ENV === 'production') {
-    siteBudCMSBaseURL = 'https://app.sitebudcms.com';
-}
-
-const DemoPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({owner, repo, token}) => {
+const AdminPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({owner, repo, token}) => {
     const router = useRouter();
     const [isError, setError] = useState<boolean>(false);
 
     useEffect(() => {
         if (owner && repo && token) {
             const rootUrl = `${window.location.protocol}//${window.location.host}`;
-            const targetUrl = `${siteBudCMSBaseURL}/demo?owner=${encodeURIComponent(owner)}&repo=${encodeURIComponent(repo)}&referrer=${encodeURIComponent(rootUrl)}&token=${encodeURIComponent(token)}`;
+            const targetUrl = `https://app.sitebudcms.com/?owner=${encodeURIComponent(owner)}&repo=${encodeURIComponent(repo)}&referrer=${encodeURIComponent(rootUrl)}&token=${encodeURIComponent(token)}`;
+            // const targetUrl = `http://localhost:3030/?owner=${encodeURIComponent(owner)}&repo=${encodeURIComponent(repo)}&referrer=${encodeURIComponent(rootUrl)}&token=${encodeURIComponent(token)}`;
             router.replace(targetUrl);
         } else {
             setError(true);
@@ -40,9 +36,9 @@ export async function getStaticProps() {
         props: {
             owner,
             repo,
-            token,
+            token
         },
     };
 }
 
-export default DemoPage;
+export default AdminPage;
