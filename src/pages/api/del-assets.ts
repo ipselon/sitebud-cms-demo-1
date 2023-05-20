@@ -1,5 +1,6 @@
 import {S3Client, DeleteObjectsCommand} from "@aws-sdk/client-s3";
 import {NextApiRequest, NextApiResponse} from 'next';
+import jwt from 'jsonwebtoken';
 
 const SB_SECRET: string | undefined = process.env.SB_SECRET;
 const AWS_ACCESS_KEY_ID: string | undefined = process.env.AWS_ACCESS_KEY_ID;
@@ -16,8 +17,22 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         res.status(200).end();
         return;
     }
-    if (req.query.secret !== SB_SECRET) {
-        res.status(401).send('Invalid token');
+    if (!SB_SECRET) {
+        res.status(401).send('It seems like the SiteBud CMS and the web application are not yet linked. This connection is established by setting a specific environment variable.');
+        return;
+    }
+    try {
+        const decoded: any = jwt.verify(req.query.secret as string, SB_SECRET);
+        if (decoded.userEmail === 'demo@demo.com') {
+            res.status(401).send('The demo account lacks the necessary permissions to add images.');
+            return;
+        }
+        if (decoded.userEmail === 'undefined') {
+            res.status(401).send('The undefined account lacks the necessary permissions to delete images.');
+            return;
+        }
+    } catch (e: any) {
+        res.status(401).send(`Invalid token. ${e.message}`);
         return;
     }
     if (req.method !== "DELETE") {

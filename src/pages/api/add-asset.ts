@@ -1,3 +1,4 @@
+import jwt from 'jsonwebtoken';
 import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import {NextApiRequest, NextApiResponse} from 'next';
@@ -17,15 +18,28 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         res.status(200).end();
         return;
     }
-    if (req.query.secret !== SB_SECRET) {
-        res.status(401).send('Invalid token');
+    if (!SB_SECRET) {
+        res.status(401).send('It seems like the SiteBud CMS and the web application are not yet linked. This connection is established by setting a specific environment variable.');
+        return;
+    }
+    try {
+        const decoded: any = jwt.verify(req.query.secret as string, SB_SECRET);
+        if (decoded.userEmail === 'demo@demo.com') {
+            res.status(401).send('The demo account lacks the necessary permissions to add images.');
+            return;
+        }
+        if (decoded.userEmail === 'undefined') {
+            res.status(401).send('The undefined account lacks the necessary permissions to add images.');
+            return;
+        }
+    } catch (e: any) {
+        res.status(401).send(`Invalid token. ${e.message}`);
         return;
     }
     if (req.method !== "POST") {
         res.status(405).end();
         return;
     }
-
     if (!AWS_REGION || !BUCKET_NAME || !AWS_ACCESS_KEY_ID || !AWS_SECRET_ACCESS_KEY) {
         res.status(500).send('S3 Bucket is uninitialized');
         return;
