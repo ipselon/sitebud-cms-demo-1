@@ -1,12 +1,7 @@
 import {S3Client, DeleteObjectsCommand} from "@aws-sdk/client-s3";
 import {NextApiRequest, NextApiResponse} from 'next';
 
-let SB_TOKEN: string | undefined = process.env.SB_TOKEN;
-if (!SB_TOKEN) {
-    const owner = process.env.OWNER || process.env.VERCEL_GIT_REPO_OWNER || null;
-    const repo = process.env.REPO || process.env.VERCEL_GIT_REPO_SLUG || null;
-    SB_TOKEN = `${owner}/${repo}`;
-}
+const SB_SECRET: string | undefined = process.env.SB_SECRET;
 const AWS_ACCESS_KEY_ID: string | undefined = process.env.AWS_ACCESS_KEY_ID;
 const AWS_SECRET_ACCESS_KEY: string | undefined = process.env.AWS_SECRET_ACCESS_KEY;
 const AWS_REGION: string | undefined = process.env.AWS_REGION;
@@ -21,7 +16,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         res.status(200).end();
         return;
     }
-    if (req.query.secret !== SB_TOKEN) {
+    if (req.query.secret !== SB_SECRET) {
         res.status(401).send('Invalid token');
         return;
     }
