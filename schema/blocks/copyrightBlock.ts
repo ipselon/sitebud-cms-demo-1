@@ -15,25 +15,20 @@ export const copyrightBlock: BlockConfig = {
                     indexNumber: 0,
                     type: 'StringValue',
                     label: 'Copyright Year',
-                    fieldContent: {
-                        isRequired: true
-                    }
+                    isRequired: true,
+                    fieldContent: {}
                 },
                 text: {
                     indexNumber: 1,
                     type: 'StringValue',
                     label: 'Copyright Text',
-                    fieldContent: {
-                        isRequired: true
-                    }
+                    fieldContent: {}
                 },
                 link: {
                     indexNumber: 2,
                     type: 'Link',
                     label: 'Copyright Document Link',
-                    fieldContent: {
-                        isRequired: false,
-                    }
+                    fieldContent: {}
                 },
             }
         }

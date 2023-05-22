@@ -1264,33 +1264,17 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
-"@sitebud/bridge-lib@1.0.0-alpha.12":
-  version "1.0.0-alpha.12"
-  resolved "https://registry.yarnpkg.com/@sitebud/bridge-lib/-/bridge-lib-1.0.0-alpha.12.tgz#268504fd7d52bb33215f54c75db358c3c154e305"
-  integrity sha512-88iBsfN/B0FM/CYl1lBY5L2+lzjP3ni2VYEH0Sa766rguHypegBeaIuJZKf9w+wEcnX3V7dq4ve6HEdBDxXnMA==
-  dependencies:
-    idb "7.1.1"
+"@sitebud/bridge-lib@link:../sitebud-libs/packages/bridge-lib":
+  version "0.0.0"
+  uid ""
 
-"@sitebud/domain-lib@1.0.0-alpha.12":
-  version "1.0.0-alpha.12"
-  resolved "https://registry.yarnpkg.com/@sitebud/domain-lib/-/domain-lib-1.0.0-alpha.12.tgz#756daded4c070fdc456efbea90d991b91fb6e6d0"
-  integrity sha512-X3Wuq7nkFqExj7I6AH9na44sJsqnHsSItg9YR2hMO61MidpkCWAPIEIH+QbtnXqsZatqupgD2N9qUd8jG2t1KA==
+"@sitebud/domain-lib@link:../sitebud-libs/packages/domain-lib":
+  version "0.0.0"
+  uid ""
 
-"@sitebud/sdk-lib@1.0.0-alpha.12":
-  version "1.0.0-alpha.12"
-  resolved "https://registry.yarnpkg.com/@sitebud/sdk-lib/-/sdk-lib-1.0.0-alpha.12.tgz#ff9e1596882c712469db3cde7d84da09f36b7451"
-  integrity sha512-CKRxfijxl5hBo0JzXG/xpI9+rCpe1tAr0k06q15AgX7HtwFPbDHEUY65jkvOESacN9/Mas0ODJUi1cYLctQvDw==
-  dependencies:
-    "@rollup/plugin-commonjs" "24.0.0"
-    "@rollup/plugin-node-resolve" "15.0.1"
-    "@rollup/plugin-typescript" "11.0.0"
-    "@xmldom/xmldom" "0.8.7"
-    fs-extra "11.1.0"
-    klaw-sync "6.0.0"
-    lodash "4.17.21"
-    prettier "2.8.4"
-    rollup "3.9.0"
-    xpath "0.0.32"
+"@sitebud/sdk-lib@link:../sitebud-libs/packages/sdk-lib":
+  version "0.0.0"
+  uid ""
 
 "@swc/helpers@0.4.14":
   version "0.4.14"
@@ -1364,7 +1348,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/jsonwebtoken@^9.0.2":
+"@types/jsonwebtoken@9.0.2":
   version "9.0.2"
   resolved "https://registry.yarnpkg.com/@types/jsonwebtoken/-/jsonwebtoken-9.0.2.tgz#9eeb56c76dd555039be2a3972218de5bd3b8d83e"
   integrity sha512-drE6uz7QBKq1fYqqoFKTDRdFCPHd5TCub75BM+D+cMx7NU9hUz7SESLfC2fSCXVFMO5Yj8sOWHuGqPgjc+fz0Q==
@@ -3318,7 +3302,7 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsonwebtoken@^9.0.0:
+jsonwebtoken@9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-9.0.0.tgz#d0faf9ba1cc3a56255fe49c0961a67e520c1926d"
   integrity sha512-tuGfYXxkQGDPnLJ7SibiQgVgeDgfbPq2k2ICcbgqW8WxWLBAxKQM/ZCu/IT8SOSwmaYl4dpTFCW5xZv7YbbWUw==

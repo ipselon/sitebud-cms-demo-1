@@ -13,17 +13,15 @@ export const authorProfileInfoBlock: BlockConfig = {
                     indexNumber: 0,
                     label: 'Full Name',
                     type: 'StringValue',
-                    fieldContent: {
-                        isRequired: true
-                    }
+                    isRequired: true,
+                    fieldContent: {}
                 },
                 email: {
                     indexNumber: 0,
                     label: 'Email',
                     type: 'StringValue',
-                    fieldContent: {
-                        isRequired: true
-                    }
+                    isRequired: true,
+                    fieldContent: {}
                 }
             }
         }

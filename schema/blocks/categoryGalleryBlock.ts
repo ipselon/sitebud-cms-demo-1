@@ -47,11 +47,11 @@ export const categoryGalleryBlock: BlockConfig = {
                     indexNumber: 0,
                     type: 'DocumentsList',
                     label: '',
+                    isRequired: true,
                     fieldContent: {
                         selectionMode: 'selectDocuments',
                         itemsLimit: 1,
                         allowedDocumentClasses: ['CategoriesPage'],
-                        isRequired: true,
                     }
                 }
             }

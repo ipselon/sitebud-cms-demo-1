@@ -14,8 +14,8 @@ export const menuDocumentsBlock: BlockConfig = {
                 documentsList: {
                     indexNumber: 0,
                     type: 'DocumentsList',
+                    isRequired: true,
                     fieldContent: {
-                        isRequired: true,
                         selectionMode: 'selectDocuments',
                     }
                 },

@@ -16,17 +16,15 @@ export const menuLinksBlock: BlockConfig = {
                     indexNumber: 0,
                     type: 'Link',
                     label: 'Link',
-                    fieldContent: {
-                        isRequired: true
-                    }
+                    isRequired: true,
+                    fieldContent: {}
                 },
                 label: {
                     indexNumber: 1,
                     type: 'StringValue',
                     label: 'Link Label',
-                    fieldContent: {
-                        isRequired: true
-                    }
+                    isRequired: true,
+                    fieldContent: {}
                 }
             }
         }

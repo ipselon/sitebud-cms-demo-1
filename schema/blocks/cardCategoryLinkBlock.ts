@@ -15,17 +15,15 @@ export const cardCategoryLinkBlock: BlockConfig = {
                     indexNumber: 0,
                     type: 'Link',
                     label: 'Link to the Category Document',
-                    fieldContent: {
-                        isRequired: true
-                    }
+                    isRequired: true,
+                    fieldContent: {}
                 },
                 label: {
                     indexNumber: 1,
                     type: 'StringValue',
                     label: 'Label to Link',
-                    fieldContent: {
-                        isRequired: true
-                    }
+                    isRequired: true,
+                    fieldContent: {}
                 },
             }
         }

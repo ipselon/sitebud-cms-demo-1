@@ -15,9 +15,9 @@ export const authorProfileSocialLinksBlock: BlockConfig = {
                     indexNumber: 0,
                     label: 'Social Network',
                     type: 'StringValue',
+                    isRequired: true,
                     fieldContent: {
                         value: 'twitter',
-                        isRequired: true,
                     },
                     fieldContentVariants: [
                         {
@@ -44,9 +44,8 @@ export const authorProfileSocialLinksBlock: BlockConfig = {
                     indexNumber: 1,
                     label: 'Network Profile URL',
                     type: 'StringValue',
-                    fieldContent: {
-                        isRequired: true
-                    }
+                    isRequired: true,
+                    fieldContent: {}
                 }
             }
         }

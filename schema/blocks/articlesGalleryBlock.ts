@@ -31,7 +31,6 @@ export const articlesGalleryBlock: BlockConfig = {
                     type: 'DocumentsList',
                     label: '',
                     fieldContent: {
-                        isRequired: false,
                         selectionMode: 'selectDocuments',
                         allowedDocumentClasses: ['ArticlePage'],
                         selectDocumentAreas: ['card', 'metaData'],

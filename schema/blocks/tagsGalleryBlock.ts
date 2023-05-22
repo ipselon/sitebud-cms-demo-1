@@ -16,7 +16,6 @@ export const tagsGalleryBlock: BlockConfig = {
                     type: 'DocumentsList',
                     label: '',
                     fieldContent: {
-                        isRequired: false,
                         selectionMode: 'selectDocuments',
                         selectDocumentAreas: ['card'],
                         allowedDocumentClasses: ['TagPage'],

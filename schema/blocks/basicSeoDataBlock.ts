@@ -15,9 +15,8 @@ export const  basicSeoDataBlock: BlockConfig = {
                     indexNumber: 0,
                     label: 'Description',
                     type: 'StringValue',
-                    fieldContent: {
-                        isRequired: true
-                    }
+                    isRequired: true,
+                    fieldContent: {}
                 },
                 robots: {
                     indexNumber: 0,

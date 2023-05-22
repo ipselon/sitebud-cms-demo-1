@@ -26,9 +26,8 @@
                     "indexNumber": 0,
                     "label": "Description",
                     "type": "StringValue",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   },
                   "robots": {
                     "indexNumber": 0,
@@ -82,8 +81,8 @@
                   "documentsList": {
                     "indexNumber": 0,
                     "type": "DocumentsList",
+                    "isRequired": true,
                     "fieldContent": {
-                      "isRequired": true,
                       "selectionMode": "selectDocuments",
                       "allowedDocumentClasses": [
                         "AuthorProfilePage"
@@ -111,8 +110,8 @@
                   "documentsList": {
                     "indexNumber": 0,
                     "type": "DocumentsList",
+                    "isRequired": true,
                     "fieldContent": {
-                      "isRequired": true,
                       "selectionMode": "selectDocuments",
                       "allowedDocumentClasses": [
                         "TagPage"
@@ -390,9 +389,8 @@
                     "indexNumber": 0,
                     "label": "Description",
                     "type": "StringValue",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   },
                   "robots": {
                     "indexNumber": 0,
@@ -499,9 +497,9 @@
                     "indexNumber": 0,
                     "label": "Social Network",
                     "type": "StringValue",
+                    "isRequired": true,
                     "fieldContent": {
-                      "value": "twitter",
-                      "isRequired": true
+                      "value": "twitter"
                     },
                     "fieldContentVariants": [
                       {
@@ -528,9 +526,8 @@
                     "indexNumber": 1,
                     "label": "Network Profile URL",
                     "type": "StringValue",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   }
                 }
               }
@@ -567,7 +564,6 @@
                     "type": "DocumentsList",
                     "label": "",
                     "fieldContent": {
-                      "isRequired": false,
                       "selectionMode": "selectDocuments",
                       "allowedDocumentClasses": [
                         "ArticlePage"
@@ -719,17 +715,15 @@
                     "indexNumber": 0,
                     "label": "Full Name",
                     "type": "StringValue",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   },
                   "email": {
                     "indexNumber": 0,
                     "label": "Email",
                     "type": "StringValue",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   }
                 }
               }
@@ -766,9 +760,8 @@
                     "indexNumber": 0,
                     "label": "Description",
                     "type": "StringValue",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   },
                   "robots": {
                     "indexNumber": 0,
@@ -853,8 +846,8 @@
                     "indexNumber": 1,
                     "type": "DocumentsList",
                     "label": "",
+                    "isRequired": true,
                     "fieldContent": {
-                      "isRequired": false,
                       "selectionMode": "selectDocuments",
                       "allowedDocumentClasses": [
                         "CategoryPage"
@@ -922,9 +915,8 @@
                     "indexNumber": 0,
                     "label": "Description",
                     "type": "StringValue",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   },
                   "robots": {
                     "indexNumber": 0,
@@ -1047,7 +1039,6 @@
                     "type": "DocumentsList",
                     "label": "",
                     "fieldContent": {
-                      "isRequired": false,
                       "selectionMode": "selectDocuments",
                       "allowedDocumentClasses": [
                         "ArticlePage"
@@ -1179,9 +1170,8 @@
                     "indexNumber": 0,
                     "label": "Description",
                     "type": "StringValue",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   },
                   "robots": {
                     "indexNumber": 0,
@@ -1324,13 +1314,13 @@
                     "indexNumber": 0,
                     "type": "DocumentsList",
                     "label": "",
+                    "isRequired": true,
                     "fieldContent": {
                       "selectionMode": "selectDocuments",
                       "itemsLimit": 1,
                       "allowedDocumentClasses": [
                         "CategoriesPage"
-                      ],
-                      "isRequired": true
+                      ]
                     }
                   }
                 }
@@ -1368,7 +1358,6 @@
                     "type": "DocumentsList",
                     "label": "",
                     "fieldContent": {
-                      "isRequired": false,
                       "selectionMode": "selectDocuments",
                       "allowedDocumentClasses": [
                         "ArticlePage"
@@ -1495,9 +1484,8 @@
                   "image": {
                     "indexNumber": 0,
                     "type": "Image",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   }
                 }
               },
@@ -1510,9 +1498,8 @@
                   "text": {
                     "indexNumber": 0,
                     "type": "StringValue",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   }
                 }
               }
@@ -1542,17 +1529,15 @@
                     "indexNumber": 0,
                     "type": "Link",
                     "label": "Link",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   },
                   "label": {
                     "indexNumber": 1,
                     "type": "StringValue",
                     "label": "Link Label",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   }
                 }
               }
@@ -1572,8 +1557,8 @@
                   "documentsList": {
                     "indexNumber": 0,
                     "type": "DocumentsList",
+                    "isRequired": true,
                     "fieldContent": {
-                      "isRequired": true,
                       "selectionMode": "selectDocuments"
                     }
                   }
@@ -1605,17 +1590,15 @@
                     "indexNumber": 0,
                     "type": "Link",
                     "label": "Link",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   },
                   "label": {
                     "indexNumber": 1,
                     "type": "StringValue",
                     "label": "Link Label",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   }
                 }
               }
@@ -1635,8 +1618,8 @@
                   "documentsList": {
                     "indexNumber": 0,
                     "type": "DocumentsList",
+                    "isRequired": true,
                     "fieldContent": {
-                      "isRequired": true,
                       "selectionMode": "selectDocuments"
                     }
                   }
@@ -1659,25 +1642,20 @@
                     "indexNumber": 0,
                     "type": "StringValue",
                     "label": "Copyright Year",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   },
                   "text": {
                     "indexNumber": 1,
                     "type": "StringValue",
                     "label": "Copyright Text",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "fieldContent": {}
                   },
                   "link": {
                     "indexNumber": 2,
                     "type": "Link",
                     "label": "Copyright Document Link",
-                    "fieldContent": {
-                      "isRequired": false
-                    }
+                    "fieldContent": {}
                   }
                 }
               }
@@ -1736,9 +1714,8 @@
                     "indexNumber": 0,
                     "label": "Description",
                     "type": "StringValue",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   },
                   "robots": {
                     "indexNumber": 0,
@@ -1822,8 +1799,8 @@
                   "documentList": {
                     "indexNumber": 1,
                     "type": "DocumentsList",
+                    "isRequired": true,
                     "fieldContent": {
-                      "isRequired": true,
                       "selectionMode": "selectDocuments",
                       "selectDocumentAreas": [
                         "card",
@@ -1950,9 +1927,8 @@
                     "indexNumber": 0,
                     "label": "Description",
                     "type": "StringValue",
-                    "fieldContent": {
-                      "isRequired": true
-                    }
+                    "isRequired": true,
+                    "fieldContent": {}
                   },
                   "robots": {
                     "indexNumber": 0,
@@ -2038,7 +2014,6 @@
                     "type": "DocumentsList",
                     "label": "",
                     "fieldContent": {
-                      "isRequired": false,
                       "selectionMode": "selectDocuments",
                       "selectDocumentAreas": [
                         "card"

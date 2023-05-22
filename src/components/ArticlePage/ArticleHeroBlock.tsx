@@ -20,7 +20,7 @@ export function ArticleHeroBlock(props: ArticlePageHeroBlockProps) {
             <div className="container">
                     <div className="flex justify-center mt-10">
                         <img
-                            className="object-cover object-center w-full h-80 rounded-xl"
+                            className="w-full h-80 rounded-xl"
                             src={heroImage.image.src}
                             alt={heroImage.image.alt}
                             style={{
