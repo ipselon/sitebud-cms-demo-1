@@ -10,8 +10,8 @@ export class SearchPageContentAdapter extends ContentAdapter<SearchPageContent> 
             dateUpdated: content?.dateUpdated,
             authors: content?.authors,
             path: path || '',
-            locale,
-            hasRestrictedAreas,
+            locale: locale || '',
+            hasRestrictedAreas: !!hasRestrictedAreas,
             baseUrl: baseUrl || '',
             documentAreas: {
                 pageBody: [],

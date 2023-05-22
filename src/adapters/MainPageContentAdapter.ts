@@ -10,8 +10,8 @@ export class MainPageContentAdapter extends ContentAdapter<MainPageContent> {
             dateUpdated: content?.dateUpdated,
             authors: content?.authors,
             path: path || '',
-            locale,
-            hasRestrictedAreas,
+            locale: locale || '',
+            hasRestrictedAreas: !!hasRestrictedAreas,
             baseUrl: baseUrl || '',
             documentAreas: {
                 metaData: [],

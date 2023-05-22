@@ -5,7 +5,7 @@ export class SiteContentAdapter extends ContentAdapter<SiteContent> {
         const { content, hasRestrictedAreas, baseUrl, availableLocales } =
             this._documentData;
         const result: SiteContent = {
-            hasRestrictedAreas,
+            hasRestrictedAreas: !!hasRestrictedAreas,
             baseUrl: baseUrl || '',
             availableLocales: availableLocales || [],
             documentAreas: {

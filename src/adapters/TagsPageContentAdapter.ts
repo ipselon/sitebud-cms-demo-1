@@ -10,8 +10,8 @@ export class TagsPageContentAdapter extends ContentAdapter<TagsPageContent> {
             dateUpdated: content?.dateUpdated,
             authors: content?.authors,
             path: path || '',
-            locale,
-            hasRestrictedAreas,
+            locale: locale || '',
+            hasRestrictedAreas: !!hasRestrictedAreas,
             baseUrl: baseUrl || '',
             documentAreas: {
                 metaData: [],
