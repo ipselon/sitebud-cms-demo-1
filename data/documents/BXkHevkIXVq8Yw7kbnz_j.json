@@ -8,19 +8,6 @@
       "slug": "all-tags",
       "statusMap": {},
       "isCustomSlug": false,
-      "tags": {},
-      "dataFields": [
-        {
-          "name": "metaDescription",
-          "value": "Tags",
-          "type": "string"
-        },
-        {
-          "name": "metaRobots",
-          "value": "index,follow",
-          "type": "string"
-        }
-      ],
       "documentAreas": [
         {
           "name": "metaData",

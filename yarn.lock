@@ -1264,17 +1264,34 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
   integrity sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==
 
-"@sitebud/bridge-lib@link:../sitebud-libs/packages/bridge-lib":
-  version "0.0.0"
-  uid ""
+"@sitebud/bridge-lib@1.0.0-alpha.14":
+  version "1.0.0-alpha.14"
+  resolved "https://registry.yarnpkg.com/@sitebud/bridge-lib/-/bridge-lib-1.0.0-alpha.14.tgz#61b16cf4277362752b3b6702396ca9230ec2bb8f"
+  integrity sha512-oWgnsC+tuz5Ei4eXzMOaxoCIi+AWMuZZ1WjfvOzXCDKnvvc+hwI/PGBvSLyOJOiu+ERxmvLtudE0LkWLgoPqWw==
+  dependencies:
+    idb "7.1.1"
 
-"@sitebud/domain-lib@link:../sitebud-libs/packages/domain-lib":
-  version "0.0.0"
-  uid ""
+"@sitebud/domain-lib@1.0.0-alpha.14":
+  version "1.0.0-alpha.14"
+  resolved "https://registry.yarnpkg.com/@sitebud/domain-lib/-/domain-lib-1.0.0-alpha.14.tgz#08483443c020b913c9a1bbb4d509ceb5240341c4"
+  integrity sha512-wJnv+rE+vzMqpIv6hXg788RjMLbNSeUXLXVLtruIvTqlBEFtuuuH0L9TSs3U/yHQAx7S70CzQMYeo2zecGw6YA==
 
-"@sitebud/sdk-lib@link:../sitebud-libs/packages/sdk-lib":
-  version "0.0.0"
-  uid ""
+"@sitebud/sdk-lib@1.0.0-alpha.14":
+  version "1.0.0-alpha.14"
+  resolved "https://registry.yarnpkg.com/@sitebud/sdk-lib/-/sdk-lib-1.0.0-alpha.14.tgz#31c37cf10c463b5bdce254aeb4c59c29c9191830"
+  integrity sha512-HUMdc5WPNoidFJW6jNReobkFCKsNMw50LBY1X3yUS+p3i1fdN4wQfSyJvDf5FT3sFhylf/oSCVzyFzlt9uYobw==
+  dependencies:
+    "@rollup/plugin-commonjs" "24.0.0"
+    "@rollup/plugin-node-resolve" "15.0.1"
+    "@rollup/plugin-typescript" "11.0.0"
+    "@xmldom/xmldom" "0.8.7"
+    fs-extra "11.1.0"
+    klaw-sync "6.0.0"
+    lodash "4.17.21"
+    nanoid "3.3.6"
+    prettier "2.8.4"
+    rollup "3.9.0"
+    xpath "0.0.32"
 
 "@swc/helpers@0.4.14":
   version "0.4.14"

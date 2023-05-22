@@ -1,1 +1,469 @@
-{"id":"phDyJS94sln_dCAt0U9uo","type":"page","documentClass":"CategoryPage","contents":{"en-US":{"title":"Giraffes","slug":"giraffes","statusMap":{},"isCustomSlug":false,"tags":{},"dataFields":[{"name":"metaDescription","value":"Stories about giraffes","type":"string"},{"name":"metaRobots","value":"index,follow","type":"string"}],"documentAreas":[{"name":"metaData","blocks":[{"id":"WLCg-1jsOXyWkV4bT0QzN","name":"basicSeoDataBlock","components":[{"name":"metaDataFields","instances":[{"id":"VF1W7lC7TNGwXPmhwVGq_","props":[{"name":"description","type":"StringValue","fieldContent":{"isRequired":true,"value":"Giraffes"}},{"name":"robots","type":"StringValue","fieldContent":{"value":"index,follow"}}]}]}]}]},{"name":"pageBody","blocks":[{"id":"vzirzqwAQUB0qNwt6nUeu","name":"defaultHeroBlock","components":[{"name":"heroTitle","instances":[{"id":"OvMsvBpxNJ--zcMsH7aTT","props":[{"name":"text","type":"HeaderText","fieldContent":{"htmlText":"<h1>Giraffes</h1>"}}]}]},{"name":"heroDescription","instances":[{"id":"Xs6bpv5EyvWbcEuYoWl8S","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>Did you know that giraffes have the same number of neck vertebrae as humans? Despite their incredibly long necks, giraffes have only seven neck vertebrae, just like humans. However, each of their vertebrae is much larger, with some measuring up to 10 inches long.</p><p>This unique anatomical feature allows giraffes to reach great heights, granting them access to leaves and vegetation that other herbivores cannot reach. Additionally, the elongated neck aids in their survival by providing an excellent vantage point for spotting predators from a distance, ensuring their safety within the vast savannah landscape.</p>"}}]}]},{"name":"heroImage","instances":[{"id":"9hP_5Zr2liik66cPFm1nG","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/giraffe_1.webp","width":1000,"height":613,"alt":"Giraffes"}}]}]}]},{"id":"rE3JKPsDeGvo61rV1h4C2","name":"articlesGalleryBlock","components":[{"name":"galleryHeading","instances":[{"id":"eqPc-JLP0r2bDTBMUwajK","props":[{"name":"text","type":"HeaderText","fieldContent":{"htmlText":"<h2>Stories about giraffes</h2>"}}]}]},{"name":"galleryListing","instances":[{"id":"L_Zcyy6Jjj2V88SZbU08s","props":[{"name":"documentsList","type":"DocumentsList","fieldContent":{"isRequired":false,"selectionMode":"selectChildrenDocuments","allowedDocumentClasses":["CategoryPage"],"selectDocumentAreas":["card","metaData"],"documentsIds":["phDyJS94sln_dCAt0U9uo"],"selectDocumentClasses":["ArticlePage"]}}]}]}]}],"ignoreNested":true},{"name":"card","blocks":[{"id":"Asg0W3owzswo9zRPdDqtE","name":"cardImageBlock","components":[{"name":"cardViewImage","instances":[{"id":"I9HCUxXsju7FMex040u2_","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/giraffe_1.webp","width":1000,"height":613,"alt":"Giraffes","focusX":32.04,"focusY":45.91}}]}]}]},{"id":"3KD7iQdJ01CO78lzbPLTy","name":"cardTitleBlock","components":[{"name":"cardTitle","instances":[{"id":"3-mX2Px8ud9Hn4ub6FM0z","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>GIRAFFES</p>"}}]}]}]}]}],"dateUpdated":1684419006310,"authors":{"apustovalov@gmail.com":1684419006310,"demo@demo.com":1683741324291},"includeInSiteMap":true},"es-ES":{"title":"Jirafas","slug":"jirafas","statusMap":{},"isCustomSlug":false,"tags":{},"dataFields":[{"name":"metaDescription","value":"Cuentos de jirafas","type":"string"},{"name":"metaRobots","value":"index,follow","type":"string"}],"documentAreas":[{"name":"metaData","blocks":[{"id":"5WnRLKNyXTMTzx8iqKQT-","name":"basicSeoDataBlock","components":[{"name":"metaDataFields","instances":[{"id":"C8D569JkYnHAeluc2HT9P","props":[{"name":"description","type":"StringValue","fieldContent":{"isRequired":true,"value":"Jirafas"}},{"name":"robots","type":"StringValue","fieldContent":{"value":"index,follow"}}]}]}]}]},{"name":"pageBody","blocks":[{"id":"fDfx--D-vcNRc1xHDzP4g","name":"defaultHeroBlock","components":[{"name":"heroTitle","instances":[{"id":"YNzfdcJdI9TiRHGnlxwnz","props":[{"name":"text","type":"HeaderText","fieldContent":{"htmlText":"<h1>Jirafas</h1>"}}]}]},{"name":"heroDescription","instances":[{"id":"M2c76dmJuVm6Bp-BRKX0r","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>¿Sabías que las jirafas tienen el mismo número de vértebras en el cuello que los humanos? A pesar de tener cuellos increíblemente largos, las jirafas tienen solo siete vértebras en el cuello, al igual que los humanos. Sin embargo, cada una de sus vértebras es mucho más grande, con algunas que miden hasta 10 pulgadas de largo.</p><p style=\"text-align: start\">Esta característica anatómica única permite a las jirafas alcanzar grandes alturas, otorgándoles acceso a hojas y vegetación que otros herbívoros no pueden alcanzar. Además, el cuello alargado ayuda en su supervivencia al proporcionar un excelente punto de vista para detectar a los depredadores a distancia, asegurando su seguridad en el vasto paisaje de la sabana.</p>"}}]}]},{"name":"heroImage","instances":[{"id":"zufDGNb6GsDuVmQOhIm9Q","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/giraffe_1.webp","width":1000,"height":613,"alt":"Giraffes"}}]}]}]},{"id":"KLUS8v-8z6gznUeAuZKpw","name":"articlesGalleryBlock","components":[{"name":"galleryHeading","instances":[{"id":"FZQFOCqM1CpODyT_h8c1J","props":[{"name":"text","type":"HeaderText","fieldContent":{"htmlText":"<h2>Cuentos de jirafas</h2>"}}]}]},{"name":"galleryListing","instances":[{"id":"oTfU7iMapWNsUXINp1PgI","props":[{"name":"documentsList","type":"DocumentsList","fieldContent":{"isRequired":false,"selectionMode":"selectChildrenDocuments","allowedDocumentClasses":["CategoryPage"],"selectDocumentAreas":["card","metaData"],"documentsIds":["phDyJS94sln_dCAt0U9uo"],"selectDocumentClasses":["ArticlePage"]}}]}]}]}],"ignoreNested":true},{"name":"card","blocks":[{"id":"P9-ry_DkAzY0xDreFY17_","name":"cardImageBlock","components":[{"name":"cardViewImage","instances":[{"id":"-8wpd1xe4U8_V0eTpeRyz","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/giraffe_1.webp","width":1000,"height":613,"alt":"JIRAFAS"}}]}]}]},{"id":"X0VV0yp1JSJfnb5vQXa60","name":"cardTitleBlock","components":[{"name":"cardTitle","instances":[{"id":"Wx4nK-WLvQ6SHjcEd5ixf","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>JIRAFAS</p>"}}]}]}]}]}],"dateUpdated":1684419015712,"authors":{"apustovalov@gmail.com":1684419015712},"includeInSiteMap":true}}}
+{
+  "id": "phDyJS94sln_dCAt0U9uo",
+  "type": "page",
+  "documentClass": "CategoryPage",
+  "contents": {
+    "en-US": {
+      "title": "Giraffes",
+      "slug": "giraffes",
+      "statusMap": {},
+      "isCustomSlug": false,
+      "documentAreas": [
+        {
+          "name": "metaData",
+          "blocks": [
+            {
+              "id": "WLCg-1jsOXyWkV4bT0QzN",
+              "name": "basicSeoDataBlock",
+              "components": [
+                {
+                  "name": "metaDataFields",
+                  "instances": [
+                    {
+                      "id": "VF1W7lC7TNGwXPmhwVGq_",
+                      "props": [
+                        {
+                          "name": "description",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "Giraffes"
+                          }
+                        },
+                        {
+                          "name": "robots",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "value": "index,follow"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pageBody",
+          "blocks": [
+            {
+              "id": "vzirzqwAQUB0qNwt6nUeu",
+              "name": "defaultHeroBlock",
+              "components": [
+                {
+                  "name": "heroTitle",
+                  "instances": [
+                    {
+                      "id": "OvMsvBpxNJ--zcMsH7aTT",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h1>Giraffes</h1>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "heroDescription",
+                  "instances": [
+                    {
+                      "id": "Xs6bpv5EyvWbcEuYoWl8S",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>Did you know that giraffes have the same number of neck vertebrae as humans? Despite their incredibly long necks, giraffes have only seven neck vertebrae, just like humans. However, each of their vertebrae is much larger, with some measuring up to 10 inches long.</p><p>This unique anatomical feature allows giraffes to reach great heights, granting them access to leaves and vegetation that other herbivores cannot reach. Additionally, the elongated neck aids in their survival by providing an excellent vantage point for spotting predators from a distance, ensuring their safety within the vast savannah landscape.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "heroImage",
+                  "instances": [
+                    {
+                      "id": "9hP_5Zr2liik66cPFm1nG",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/giraffe_1.webp",
+                            "width": 1000,
+                            "height": 613,
+                            "alt": "Giraffes"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rE3JKPsDeGvo61rV1h4C2",
+              "name": "articlesGalleryBlock",
+              "components": [
+                {
+                  "name": "galleryHeading",
+                  "instances": [
+                    {
+                      "id": "eqPc-JLP0r2bDTBMUwajK",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h2>Stories about giraffes</h2>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "galleryListing",
+                  "instances": [
+                    {
+                      "id": "L_Zcyy6Jjj2V88SZbU08s",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": false,
+                            "selectionMode": "selectChildrenDocuments",
+                            "allowedDocumentClasses": [
+                              "CategoryPage"
+                            ],
+                            "selectDocumentAreas": [
+                              "card",
+                              "metaData"
+                            ],
+                            "documentsIds": [
+                              "phDyJS94sln_dCAt0U9uo"
+                            ],
+                            "selectDocumentClasses": [
+                              "ArticlePage"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ignoreNested": true
+        },
+        {
+          "name": "card",
+          "blocks": [
+            {
+              "id": "Asg0W3owzswo9zRPdDqtE",
+              "name": "cardImageBlock",
+              "components": [
+                {
+                  "name": "cardViewImage",
+                  "instances": [
+                    {
+                      "id": "I9HCUxXsju7FMex040u2_",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/giraffe_1.webp",
+                            "width": 1000,
+                            "height": 613,
+                            "alt": "Giraffes",
+                            "focusX": 32.04,
+                            "focusY": 45.91
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "3KD7iQdJ01CO78lzbPLTy",
+              "name": "cardTitleBlock",
+              "components": [
+                {
+                  "name": "cardTitle",
+                  "instances": [
+                    {
+                      "id": "3-mX2Px8ud9Hn4ub6FM0z",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>GIRAFFES</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateUpdated": 1684419006310,
+      "authors": {
+        "apustovalov@gmail.com": 1684419006310,
+        "demo@demo.com": 1683741324291
+      },
+      "includeInSiteMap": true
+    },
+    "es-ES": {
+      "title": "Jirafas",
+      "slug": "jirafas",
+      "statusMap": {},
+      "isCustomSlug": false,
+      "tags": {},
+      "dataFields": [
+        {
+          "name": "metaDescription",
+          "value": "Cuentos de jirafas",
+          "type": "string"
+        },
+        {
+          "name": "metaRobots",
+          "value": "index,follow",
+          "type": "string"
+        }
+      ],
+      "documentAreas": [
+        {
+          "name": "metaData",
+          "blocks": [
+            {
+              "id": "5WnRLKNyXTMTzx8iqKQT-",
+              "name": "basicSeoDataBlock",
+              "components": [
+                {
+                  "name": "metaDataFields",
+                  "instances": [
+                    {
+                      "id": "C8D569JkYnHAeluc2HT9P",
+                      "props": [
+                        {
+                          "name": "description",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "Jirafas"
+                          }
+                        },
+                        {
+                          "name": "robots",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "value": "index,follow"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pageBody",
+          "blocks": [
+            {
+              "id": "fDfx--D-vcNRc1xHDzP4g",
+              "name": "defaultHeroBlock",
+              "components": [
+                {
+                  "name": "heroTitle",
+                  "instances": [
+                    {
+                      "id": "YNzfdcJdI9TiRHGnlxwnz",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h1>Jirafas</h1>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "heroDescription",
+                  "instances": [
+                    {
+                      "id": "M2c76dmJuVm6Bp-BRKX0r",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>¿Sabías que las jirafas tienen el mismo número de vértebras en el cuello que los humanos? A pesar de tener cuellos increíblemente largos, las jirafas tienen solo siete vértebras en el cuello, al igual que los humanos. Sin embargo, cada una de sus vértebras es mucho más grande, con algunas que miden hasta 10 pulgadas de largo.</p><p style=\"text-align: start\">Esta característica anatómica única permite a las jirafas alcanzar grandes alturas, otorgándoles acceso a hojas y vegetación que otros herbívoros no pueden alcanzar. Además, el cuello alargado ayuda en su supervivencia al proporcionar un excelente punto de vista para detectar a los depredadores a distancia, asegurando su seguridad en el vasto paisaje de la sabana.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "heroImage",
+                  "instances": [
+                    {
+                      "id": "zufDGNb6GsDuVmQOhIm9Q",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/giraffe_1.webp",
+                            "width": 1000,
+                            "height": 613,
+                            "alt": "Giraffes"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "KLUS8v-8z6gznUeAuZKpw",
+              "name": "articlesGalleryBlock",
+              "components": [
+                {
+                  "name": "galleryHeading",
+                  "instances": [
+                    {
+                      "id": "FZQFOCqM1CpODyT_h8c1J",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h2>Cuentos de jirafas</h2>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "galleryListing",
+                  "instances": [
+                    {
+                      "id": "oTfU7iMapWNsUXINp1PgI",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": false,
+                            "selectionMode": "selectChildrenDocuments",
+                            "allowedDocumentClasses": [
+                              "CategoryPage"
+                            ],
+                            "selectDocumentAreas": [
+                              "card",
+                              "metaData"
+                            ],
+                            "documentsIds": [
+                              "phDyJS94sln_dCAt0U9uo"
+                            ],
+                            "selectDocumentClasses": [
+                              "ArticlePage"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ignoreNested": true
+        },
+        {
+          "name": "card",
+          "blocks": [
+            {
+              "id": "P9-ry_DkAzY0xDreFY17_",
+              "name": "cardImageBlock",
+              "components": [
+                {
+                  "name": "cardViewImage",
+                  "instances": [
+                    {
+                      "id": "-8wpd1xe4U8_V0eTpeRyz",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/giraffe_1.webp",
+                            "width": 1000,
+                            "height": 613,
+                            "alt": "JIRAFAS"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "X0VV0yp1JSJfnb5vQXa60",
+              "name": "cardTitleBlock",
+              "components": [
+                {
+                  "name": "cardTitle",
+                  "instances": [
+                    {
+                      "id": "Wx4nK-WLvQ6SHjcEd5ixf",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>JIRAFAS</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateUpdated": 1684419015712,
+      "authors": {
+        "apustovalov@gmail.com": 1684419015712
+      },
+      "includeInSiteMap": true
+    }
+  }
+}

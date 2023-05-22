@@ -1,1 +1,466 @@
-{"id":"AJeftD2VQiQb3oCVsOUas","type":"page","documentClass":"CategoryPage","contents":{"en-US":{"title":"Zebras","slug":"zebras","statusMap":{},"isCustomSlug":false,"tags":{},"dataFields":[{"name":"metaDescription","value":"Stories about zebras","type":"string"},{"name":"metaRobots","value":"index,follow","type":"string"}],"documentAreas":[{"name":"metaData","blocks":[{"id":"7fKzd1CF01IaoxFWm2PWA","name":"basicSeoDataBlock","components":[{"name":"metaDataFields","instances":[{"id":"yCzBp5YA-fpF3PYuYy_Qq","props":[{"name":"description","type":"StringValue","fieldContent":{"isRequired":true,"value":"Zebras"}},{"name":"robots","type":"StringValue","fieldContent":{"value":"index,follow"}}]}]}]}]},{"name":"pageBody","blocks":[{"id":"1e_JnAnN0zzzX-f4vEsB6","name":"defaultHeroBlock","components":[{"name":"heroTitle","instances":[{"id":"u85bQNwJSwT2ZchRnVv3b","props":[{"name":"text","type":"HeaderText","fieldContent":{"htmlText":"<h1>Zebras</h1>"}}]}]},{"name":"heroDescription","instances":[{"id":"l9voNuZD72vp_EGS0sHK2","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>Did you know that a zebra's stripes serve a unique purpose beyond just their striking appearance? Each zebra has a distinct pattern of stripes, like a fingerprint, which helps them recognize one another within their social groups. </p><p>Additionally, scientists believe that the stripes play a crucial role in deterring biting insects, such as horseflies and tsetse flies. The alternating black and white pattern is thought to interfere with the insects' vision, making it more difficult for them to land on the zebras. </p><p>Thus, the zebra's iconic stripes not only serve as a form of individual identification but also offer valuable protection from bothersome pests.</p>"}}]}]},{"name":"heroImage","instances":[{"id":"0xuppSCboQHKZQ7Q9rIV6","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/zebras.webp","width":1000,"height":598,"alt":"Zebras"}}]}]}]},{"id":"9lAu62R9fpN7Rbref4u9p","name":"articlesGalleryBlock","components":[{"name":"galleryHeading","instances":[{"id":"rSZwZyVoccaZBDPs4IYVC","props":[{"name":"text","type":"HeaderText","fieldContent":{"htmlText":"<h1>Type the gallery title...</h1>"}}]}]},{"name":"galleryListing","instances":[{"id":"6et4_eWw-_nOJs1bDHeN8","props":[{"name":"documentsList","type":"DocumentsList","fieldContent":{"isRequired":false,"selectionMode":"selectChildrenDocuments","allowedDocumentClasses":["CategoryPage"],"selectDocumentAreas":["card","metaData"],"documentsIds":["AJeftD2VQiQb3oCVsOUas"],"selectDocumentClasses":["ArticlePage"]}}]}]}]}],"ignoreNested":true},{"name":"card","blocks":[{"id":"-1k86m7D05ITMFbHBP7wV","name":"cardImageBlock","components":[{"name":"cardViewImage","instances":[{"id":"nFt6y9h3uddKHPslRyghn","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/zebras.webp","width":1000,"height":598,"alt":"Zebras"}}]}]}]},{"id":"-ZsHYpGmXaj0JhhrWPG9l","name":"cardTitleBlock","components":[{"name":"cardTitle","instances":[{"id":"BPTKxQoXKuB5YOyQBIk6v","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>ZEBRAS</p>"}}]}]}]}]}],"dateUpdated":1684419467911,"authors":{"apustovalov@gmail.com":1684419467911},"includeInSiteMap":true},"es-ES":{"title":"Cebras","slug":"cebras","statusMap":{},"isCustomSlug":false,"tags":{},"dataFields":[{"name":"metaDescription","value":"Cuentos de cebras","type":"string"},{"name":"metaRobots","value":"index,follow","type":"string"}],"documentAreas":[{"name":"metaData","blocks":[{"id":"bp8T9F4iji6Kdb3hyANom","name":"basicSeoDataBlock","components":[{"name":"metaDataFields","instances":[{"id":"LLGk7aa5yd1hYfgyQBmM8","props":[{"name":"description","type":"StringValue","fieldContent":{"isRequired":true,"value":"Cebras"}},{"name":"robots","type":"StringValue","fieldContent":{"value":"index,follow"}}]}]}]}]},{"name":"pageBody","blocks":[{"id":"jk4dcTq0lax_ISkStix6d","name":"defaultHeroBlock","components":[{"name":"heroTitle","instances":[{"id":"b5kTfWUHDlAhLlUWXUbwi","props":[{"name":"text","type":"HeaderText","fieldContent":{"htmlText":"<h1>Cebras</h1>"}}]}]},{"name":"heroDescription","instances":[{"id":"Vp_jvNyrEVHrmELlc53f1","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>¿Sabías que las rayas de las cebras tienen un propósito único más allá de su llamativo aspecto? Cada cebra tiene un patrón distintivo de rayas, como una huella dactilar, lo que les ayuda a reconocerse entre sí dentro de sus grupos sociales.</p><p style=\"text-align: start\">Además, los científicos creen que las rayas juegan un papel crucial en disuadir a los insectos mordedores, como las moscas de los caballos y las moscas tsetsé. Se cree que el patrón alternante de blanco y negro interfiere con la visión de los insectos, lo que dificulta que aterricen en las cebras.</p><p style=\"text-align: start\">Así, las icónicas rayas de la cebra no solo sirven como forma de identificación individual, sino que también ofrecen una valiosa protección contra los molestos insectos.</p>"}}]}]},{"name":"heroImage","instances":[{"id":"kQ7vuJ5h82cgizG-sQZpa","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/zebras.webp","width":1000,"height":598,"alt":"Zebras"}}]}]}]},{"id":"8hPSjwUYqkkGMTO0IMzxN","name":"articlesGalleryBlock","components":[{"name":"galleryHeading","instances":[{"id":"daEcfup8kv1IhB72vxGZi","props":[{"name":"text","type":"HeaderText","fieldContent":{"htmlText":"<h2>Historias sobre cebra</h2>"}}]}]},{"name":"galleryListing","instances":[{"id":"ZiE4Mn8IoXI0z4Hos4BwM","props":[{"name":"documentsList","type":"DocumentsList","fieldContent":{"isRequired":false,"selectionMode":"selectChildrenDocuments","allowedDocumentClasses":["CategoryPage"],"selectDocumentAreas":["card","metaData"],"documentsIds":["AJeftD2VQiQb3oCVsOUas"],"selectDocumentClasses":["ArticlePage"]}}]}]}]}],"ignoreNested":true},{"name":"card","blocks":[{"id":"42FIvxN8SP2ltNkWM_HDs","name":"cardImageBlock","components":[{"name":"cardViewImage","instances":[{"id":"jnZ35OeiFdDm992XBi0Wn","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/zebras.webp","width":1000,"height":598,"alt":"Zebras"}}]}]}]},{"id":"iXoK9TRBLub6ONkJ65KBD","name":"cardTitleBlock","components":[{"name":"cardTitle","instances":[{"id":"LHYuEp7xgbTmgq6smQkM6","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>CEBRAS</p>"}}]}]}]}]}],"dateUpdated":1684419463445,"authors":{"apustovalov@gmail.com":1684419463445},"includeInSiteMap":true}}}
+{
+  "id": "AJeftD2VQiQb3oCVsOUas",
+  "type": "page",
+  "documentClass": "CategoryPage",
+  "contents": {
+    "en-US": {
+      "title": "Zebras",
+      "slug": "zebras",
+      "statusMap": {},
+      "isCustomSlug": false,
+      "documentAreas": [
+        {
+          "name": "metaData",
+          "blocks": [
+            {
+              "id": "7fKzd1CF01IaoxFWm2PWA",
+              "name": "basicSeoDataBlock",
+              "components": [
+                {
+                  "name": "metaDataFields",
+                  "instances": [
+                    {
+                      "id": "yCzBp5YA-fpF3PYuYy_Qq",
+                      "props": [
+                        {
+                          "name": "description",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "Zebras"
+                          }
+                        },
+                        {
+                          "name": "robots",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "value": "index,follow"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pageBody",
+          "blocks": [
+            {
+              "id": "1e_JnAnN0zzzX-f4vEsB6",
+              "name": "defaultHeroBlock",
+              "components": [
+                {
+                  "name": "heroTitle",
+                  "instances": [
+                    {
+                      "id": "u85bQNwJSwT2ZchRnVv3b",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h1>Zebras</h1>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "heroDescription",
+                  "instances": [
+                    {
+                      "id": "l9voNuZD72vp_EGS0sHK2",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>Did you know that a zebra's stripes serve a unique purpose beyond just their striking appearance? Each zebra has a distinct pattern of stripes, like a fingerprint, which helps them recognize one another within their social groups. </p><p>Additionally, scientists believe that the stripes play a crucial role in deterring biting insects, such as horseflies and tsetse flies. The alternating black and white pattern is thought to interfere with the insects' vision, making it more difficult for them to land on the zebras. </p><p>Thus, the zebra's iconic stripes not only serve as a form of individual identification but also offer valuable protection from bothersome pests.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "heroImage",
+                  "instances": [
+                    {
+                      "id": "0xuppSCboQHKZQ7Q9rIV6",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/zebras.webp",
+                            "width": 1000,
+                            "height": 598,
+                            "alt": "Zebras"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "9lAu62R9fpN7Rbref4u9p",
+              "name": "articlesGalleryBlock",
+              "components": [
+                {
+                  "name": "galleryHeading",
+                  "instances": [
+                    {
+                      "id": "rSZwZyVoccaZBDPs4IYVC",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h1>Type the gallery title...</h1>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "galleryListing",
+                  "instances": [
+                    {
+                      "id": "6et4_eWw-_nOJs1bDHeN8",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": false,
+                            "selectionMode": "selectChildrenDocuments",
+                            "allowedDocumentClasses": [
+                              "CategoryPage"
+                            ],
+                            "selectDocumentAreas": [
+                              "card",
+                              "metaData"
+                            ],
+                            "documentsIds": [
+                              "AJeftD2VQiQb3oCVsOUas"
+                            ],
+                            "selectDocumentClasses": [
+                              "ArticlePage"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ignoreNested": true
+        },
+        {
+          "name": "card",
+          "blocks": [
+            {
+              "id": "-1k86m7D05ITMFbHBP7wV",
+              "name": "cardImageBlock",
+              "components": [
+                {
+                  "name": "cardViewImage",
+                  "instances": [
+                    {
+                      "id": "nFt6y9h3uddKHPslRyghn",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/zebras.webp",
+                            "width": 1000,
+                            "height": 598,
+                            "alt": "Zebras"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "-ZsHYpGmXaj0JhhrWPG9l",
+              "name": "cardTitleBlock",
+              "components": [
+                {
+                  "name": "cardTitle",
+                  "instances": [
+                    {
+                      "id": "BPTKxQoXKuB5YOyQBIk6v",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>ZEBRAS</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateUpdated": 1684419467911,
+      "authors": {
+        "apustovalov@gmail.com": 1684419467911
+      },
+      "includeInSiteMap": true
+    },
+    "es-ES": {
+      "title": "Cebras",
+      "slug": "cebras",
+      "statusMap": {},
+      "isCustomSlug": false,
+      "tags": {},
+      "dataFields": [
+        {
+          "name": "metaDescription",
+          "value": "Cuentos de cebras",
+          "type": "string"
+        },
+        {
+          "name": "metaRobots",
+          "value": "index,follow",
+          "type": "string"
+        }
+      ],
+      "documentAreas": [
+        {
+          "name": "metaData",
+          "blocks": [
+            {
+              "id": "bp8T9F4iji6Kdb3hyANom",
+              "name": "basicSeoDataBlock",
+              "components": [
+                {
+                  "name": "metaDataFields",
+                  "instances": [
+                    {
+                      "id": "LLGk7aa5yd1hYfgyQBmM8",
+                      "props": [
+                        {
+                          "name": "description",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "Cebras"
+                          }
+                        },
+                        {
+                          "name": "robots",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "value": "index,follow"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pageBody",
+          "blocks": [
+            {
+              "id": "jk4dcTq0lax_ISkStix6d",
+              "name": "defaultHeroBlock",
+              "components": [
+                {
+                  "name": "heroTitle",
+                  "instances": [
+                    {
+                      "id": "b5kTfWUHDlAhLlUWXUbwi",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h1>Cebras</h1>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "heroDescription",
+                  "instances": [
+                    {
+                      "id": "Vp_jvNyrEVHrmELlc53f1",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>¿Sabías que las rayas de las cebras tienen un propósito único más allá de su llamativo aspecto? Cada cebra tiene un patrón distintivo de rayas, como una huella dactilar, lo que les ayuda a reconocerse entre sí dentro de sus grupos sociales.</p><p style=\"text-align: start\">Además, los científicos creen que las rayas juegan un papel crucial en disuadir a los insectos mordedores, como las moscas de los caballos y las moscas tsetsé. Se cree que el patrón alternante de blanco y negro interfiere con la visión de los insectos, lo que dificulta que aterricen en las cebras.</p><p style=\"text-align: start\">Así, las icónicas rayas de la cebra no solo sirven como forma de identificación individual, sino que también ofrecen una valiosa protección contra los molestos insectos.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "heroImage",
+                  "instances": [
+                    {
+                      "id": "kQ7vuJ5h82cgizG-sQZpa",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/zebras.webp",
+                            "width": 1000,
+                            "height": 598,
+                            "alt": "Zebras"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "8hPSjwUYqkkGMTO0IMzxN",
+              "name": "articlesGalleryBlock",
+              "components": [
+                {
+                  "name": "galleryHeading",
+                  "instances": [
+                    {
+                      "id": "daEcfup8kv1IhB72vxGZi",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h2>Historias sobre cebra</h2>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "galleryListing",
+                  "instances": [
+                    {
+                      "id": "ZiE4Mn8IoXI0z4Hos4BwM",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": false,
+                            "selectionMode": "selectChildrenDocuments",
+                            "allowedDocumentClasses": [
+                              "CategoryPage"
+                            ],
+                            "selectDocumentAreas": [
+                              "card",
+                              "metaData"
+                            ],
+                            "documentsIds": [
+                              "AJeftD2VQiQb3oCVsOUas"
+                            ],
+                            "selectDocumentClasses": [
+                              "ArticlePage"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ignoreNested": true
+        },
+        {
+          "name": "card",
+          "blocks": [
+            {
+              "id": "42FIvxN8SP2ltNkWM_HDs",
+              "name": "cardImageBlock",
+              "components": [
+                {
+                  "name": "cardViewImage",
+                  "instances": [
+                    {
+                      "id": "jnZ35OeiFdDm992XBi0Wn",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/zebras.webp",
+                            "width": 1000,
+                            "height": 598,
+                            "alt": "Zebras"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "iXoK9TRBLub6ONkJ65KBD",
+              "name": "cardTitleBlock",
+              "components": [
+                {
+                  "name": "cardTitle",
+                  "instances": [
+                    {
+                      "id": "LHYuEp7xgbTmgq6smQkM6",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>CEBRAS</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateUpdated": 1684419463445,
+      "authors": {
+        "apustovalov@gmail.com": 1684419463445
+      },
+      "includeInSiteMap": true
+    }
+  }
+}

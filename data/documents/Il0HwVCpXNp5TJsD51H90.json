@@ -9,19 +9,6 @@
       "includeInSiteMap": true,
       "statusMap": {},
       "isCustomSlug": true,
-      "tags": {},
-      "dataFields": [
-        {
-          "name": "metaDescription",
-          "value": "Search Page",
-          "type": "string"
-        },
-        {
-          "name": "metaRobots",
-          "value": "noindex,nofollow",
-          "type": "string"
-        }
-      ],
       "documentAreas": [
         {
           "name": "pageBody",

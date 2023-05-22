@@ -8,7 +8,6 @@
       "en-US": {
         "isCustomSlug": true,
         "title": "Site",
-        "tags": {},
         "slug": "@site",
         "dateUpdated": 1683572222749,
         "authors": {
@@ -18,7 +17,6 @@
       "es-ES": {
         "isCustomSlug": true,
         "title": "Site",
-        "tags": {},
         "slug": "@site",
         "dateUpdated": 1683572285624,
         "authors": {
@@ -35,7 +33,6 @@
           "en-US": {
             "isCustomSlug": true,
             "title": "Home",
-            "tags": {},
             "slug": "home",
             "dateUpdated": 1684418103417,
             "authors": {
@@ -47,7 +44,6 @@
           "es-ES": {
             "isCustomSlug": true,
             "title": "Página de inicio",
-            "tags": {},
             "slug": "home",
             "dateUpdated": 1684418152063,
             "authors": {
@@ -66,7 +62,6 @@
           "en-US": {
             "isCustomSlug": false,
             "title": "All Animals",
-            "tags": {},
             "slug": "all-animals",
             "dateUpdated": 1683573942766,
             "authors": {
@@ -77,7 +72,6 @@
           "es-ES": {
             "isCustomSlug": false,
             "title": "Todos los Animales",
-            "tags": {},
             "slug": "todos-los-animales",
             "dateUpdated": 1683573927040,
             "authors": {
@@ -95,7 +89,6 @@
               "en-US": {
                 "isCustomSlug": false,
                 "title": "Lions",
-                "tags": {},
                 "slug": "lions",
                 "dateUpdated": 1684419083380,
                 "authors": {
@@ -106,7 +99,6 @@
               "es-ES": {
                 "isCustomSlug": false,
                 "title": "Leones",
-                "tags": {},
                 "slug": "leones",
                 "dateUpdated": 1684419078807,
                 "authors": {
@@ -124,7 +116,6 @@
                   "en-US": {
                     "isCustomSlug": false,
                     "title": "The Lion's Whisker Mishap",
-                    "tags": {},
                     "slug": "the-lion's-whisker-mishap",
                     "dateUpdated": 1684419068983,
                     "authors": {
@@ -136,7 +127,6 @@
                   "es-ES": {
                     "isCustomSlug": false,
                     "title": "El percance del bigote de león",
-                    "tags": {},
                     "slug": "el-percance-del-bigote-de-leon",
                     "dateUpdated": 1684419061380,
                     "authors": {
@@ -157,7 +147,6 @@
               "en-US": {
                 "isCustomSlug": false,
                 "title": "Elephants",
-                "tags": {},
                 "slug": "elephants",
                 "dateUpdated": 1684419046667,
                 "authors": {
@@ -168,7 +157,6 @@
               "es-ES": {
                 "isCustomSlug": false,
                 "title": "Elefantes",
-                "tags": {},
                 "slug": "elefantes",
                 "dateUpdated": 1684419040720,
                 "authors": {
@@ -186,7 +174,6 @@
                   "en-US": {
                     "isCustomSlug": false,
                     "title": "Ella's Unexpected Talent Show",
-                    "tags": {},
                     "slug": "ella's-unexpected-talent-show",
                     "dateUpdated": 1684419033806,
                     "authors": {
@@ -197,7 +184,6 @@
                   "es-ES": {
                     "isCustomSlug": false,
                     "title": "El espectáculo de talentos inesperado de Ella",
-                    "tags": {},
                     "slug": "el-espectaculo-de-talentos-inesperado-de-ella",
                     "dateUpdated": 1684419025204,
                     "authors": {
@@ -218,7 +204,6 @@
               "en-US": {
                 "isCustomSlug": false,
                 "title": "Giraffes",
-                "tags": {},
                 "slug": "giraffes",
                 "dateUpdated": 1684419006310,
                 "authors": {
@@ -230,7 +215,6 @@
               "es-ES": {
                 "isCustomSlug": false,
                 "title": "Jirafas",
-                "tags": {},
                 "slug": "jirafas",
                 "dateUpdated": 1684419015712,
                 "authors": {
@@ -248,7 +232,6 @@
                   "en-US": {
                     "isCustomSlug": false,
                     "title": "Geoffrey the Giraffe and the Sky-High Adventure",
-                    "tags": {},
                     "slug": "geoffrey-the-giraffe-and-the-sky-high-adventure",
                     "dateUpdated": 1684418982161,
                     "authors": {
@@ -260,7 +243,6 @@
                   "es-ES": {
                     "isCustomSlug": false,
                     "title": "Geoffrey la jirafa y la aventura en las alturas",
-                    "tags": {},
                     "slug": "geoffrey-la-jirafa-y-la-aventura-en-las-alturas",
                     "dateUpdated": 1684418745668,
                     "authors": {
@@ -281,7 +263,6 @@
               "en-US": {
                 "isCustomSlug": false,
                 "title": "Gorillas",
-                "tags": {},
                 "slug": "gorillas",
                 "dateUpdated": 1684589040845,
                 "authors": {
@@ -293,7 +274,6 @@
               "es-ES": {
                 "isCustomSlug": false,
                 "title": "Gorilas",
-                "tags": {},
                 "slug": "gorilas",
                 "dateUpdated": 1684419227329,
                 "authors": {
@@ -311,7 +291,6 @@
                   "en-US": {
                     "isCustomSlug": false,
                     "title": "Gracie the Gorilla and the Mysterious Fruit",
-                    "tags": {},
                     "slug": "gracie-the-gorilla-and-the-mysterious-fruit",
                     "dateUpdated": 1684419430497,
                     "authors": {
@@ -322,7 +301,6 @@
                   "es-ES": {
                     "isCustomSlug": false,
                     "title": "Gracie el gorila y la fruta misteriosa",
-                    "tags": {},
                     "slug": "gracie-el-gorila-y-la-fruta-misteriosa",
                     "dateUpdated": 1684419435147,
                     "authors": {
@@ -343,7 +321,6 @@
               "en-US": {
                 "isCustomSlug": false,
                 "title": "Zebras",
-                "tags": {},
                 "slug": "zebras",
                 "dateUpdated": 1684419467911,
                 "authors": {
@@ -354,7 +331,6 @@
               "es-ES": {
                 "isCustomSlug": false,
                 "title": "Cebras",
-                "tags": {},
                 "slug": "cebras",
                 "dateUpdated": 1684419463445,
                 "authors": {
@@ -372,7 +348,6 @@
                   "en-US": {
                     "isCustomSlug": false,
                     "title": "Ziggy the Zebra's Striped Surprise",
-                    "tags": {},
                     "slug": "ziggy-the-zebra's-striped-surprise",
                     "dateUpdated": 1684419538597,
                     "authors": {
@@ -384,7 +359,6 @@
                   "es-ES": {
                     "isCustomSlug": false,
                     "title": "La sorpresa rayada de Ziggy la cebra",
-                    "tags": {},
                     "slug": "la-sorpresa-rayada-de-ziggy-la-cebra",
                     "dateUpdated": 1684419543085,
                     "authors": {
@@ -407,7 +381,6 @@
           "en-US": {
             "isCustomSlug": false,
             "title": "All Tags",
-            "tags": {},
             "slug": "all-tags",
             "dateUpdated": 1683554236144,
             "authors": {
@@ -417,7 +390,6 @@
           "es-ES": {
             "isCustomSlug": false,
             "title": "Todos los tags",
-            "tags": {},
             "slug": "todos-los-tags",
             "dateUpdated": 1683572788551,
             "authors": {
@@ -434,7 +406,6 @@
               "en-US": {
                 "isCustomSlug": false,
                 "title": "Adventure Tag",
-                "tags": {},
                 "slug": "adventure-tag",
                 "dateUpdated": 1684419563238,
                 "authors": {
@@ -444,7 +415,6 @@
               "es-ES": {
                 "isCustomSlug": false,
                 "title": "Aventura",
-                "tags": {},
                 "slug": "aventura",
                 "dateUpdated": 1684419569090,
                 "authors": {
@@ -462,7 +432,6 @@
               "en-US": {
                 "isCustomSlug": false,
                 "title": "Life lessons",
-                "tags": {},
                 "slug": "life-lessons",
                 "dateUpdated": 1684588807446,
                 "authors": {
@@ -472,7 +441,6 @@
               "es-ES": {
                 "isCustomSlug": false,
                 "title": "Lecciones de vida",
-                "tags": {},
                 "slug": "lecciones-de-vida",
                 "dateUpdated": 1684419583651,
                 "authors": {
@@ -490,7 +458,6 @@
               "en-US": {
                 "isCustomSlug": false,
                 "title": "Friendship",
-                "tags": {},
                 "slug": "friendship",
                 "dateUpdated": 1684419598960,
                 "authors": {
@@ -501,7 +468,6 @@
               "es-ES": {
                 "isCustomSlug": false,
                 "title": "Amistad",
-                "tags": {},
                 "slug": "amistad",
                 "dateUpdated": 1684419606243,
                 "authors": {
@@ -521,7 +487,6 @@
           "en-US": {
             "isCustomSlug": false,
             "title": "Author Profile",
-            "tags": {},
             "slug": "author-profile",
             "dateUpdated": 1684569151372,
             "authors": {
@@ -533,7 +498,6 @@
           "es-ES": {
             "isCustomSlug": false,
             "title": "Perfil del autor",
-            "tags": {},
             "slug": "perfil-del-autor",
             "dateUpdated": 1684419630480,
             "authors": {
@@ -552,7 +516,6 @@
           "en-US": {
             "isCustomSlug": true,
             "title": "Search",
-            "tags": {},
             "slug": "search",
             "dateUpdated": 1682892671807,
             "authors": {
@@ -563,7 +526,6 @@
           "es-ES": {
             "isCustomSlug": false,
             "title": "Buscar",
-            "tags": {},
             "slug": "buscar",
             "dateUpdated": 1682894243402,
             "authors": {
@@ -575,28 +537,5 @@
         "children": []
       }
     ]
-  },
-  "generalSettings": {
-    "title": ""
-  },
-  "tagsLinks": {
-    "en-US": {
-      "Adventure": "YyTpPZqnaHgvvUjUzMIgU",
-      "Friendship": "lrh3lqeUR6dc7RNwMGod6",
-      "Life lessons": "oa5NgHBjmdN08cwzO8qyX"
-    },
-    "es-ES": {
-      "Aventura": "YyTpPZqnaHgvvUjUzMIgU",
-      "Amistad": "lrh3lqeUR6dc7RNwMGod6",
-      "Lecciones de vida": "oa5NgHBjmdN08cwzO8qyX"
-    }
-  },
-  "authorsDocumentIds": {
-    "en-US": {
-      "apustovalov@gmail.com": "ZTRCPYewVwABi4xt3dTgf"
-    },
-    "es-ES": {
-      "apustovalov@gmail.com": "ZTRCPYewVwABi4xt3dTgf"
-    }
   }
 }

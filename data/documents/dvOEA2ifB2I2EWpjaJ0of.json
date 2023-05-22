@@ -1,1 +1,806 @@
-{"id":"dvOEA2ifB2I2EWpjaJ0of","type":"page","documentClass":"ArticlePage","contents":{"en-US":{"title":"Ella's Unexpected Talent Show","slug":"ella's-unexpected-talent-show","statusMap":{},"isCustomSlug":false,"tags":{"Life lessons":1,"Friendship":1},"dataFields":[{"name":"metaDescription","value":"Ella's Unexpected Talent Show","type":"string"},{"name":"metaRobots","value":"index,follow","type":"string"}],"documentAreas":[{"name":"metaData","blocks":[{"id":"DbNKmoO3U4f67x1xIMJaV","name":"basicSeoDataBlock","components":[{"name":"metaDataFields","instances":[{"id":"603aI1Po0ec9z7AlmUq65","props":[{"name":"description","type":"StringValue","fieldContent":{"isRequired":true,"value":"Ella's Unexpected Talent Show"}},{"name":"robots","type":"StringValue","fieldContent":{"value":"index,follow"}}]}]}]},{"id":"pB4srXFrauDRejFBHaR-q","name":"authorsBylinesBlock","components":[{"name":"authorsBylines","instances":[{"id":"MZ-mmF2rgGK6U3OAU8RUS","props":[{"name":"documentsList","type":"DocumentsList","fieldContent":{"isRequired":true,"selectionMode":"selectDocuments","allowedDocumentClasses":["AuthorProfilePage"],"selectDocumentAreas":["authorByline"],"documentsIds":["ZTRCPYewVwABi4xt3dTgf"]}}]}]}]},{"id":"r6F4VjgAsvAJasywDD9Zn","name":"tagsListBlock","components":[{"name":"tags","instances":[{"id":"q95UyBACsj9fuZ0ahc56u","props":[{"name":"documentsList","type":"DocumentsList","fieldContent":{"isRequired":true,"selectionMode":"selectDocuments","allowedDocumentClasses":["TagPage"],"documentsIds":["YyTpPZqnaHgvvUjUzMIgU","oa5NgHBjmdN08cwzO8qyX","lrh3lqeUR6dc7RNwMGod6"]}}]}]}]}]},{"name":"pageBody","blocks":[{"id":"btzjuQwgXX5AEIAPu86Qh","name":"articleHeroBlock","components":[{"name":"heroTitle","instances":[{"id":"Ghnh4AWCQP97RM1rTD0Yw","props":[{"name":"text","type":"HeaderText","fieldContent":{"htmlText":"<h1 style=\"text-align: center\">Ella's Unexpected Talent Show</h1>"}}]}]},{"name":"heroImage","instances":[{"id":"Tr2IrgCgYq8yW9SgpVuwB","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_1.webp","width":1000,"height":477,"alt":"Elephant","focusX":26.05,"focusY":44.57}}]}]}]},{"id":"wu9pvivO-IA4awcP3ug65","name":"defaultParagraphBlock","components":[{"name":"defaultParagraph","instances":[{"id":"88WC0a4_QYwjfxZbCsoqM","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>In a lush, green forest, there lived a young elephant named Ella. She loved to play with her friends and explore the wonders of the jungle.</p><p>One day, while splashing around in the river, Ella discovered a hidden talent – she could create beautiful melodies by blowing water through her trunk.</p><p style=\"text-align: start\">Ella's newfound musical gift quickly spread throughout the forest, and soon all the animals wanted to hear her play.</p><p style=\"text-align: start\">Excited by the attention, Ella decided to organize a talent show and invited the entire jungle to participate.</p>"}}]}]}]},{"id":"4RzL-c76uFpynVqfrMifi","name":"defaultImageBlock","components":[{"name":"defaultImage","instances":[{"id":"_3gsBlJ5kEYErhwtnLFzR","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_2.webp","width":1000,"height":546,"alt":"Elephants blowing"}}]}]}]},{"id":"FYZkEckk5Ilgt-hkqwrN3","name":"defaultParagraphBlock","components":[{"name":"defaultParagraph","instances":[{"id":"9XO1qiiQKQ6W4U_TKd0hX","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>The day of the talent show arrived, and the forest was buzzing with excitement. Monkeys practiced their acrobatics, birds fine-tuned their songs, and even the shy tortoises came out to showcase their synchronized dancing. </p><p>Ella, however, was feeling a bit nervous. She had never performed in front of such a large crowd before.</p><p style=\"text-align: start\">As the show began, Ella watched in awe as her friends wowed the audience with their incredible talents. When it was finally her turn to perform, she took a deep breath and stepped onto the stage. </p><p style=\"text-align: start\">With a gentle blow, she sent a cascade of water through her trunk, creating a mesmerizing tune that echoed throughout the jungle.</p>"}}]}]}]},{"id":"k1ncwmrXNW2akcFDchtfo","name":"defaultImageBlock","components":[{"name":"defaultImage","instances":[{"id":"xorbdvQZUWDxD5DiHtLxK","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_3.webp","width":1000,"height":666,"alt":"Elephant and a girl"}}]}]}]},{"id":"k5Vrr7RJh-Fp3rFTV62sE","name":"defaultParagraphBlock","components":[{"name":"defaultParagraph","instances":[{"id":"GZvBpZWtCi8zP7mx5KzHo","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>The audience was captivated by Ella's unique performance, and they erupted in thunderous applause. With her friends cheering her on, Ella realized that it wasn't just her talent that made the day special – it was the support and camaraderie of her fellow animals that truly made the talent show a memorable event.</p><p style=\"text-align: start\">From that day forward, the forest's talent show became an annual tradition, bringing the creatures of the jungle together to celebrate their unique gifts and the magic of friendship.</p>"}}]}]}]},{"id":"ltKhRNWT83c6NFgdbc2o1","name":"defaultHeadingBlock","components":[{"name":"defaultHeading","instances":[{"id":"F6xjgiy-AoAdhBBA0Fa39","props":[{"name":"text","type":"HeaderText","fieldContent":{"htmlText":"<h3 style=\"text-align: center\">The End</h3>"}}]}]}]}],"ignoreNested":true},{"name":"card","blocks":[{"id":"bCTj_VmWFn55z3idro4VF","name":"cardImageBlock","components":[{"name":"cardViewImage","instances":[{"id":"LqcXWPmrMKbSwgFRAa8zw","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_5.webp","width":1000,"height":667,"alt":"Elephant"}}]}]}]},{"id":"4a-UQOfi0MeLnak8Li8Oz","name":"cardTitleBlock","components":[{"name":"cardTitle","instances":[{"id":"SWmd4fgBy9G7a_F3llE8B","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<h4 style=\"text-align: start\">Ella's Unexpected Talent Show</h4>"}}]}]}]},{"id":"TMUbHDnU6zUEBM625Kl5W","name":"cardExcerptBlock","components":[{"name":"cardExcerpt","instances":[{"id":"gThbL16BSXFfyZGwtLczq","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>Ella, the young elephant, stood by the riverbank, her heart pounding with excitement. As she gently filled her trunk with water, she glanced at her gathered friends, who waited in anticipation. With a swift movement, she playfully blew the water through her trunk, producing a captivating melody that filled the air. </p><p>The animals around her listened in amazement, their eyes wide with wonder, as Ella's impromptu performance enchanted the entire forest.</p>"}},{"name":"readMoreLabel","type":"StringValue","fieldContent":{"value":"Read More"}}]}]}]}]}],"dateUpdated":1684419033806,"authors":{"apustovalov@gmail.com":1684419033806},"includeInSiteMap":true},"es-ES":{"title":"El espectáculo de talentos inesperado de Ella","slug":"el-espectaculo-de-talentos-inesperado-de-ella","statusMap":{},"isCustomSlug":false,"tags":{"Aventura":1,"Lecciones de vida":1},"dataFields":[{"name":"metaDescription","value":"El espectáculo de talentos inesperado de Ella","type":"string"},{"name":"metaRobots","value":"index,follow","type":"string"}],"documentAreas":[{"name":"metaData","blocks":[{"id":"eBWRn8Qp3EHp0Iuyhdzyy","name":"basicSeoDataBlock","components":[{"name":"metaDataFields","instances":[{"id":"Mc-MhsvD43iW51bZ2wO0y","props":[{"name":"description","type":"StringValue","fieldContent":{"isRequired":true,"value":"El espectáculo de talentos inesperado de Ella"}},{"name":"robots","type":"StringValue","fieldContent":{"value":"index,follow"}}]}]}]},{"id":"Yvdlh7kL6sg81W0A8RR43","name":"authorsBylinesBlock","components":[{"name":"authorsBylines","instances":[{"id":"OXY1ysXVPCclMjsX3RmhB","props":[{"name":"documentsList","type":"DocumentsList","fieldContent":{"isRequired":true,"selectionMode":"selectDocuments","allowedDocumentClasses":["AuthorProfilePage"],"selectDocumentAreas":["authorByline"],"documentsIds":["ZTRCPYewVwABi4xt3dTgf"]}}]}]}]},{"id":"91tO_kwvTOlN44N1xxG3o","name":"tagsListBlock","components":[{"name":"tags","instances":[{"id":"IugLE5CedB9d018_ngKOX","props":[{"name":"documentsList","type":"DocumentsList","fieldContent":{"isRequired":true,"selectionMode":"selectDocuments","allowedDocumentClasses":["TagPage"],"documentsIds":["lrh3lqeUR6dc7RNwMGod6","oa5NgHBjmdN08cwzO8qyX"]}}]}]}]}]},{"name":"pageBody","blocks":[{"id":"_7GpcQzdqrX9Co-qrmSFJ","name":"articleHeroBlock","components":[{"name":"heroTitle","instances":[{"id":"4wnJLh7PHoOb5BfO4l2_a","props":[{"name":"text","type":"HeaderText","fieldContent":{"htmlText":"<h1 style=\"text-align: center\">El espectáculo de talentos inesperado de Ella</h1>"}}]}]},{"name":"heroImage","instances":[{"id":"2gut-W7XWy0swUZkTkKYj","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_1.webp","width":1000,"height":477,"alt":"Elephant"}}]}]}]},{"id":"mX-PB8NPwd7b9y63TZA1w","name":"defaultParagraphBlock","components":[{"name":"defaultParagraph","instances":[{"id":"XbgHLu1Ry14BNCDCxDcfM","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>En un bosque exuberante y verde, vivía una joven elefanta llamada Ella. Le encantaba jugar con sus amigos y explorar las maravillas de la jungla.</p><p style=\"text-align: start\">Un día, mientras chapoteaba en el río, Ella descubrió un talento oculto: podía crear hermosas melodías soplando agua a través de su trompa.</p><p style=\"text-align: start\">El nuevo don musical de Ella se extendió rápidamente por todo el bosque, y pronto todos los animales querían escucharla tocar.</p><p style=\"text-align: start\">Emocionada por la atención, Ella decidió organizar un espectáculo de talentos e invitó a toda la jungla a participar.</p>"}}]}]}]},{"id":"p0K4UBcWJYKXbB55Rroyv","name":"defaultImageBlock","components":[{"name":"defaultImage","instances":[{"id":"OYePei_tYj0pdizdxm2YX","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_2.webp","width":1000,"height":546,"alt":"Elephants blowing"}}]}]}]},{"id":"STceYFS3FyUS_GnaZmmN-","name":"defaultParagraphBlock","components":[{"name":"defaultParagraph","instances":[{"id":"UMxcQ_JqKtZi3sbQOWNWk","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>Llegó el día del espectáculo de talentos y el bosque estaba lleno de emoción. Los monos practicaban sus acrobacias, las aves afinaban sus canciones e incluso las tortugas tímidas salían a mostrar sus bailes sincronizados.</p><p style=\"text-align: start\">Sin embargo, Ella estaba un poco nerviosa. Nunca había actuado frente a una multitud tan grande antes.</p><p style=\"text-align: start\">Mientras comenzaba el espectáculo, Ella observaba con asombro cómo sus amigos sorprendían al público con sus talentos increíbles. Cuando finalmente llegó su turno de actuar, tomó una profunda respiración y subió al escenario.</p><p style=\"text-align: start\">Con un soplido suave, envió una cascada de agua a través de su trompa, creando una melodía fascinante que resonó en toda la jungla.</p>"}}]}]}]},{"id":"IVv84uUjZVcROk7tlSjRk","name":"defaultImageBlock","components":[{"name":"defaultImage","instances":[{"id":"Si4Wb7OBPeSVV7bA7cWEb","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_3.webp","width":1000,"height":666,"alt":"Elephant and a girl"}}]}]}]},{"id":"dQdOW_eMUSnf8ODL5v-ii","name":"defaultParagraphBlock","components":[{"name":"defaultParagraph","instances":[{"id":"WA5zJ2F-EGHJo24B-AmUA","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>La audiencia quedó cautivada por la singular actuación de Ella, y estalló en un aplauso atronador. Con sus amigos animándola, Ella se dio cuenta de que no era solo su talento lo que hacía especial el día, sino el apoyo y la camaradería de los demás animales que realmente hicieron del espectáculo de talentos un evento memorable.</p><p style=\"text-align: start\">A partir de ese día, el espectáculo de talentos del bosque se convirtió en una tradición anual, reuniendo a las criaturas de la jungla para celebrar sus dones únicos y la magia de la amistad.</p>"}}]}]}]},{"id":"oxuJgRmkAizdriqQRz7yp","name":"defaultHeadingBlock","components":[{"name":"defaultHeading","instances":[{"id":"fF7sETaqKGzKpFr0bX2UE","props":[{"name":"text","type":"HeaderText","fieldContent":{"htmlText":"<h3 style=\"text-align: center\">El fin</h3>"}}]}]}]}],"ignoreNested":true},{"name":"card","blocks":[{"id":"O_yZZs-UQNCIt0SEZspG3","name":"cardImageBlock","components":[{"name":"cardViewImage","instances":[{"id":"VTYvxP_H11ntAjgLqETZk","props":[{"name":"image","type":"Image","fieldContent":{"src":"https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_5.webp","width":1000,"height":667,"alt":"Elephant"}}]}]}]},{"id":"5OeYmtTvHvTdFd-m3OYdU","name":"cardTitleBlock","components":[{"name":"cardTitle","instances":[{"id":"5_rsFLcAZVM1jampm0STI","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<h4 style=\"text-align: start\">El espectáculo de talentos inesperado de Ella</h4>"}}]}]}]},{"id":"BIX3sOdQukiK9BrinTVcj","name":"cardExcerptBlock","components":[{"name":"cardExcerpt","instances":[{"id":"wObFJUHCK_x6D7yLZoLvl","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<p>Ella, la joven elefanta, estaba junto a la orilla del río, con el corazón latiendo con emoción. Mientras llenaba su trompa con agua, miraba a sus amigos reunidos, quienes esperaban con anticipación. Con un movimiento rápido, sopló juguetonamente el agua a través de su trompa, produciendo una melodía cautivadora que llenó el aire.</p><p style=\"text-align: start\">Los animales a su alrededor escuchaban con asombro, sus ojos abiertos de admiración, mientras la actuación improvisada de Ella encantaba a todo el bosque.</p>"}},{"name":"readMoreLabel","type":"StringValue","fieldContent":{"value":"Leer más"}}]}]}]}]}],"dateUpdated":1684419025204,"authors":{"apustovalov@gmail.com":1684419025204},"includeInSiteMap":true}}}
+{
+  "id": "dvOEA2ifB2I2EWpjaJ0of",
+  "type": "page",
+  "documentClass": "ArticlePage",
+  "contents": {
+    "en-US": {
+      "title": "Ella's Unexpected Talent Show",
+      "slug": "ella's-unexpected-talent-show",
+      "statusMap": {},
+      "isCustomSlug": false,
+      "documentAreas": [
+        {
+          "name": "metaData",
+          "blocks": [
+            {
+              "id": "DbNKmoO3U4f67x1xIMJaV",
+              "name": "basicSeoDataBlock",
+              "components": [
+                {
+                  "name": "metaDataFields",
+                  "instances": [
+                    {
+                      "id": "603aI1Po0ec9z7AlmUq65",
+                      "props": [
+                        {
+                          "name": "description",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "Ella's Unexpected Talent Show"
+                          }
+                        },
+                        {
+                          "name": "robots",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "value": "index,follow"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pB4srXFrauDRejFBHaR-q",
+              "name": "authorsBylinesBlock",
+              "components": [
+                {
+                  "name": "authorsBylines",
+                  "instances": [
+                    {
+                      "id": "MZ-mmF2rgGK6U3OAU8RUS",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "selectionMode": "selectDocuments",
+                            "allowedDocumentClasses": [
+                              "AuthorProfilePage"
+                            ],
+                            "selectDocumentAreas": [
+                              "authorByline"
+                            ],
+                            "documentsIds": [
+                              "ZTRCPYewVwABi4xt3dTgf"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "r6F4VjgAsvAJasywDD9Zn",
+              "name": "tagsListBlock",
+              "components": [
+                {
+                  "name": "tags",
+                  "instances": [
+                    {
+                      "id": "q95UyBACsj9fuZ0ahc56u",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "selectionMode": "selectDocuments",
+                            "allowedDocumentClasses": [
+                              "TagPage"
+                            ],
+                            "documentsIds": [
+                              "YyTpPZqnaHgvvUjUzMIgU",
+                              "oa5NgHBjmdN08cwzO8qyX",
+                              "lrh3lqeUR6dc7RNwMGod6"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pageBody",
+          "blocks": [
+            {
+              "id": "btzjuQwgXX5AEIAPu86Qh",
+              "name": "articleHeroBlock",
+              "components": [
+                {
+                  "name": "heroTitle",
+                  "instances": [
+                    {
+                      "id": "Ghnh4AWCQP97RM1rTD0Yw",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h1 style=\"text-align: center\">Ella's Unexpected Talent Show</h1>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "heroImage",
+                  "instances": [
+                    {
+                      "id": "Tr2IrgCgYq8yW9SgpVuwB",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_1.webp",
+                            "width": 1000,
+                            "height": 477,
+                            "alt": "Elephant",
+                            "focusX": 26.05,
+                            "focusY": 44.57
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "wu9pvivO-IA4awcP3ug65",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "88WC0a4_QYwjfxZbCsoqM",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>In a lush, green forest, there lived a young elephant named Ella. She loved to play with her friends and explore the wonders of the jungle.</p><p>One day, while splashing around in the river, Ella discovered a hidden talent – she could create beautiful melodies by blowing water through her trunk.</p><p style=\"text-align: start\">Ella's newfound musical gift quickly spread throughout the forest, and soon all the animals wanted to hear her play.</p><p style=\"text-align: start\">Excited by the attention, Ella decided to organize a talent show and invited the entire jungle to participate.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4RzL-c76uFpynVqfrMifi",
+              "name": "defaultImageBlock",
+              "components": [
+                {
+                  "name": "defaultImage",
+                  "instances": [
+                    {
+                      "id": "_3gsBlJ5kEYErhwtnLFzR",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_2.webp",
+                            "width": 1000,
+                            "height": 546,
+                            "alt": "Elephants blowing"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "FYZkEckk5Ilgt-hkqwrN3",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "9XO1qiiQKQ6W4U_TKd0hX",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>The day of the talent show arrived, and the forest was buzzing with excitement. Monkeys practiced their acrobatics, birds fine-tuned their songs, and even the shy tortoises came out to showcase their synchronized dancing. </p><p>Ella, however, was feeling a bit nervous. She had never performed in front of such a large crowd before.</p><p style=\"text-align: start\">As the show began, Ella watched in awe as her friends wowed the audience with their incredible talents. When it was finally her turn to perform, she took a deep breath and stepped onto the stage. </p><p style=\"text-align: start\">With a gentle blow, she sent a cascade of water through her trunk, creating a mesmerizing tune that echoed throughout the jungle.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "k1ncwmrXNW2akcFDchtfo",
+              "name": "defaultImageBlock",
+              "components": [
+                {
+                  "name": "defaultImage",
+                  "instances": [
+                    {
+                      "id": "xorbdvQZUWDxD5DiHtLxK",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_3.webp",
+                            "width": 1000,
+                            "height": 666,
+                            "alt": "Elephant and a girl"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "k5Vrr7RJh-Fp3rFTV62sE",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "GZvBpZWtCi8zP7mx5KzHo",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>The audience was captivated by Ella's unique performance, and they erupted in thunderous applause. With her friends cheering her on, Ella realized that it wasn't just her talent that made the day special – it was the support and camaraderie of her fellow animals that truly made the talent show a memorable event.</p><p style=\"text-align: start\">From that day forward, the forest's talent show became an annual tradition, bringing the creatures of the jungle together to celebrate their unique gifts and the magic of friendship.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ltKhRNWT83c6NFgdbc2o1",
+              "name": "defaultHeadingBlock",
+              "components": [
+                {
+                  "name": "defaultHeading",
+                  "instances": [
+                    {
+                      "id": "F6xjgiy-AoAdhBBA0Fa39",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h3 style=\"text-align: center\">The End</h3>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ignoreNested": true
+        },
+        {
+          "name": "card",
+          "blocks": [
+            {
+              "id": "bCTj_VmWFn55z3idro4VF",
+              "name": "cardImageBlock",
+              "components": [
+                {
+                  "name": "cardViewImage",
+                  "instances": [
+                    {
+                      "id": "LqcXWPmrMKbSwgFRAa8zw",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_5.webp",
+                            "width": 1000,
+                            "height": 667,
+                            "alt": "Elephant"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "4a-UQOfi0MeLnak8Li8Oz",
+              "name": "cardTitleBlock",
+              "components": [
+                {
+                  "name": "cardTitle",
+                  "instances": [
+                    {
+                      "id": "SWmd4fgBy9G7a_F3llE8B",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<h4 style=\"text-align: start\">Ella's Unexpected Talent Show</h4>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "TMUbHDnU6zUEBM625Kl5W",
+              "name": "cardExcerptBlock",
+              "components": [
+                {
+                  "name": "cardExcerpt",
+                  "instances": [
+                    {
+                      "id": "gThbL16BSXFfyZGwtLczq",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>Ella, the young elephant, stood by the riverbank, her heart pounding with excitement. As she gently filled her trunk with water, she glanced at her gathered friends, who waited in anticipation. With a swift movement, she playfully blew the water through her trunk, producing a captivating melody that filled the air. </p><p>The animals around her listened in amazement, their eyes wide with wonder, as Ella's impromptu performance enchanted the entire forest.</p>"
+                          }
+                        },
+                        {
+                          "name": "readMoreLabel",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "value": "Read More"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateUpdated": 1684419033806,
+      "authors": {
+        "apustovalov@gmail.com": 1684419033806
+      },
+      "includeInSiteMap": true
+    },
+    "es-ES": {
+      "title": "El espectáculo de talentos inesperado de Ella",
+      "slug": "el-espectaculo-de-talentos-inesperado-de-ella",
+      "statusMap": {},
+      "isCustomSlug": false,
+      "tags": {
+        "Aventura": 1,
+        "Lecciones de vida": 1
+      },
+      "dataFields": [
+        {
+          "name": "metaDescription",
+          "value": "El espectáculo de talentos inesperado de Ella",
+          "type": "string"
+        },
+        {
+          "name": "metaRobots",
+          "value": "index,follow",
+          "type": "string"
+        }
+      ],
+      "documentAreas": [
+        {
+          "name": "metaData",
+          "blocks": [
+            {
+              "id": "eBWRn8Qp3EHp0Iuyhdzyy",
+              "name": "basicSeoDataBlock",
+              "components": [
+                {
+                  "name": "metaDataFields",
+                  "instances": [
+                    {
+                      "id": "Mc-MhsvD43iW51bZ2wO0y",
+                      "props": [
+                        {
+                          "name": "description",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "El espectáculo de talentos inesperado de Ella"
+                          }
+                        },
+                        {
+                          "name": "robots",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "value": "index,follow"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "Yvdlh7kL6sg81W0A8RR43",
+              "name": "authorsBylinesBlock",
+              "components": [
+                {
+                  "name": "authorsBylines",
+                  "instances": [
+                    {
+                      "id": "OXY1ysXVPCclMjsX3RmhB",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "selectionMode": "selectDocuments",
+                            "allowedDocumentClasses": [
+                              "AuthorProfilePage"
+                            ],
+                            "selectDocumentAreas": [
+                              "authorByline"
+                            ],
+                            "documentsIds": [
+                              "ZTRCPYewVwABi4xt3dTgf"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "91tO_kwvTOlN44N1xxG3o",
+              "name": "tagsListBlock",
+              "components": [
+                {
+                  "name": "tags",
+                  "instances": [
+                    {
+                      "id": "IugLE5CedB9d018_ngKOX",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "selectionMode": "selectDocuments",
+                            "allowedDocumentClasses": [
+                              "TagPage"
+                            ],
+                            "documentsIds": [
+                              "lrh3lqeUR6dc7RNwMGod6",
+                              "oa5NgHBjmdN08cwzO8qyX"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pageBody",
+          "blocks": [
+            {
+              "id": "_7GpcQzdqrX9Co-qrmSFJ",
+              "name": "articleHeroBlock",
+              "components": [
+                {
+                  "name": "heroTitle",
+                  "instances": [
+                    {
+                      "id": "4wnJLh7PHoOb5BfO4l2_a",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h1 style=\"text-align: center\">El espectáculo de talentos inesperado de Ella</h1>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "heroImage",
+                  "instances": [
+                    {
+                      "id": "2gut-W7XWy0swUZkTkKYj",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_1.webp",
+                            "width": 1000,
+                            "height": 477,
+                            "alt": "Elephant"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mX-PB8NPwd7b9y63TZA1w",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "XbgHLu1Ry14BNCDCxDcfM",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>En un bosque exuberante y verde, vivía una joven elefanta llamada Ella. Le encantaba jugar con sus amigos y explorar las maravillas de la jungla.</p><p style=\"text-align: start\">Un día, mientras chapoteaba en el río, Ella descubrió un talento oculto: podía crear hermosas melodías soplando agua a través de su trompa.</p><p style=\"text-align: start\">El nuevo don musical de Ella se extendió rápidamente por todo el bosque, y pronto todos los animales querían escucharla tocar.</p><p style=\"text-align: start\">Emocionada por la atención, Ella decidió organizar un espectáculo de talentos e invitó a toda la jungla a participar.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p0K4UBcWJYKXbB55Rroyv",
+              "name": "defaultImageBlock",
+              "components": [
+                {
+                  "name": "defaultImage",
+                  "instances": [
+                    {
+                      "id": "OYePei_tYj0pdizdxm2YX",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_2.webp",
+                            "width": 1000,
+                            "height": 546,
+                            "alt": "Elephants blowing"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "STceYFS3FyUS_GnaZmmN-",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "UMxcQ_JqKtZi3sbQOWNWk",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>Llegó el día del espectáculo de talentos y el bosque estaba lleno de emoción. Los monos practicaban sus acrobacias, las aves afinaban sus canciones e incluso las tortugas tímidas salían a mostrar sus bailes sincronizados.</p><p style=\"text-align: start\">Sin embargo, Ella estaba un poco nerviosa. Nunca había actuado frente a una multitud tan grande antes.</p><p style=\"text-align: start\">Mientras comenzaba el espectáculo, Ella observaba con asombro cómo sus amigos sorprendían al público con sus talentos increíbles. Cuando finalmente llegó su turno de actuar, tomó una profunda respiración y subió al escenario.</p><p style=\"text-align: start\">Con un soplido suave, envió una cascada de agua a través de su trompa, creando una melodía fascinante que resonó en toda la jungla.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "IVv84uUjZVcROk7tlSjRk",
+              "name": "defaultImageBlock",
+              "components": [
+                {
+                  "name": "defaultImage",
+                  "instances": [
+                    {
+                      "id": "Si4Wb7OBPeSVV7bA7cWEb",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_3.webp",
+                            "width": 1000,
+                            "height": 666,
+                            "alt": "Elephant and a girl"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dQdOW_eMUSnf8ODL5v-ii",
+              "name": "defaultParagraphBlock",
+              "components": [
+                {
+                  "name": "defaultParagraph",
+                  "instances": [
+                    {
+                      "id": "WA5zJ2F-EGHJo24B-AmUA",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>La audiencia quedó cautivada por la singular actuación de Ella, y estalló en un aplauso atronador. Con sus amigos animándola, Ella se dio cuenta de que no era solo su talento lo que hacía especial el día, sino el apoyo y la camaradería de los demás animales que realmente hicieron del espectáculo de talentos un evento memorable.</p><p style=\"text-align: start\">A partir de ese día, el espectáculo de talentos del bosque se convirtió en una tradición anual, reuniendo a las criaturas de la jungla para celebrar sus dones únicos y la magia de la amistad.</p>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "oxuJgRmkAizdriqQRz7yp",
+              "name": "defaultHeadingBlock",
+              "components": [
+                {
+                  "name": "defaultHeading",
+                  "instances": [
+                    {
+                      "id": "fF7sETaqKGzKpFr0bX2UE",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "HeaderText",
+                          "fieldContent": {
+                            "htmlText": "<h3 style=\"text-align: center\">El fin</h3>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "ignoreNested": true
+        },
+        {
+          "name": "card",
+          "blocks": [
+            {
+              "id": "O_yZZs-UQNCIt0SEZspG3",
+              "name": "cardImageBlock",
+              "components": [
+                {
+                  "name": "cardViewImage",
+                  "instances": [
+                    {
+                      "id": "VTYvxP_H11ntAjgLqETZk",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "src": "https://dkjuxxpbp5fj2.cloudfront.net/images/sitebud_cms_demo_1/elephant_5.webp",
+                            "width": 1000,
+                            "height": 667,
+                            "alt": "Elephant"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "5OeYmtTvHvTdFd-m3OYdU",
+              "name": "cardTitleBlock",
+              "components": [
+                {
+                  "name": "cardTitle",
+                  "instances": [
+                    {
+                      "id": "5_rsFLcAZVM1jampm0STI",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<h4 style=\"text-align: start\">El espectáculo de talentos inesperado de Ella</h4>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "BIX3sOdQukiK9BrinTVcj",
+              "name": "cardExcerptBlock",
+              "components": [
+                {
+                  "name": "cardExcerpt",
+                  "instances": [
+                    {
+                      "id": "wObFJUHCK_x6D7yLZoLvl",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<p>Ella, la joven elefanta, estaba junto a la orilla del río, con el corazón latiendo con emoción. Mientras llenaba su trompa con agua, miraba a sus amigos reunidos, quienes esperaban con anticipación. Con un movimiento rápido, sopló juguetonamente el agua a través de su trompa, produciendo una melodía cautivadora que llenó el aire.</p><p style=\"text-align: start\">Los animales a su alrededor escuchaban con asombro, sus ojos abiertos de admiración, mientras la actuación improvisada de Ella encantaba a todo el bosque.</p>"
+                          }
+                        },
+                        {
+                          "name": "readMoreLabel",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "value": "Leer más"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dateUpdated": 1684419025204,
+      "authors": {
+        "apustovalov@gmail.com": 1684419025204
+      },
+      "includeInSiteMap": true
+    }
+  }
+}
