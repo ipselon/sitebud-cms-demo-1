@@ -1,4 +1,4 @@
-import {FilesGenerator} from '@sitebud/sdk-lib';
+import {FilesGenerator, FilesCompiler} from '@sitebud/sdk-lib';
 import * as documents from './documents';
 
 async function run(): Promise<void> {
@@ -6,6 +6,7 @@ async function run(): Promise<void> {
         .withAdaptersDir('./src/adapters')
         .withDocuments(documents)
         .generate();
+    await new FilesCompiler().fixDocuments();
 }
 
 run()
