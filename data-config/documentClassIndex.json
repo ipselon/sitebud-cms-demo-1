@@ -4,7 +4,7 @@
     "label": "Article",
     "defaultTitle": "Article",
     "description": "A page where individual article resides, rich with engaging content, images, and videos. It's a creative hub for sharing insights, ideas, and stories, inviting readers to interact, learn, and be inspired while exploring the author's thoughts.",
-    "imageName": "article-document.webp",
+    "imageName": "article_document.png",
     "documentAreas": {
       "metaData": {
         "indexNumber": 0,
@@ -128,7 +128,7 @@
         "indexNumber": 1,
         "label": "Page Body",
         "helpText": "The webpage body in an article is the central content area, containing the article's text, images, and multimedia elements. It's designed to captivate readers, providing valuable insights and ideas while encouraging interaction and fostering engagement.",
-        "imageName": "article-page-body.webp",
+        "imageName": "article_page_body.png",
         "blocks": {
           "articleHeroBlock": {
             "label": "Hero Block",
@@ -282,7 +282,7 @@
         "indexNumber": 2,
         "label": "Card",
         "helpText": "A card on a webpage showcases a snapshot of page's content in a visually appealing, compact format. It typically includes an image, title, and brief description, making it easy for users to browse and select their desired destination.",
-        "imageName": "article-card.webp",
+        "imageName": "article_card.png",
         "blocks": {
           "cardImageBlock": {
             "label": "Card View Image Block",
@@ -1546,13 +1546,13 @@
           "menuDocumentsBlock": {
             "label": "Menu Documents Block",
             "description": "A structured menu of hyperlinks connecting key pages of this website.",
-            "imageName": "menu-documents-block.webp",
+            "imageName": "menu_documents_block.png",
             "components": {
               "menuDocuments": {
                 "indexNumber": 0,
                 "label": "Menu Documents",
                 "helpText": "A structured menu of hyperlinks connecting key pages of this website.",
-                "imageName": "menu-documents-block.webp",
+                "imageName": "menu_documents_block.png",
                 "props": {
                   "documentsList": {
                     "indexNumber": 0,
@@ -1607,13 +1607,13 @@
           "menuDocumentsBlock": {
             "label": "Menu Documents Block",
             "description": "A structured menu of hyperlinks connecting key pages of this website.",
-            "imageName": "menu-documents-block.webp",
+            "imageName": "menu_documents_block.png",
             "components": {
               "menuDocuments": {
                 "indexNumber": 0,
                 "label": "Menu Documents",
                 "helpText": "A structured menu of hyperlinks connecting key pages of this website.",
-                "imageName": "menu-documents-block.webp",
+                "imageName": "menu_documents_block.png",
                 "props": {
                   "documentsList": {
                     "indexNumber": 0,
@@ -1630,13 +1630,13 @@
           "copyrightBlock": {
             "label": "Copyright Block",
             "description": "Copyright on a web page refers to the legal protection granted to the creator or owner of original content, such as text, images, videos, or designs, published on the website. It prevents unauthorized copying, distribution, or modification of the content without the permission of the copyright holder.",
-            "imageName": "copyright-block.webp",
+            "imageName": "copyright_block.png",
             "components": {
               "copyright": {
                 "indexNumber": 0,
                 "label": "Copyright",
                 "helpText": "Copyright on a web page refers to the legal protection granted to the creator or owner of original content, such as text, images, videos, or designs, published on the website. It prevents unauthorized copying, distribution, or modification of the content without the permission of the copyright holder.",
-                "imageName": "copy-right-block.wwebp",
+                "imageName": "copyright_block.png",
                 "props": {
                   "year": {
                     "indexNumber": 0,
@@ -1664,13 +1664,13 @@
           "paragraphBlock": {
             "label": "Paragraph Block",
             "description": "The paragraph is a section within the content of a web page that contains a block of text, usually conveying a single idea or concept.",
-            "imageName": "paragraph-block.webp",
+            "imageName": "paragraph_block.png",
             "components": {
               "paragraph": {
                 "indexNumber": 0,
                 "label": "Paragraph",
                 "helpText": "The paragraph is a section within the content of a web page that contains a block of text, usually conveying a single idea or concept. It helps readers to easily digest the content by breaking it into smaller, manageable chunks.",
-                "imageName": "paragraph-block.webp",
+                "imageName": "paragraph_block.png",
                 "props": {
                   "text": {
                     "indexNumber": 0,
