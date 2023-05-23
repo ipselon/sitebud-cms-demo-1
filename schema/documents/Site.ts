@@ -21,7 +21,7 @@ export const Site: DocumentConfig = {
             indexNumber: 1,
             label: 'Main Menu',
             helpText: 'Main menu is a structured menu of hyperlinks connecting key pages, ensuring swift access to essential content. It simplifies browsing by providing a clear path to various sections, enabling users to efficiently explore and locate desired information.',
-            imageName: '', // image for area help dialog
+            imageName: '',
             blocks: {
                 menuLinksBlock,
                 menuDocumentsBlock
@@ -31,7 +31,7 @@ export const Site: DocumentConfig = {
             indexNumber: 2,
             label: 'Footer',
             helpText: 'A website footer is the lower section of a web page that typically contains supplementary information such as copyright notices, contact details, privacy policy, terms of service, social media links, and site navigation options. It serves as a consistent element across all pages, providing easy access to important information and enhancing user experience.',
-            imageName: '', // image for area help dialog
+            imageName: '',
             blocks: {
                 menuLinksBlock,
                 menuDocumentsBlock,
