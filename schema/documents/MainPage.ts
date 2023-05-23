@@ -10,7 +10,7 @@ export const MainPage: DocumentConfig = {
     defaultTitle: 'Home',
     defaultSlug: 'home',
     description: 'The main page, often called the "homepage," is the entry point and central hub of a website. It provides an overview of the site\'s purpose, features key content and sections, and offers intuitive navigation.',
-    imageName: 'main-page-help.webp',
+    imageName: '',
     documentAreas: {
         metaData: {
             indexNumber: 0,
@@ -24,7 +24,7 @@ export const MainPage: DocumentConfig = {
             indexNumber: 1,
             label: 'Page Body',
             helpText: 'The part of a web page where the main content is displayed. It\'s like the canvas for a painting, containing text, images, videos, and other elements that make up the visible portion of a website.',
-            imageName: 'main-page-help.webp',
+            imageName: '',
             blocks: {
                 mainPageHeroBlock,
                 categoryGalleryBlock,

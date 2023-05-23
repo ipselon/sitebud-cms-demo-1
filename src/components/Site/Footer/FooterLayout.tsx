@@ -47,7 +47,7 @@ export function FooterLayout() {
                             if (footerContentItem.copyrightBlock) {
                                 const {copyright: {text, year}} = footerContentItem.copyrightBlock;
                                 return (
-                                    <p key={`copyrightBlock_${idx}`} className="text-sm text-gray-500">© Copyright {year}. {text}</p>
+                                    <p key={`copyrightBlock_${idx}`} className="text-sm text-gray-500">© {text} {year}.</p>
                                 );
                             }
                         })}

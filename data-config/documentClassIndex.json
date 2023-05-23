@@ -14,7 +14,7 @@
           "basicSeoDataBlock": {
             "label": "SEO Data Block",
             "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
-            "imageName": "",
+            "imageName": "meta_data_block.webp",
             "components": {
               "metaDataFields": {
                 "indexNumber": 0,
@@ -377,7 +377,7 @@
           "basicSeoDataBlock": {
             "label": "SEO Data Block",
             "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
-            "imageName": "",
+            "imageName": "meta_data_block.webp",
             "components": {
               "metaDataFields": {
                 "indexNumber": 0,
@@ -748,7 +748,7 @@
           "basicSeoDataBlock": {
             "label": "SEO Data Block",
             "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
-            "imageName": "",
+            "imageName": "meta_data_block.webp",
             "components": {
               "metaDataFields": {
                 "indexNumber": 0,
@@ -903,7 +903,7 @@
           "basicSeoDataBlock": {
             "label": "SEO Data Block",
             "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
-            "imageName": "",
+            "imageName": "meta_data_block.webp",
             "components": {
               "metaDataFields": {
                 "indexNumber": 0,
@@ -1148,7 +1148,7 @@
     "defaultTitle": "Home",
     "defaultSlug": "home",
     "description": "The main page, often called the \"homepage,\" is the entry point and central hub of a website. It provides an overview of the site's purpose, features key content and sections, and offers intuitive navigation.",
-    "imageName": "main-page-help.webp",
+    "imageName": "",
     "documentAreas": {
       "metaData": {
         "indexNumber": 0,
@@ -1158,7 +1158,7 @@
           "basicSeoDataBlock": {
             "label": "SEO Data Block",
             "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
-            "imageName": "",
+            "imageName": "meta_data_block.webp",
             "components": {
               "metaDataFields": {
                 "indexNumber": 0,
@@ -1217,7 +1217,7 @@
         "indexNumber": 1,
         "label": "Page Body",
         "helpText": "The part of a web page where the main content is displayed. It's like the canvas for a painting, containing text, images, videos, and other elements that make up the visible portion of a website.",
-        "imageName": "main-page-help.webp",
+        "imageName": "",
         "blocks": {
           "mainPageHeroBlock": {
             "label": "Hero Block",
@@ -1473,13 +1473,13 @@
           "menuLogoBlock": {
             "label": "Menu Logo Block",
             "description": "The logo elements in the main menu of a website serve as key branding components that represent the website's identity.",
-            "imageName": "menu-logo-block.webp",
+            "imageName": "menu_logo_block.webp",
             "components": {
               "logoImage": {
                 "indexNumber": 0,
                 "label": "Logo Image",
                 "helpText": "The logo is a distinctive graphic symbol or design, while the logo title is the accompanying text, usually the website or company name.",
-                "imageName": "menu-logo-block.webp",
+                "imageName": "menu_logo_block.webp",
                 "props": {
                   "image": {
                     "indexNumber": 0,
@@ -1493,7 +1493,7 @@
                 "indexNumber": 1,
                 "label": "Logo Title",
                 "helpText": "A logo title element in the main menu of a website is the textual representation of the website or company name, positioned alongside or near the logo.",
-                "imageName": "menu-logo-block.webp",
+                "imageName": "menu_logo_block.webp",
                 "props": {
                   "text": {
                     "indexNumber": 0,
@@ -1702,7 +1702,7 @@
           "basicSeoDataBlock": {
             "label": "SEO Data Block",
             "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
-            "imageName": "",
+            "imageName": "meta_data_block.webp",
             "components": {
               "metaDataFields": {
                 "indexNumber": 0,
@@ -1915,7 +1915,7 @@
           "basicSeoDataBlock": {
             "label": "SEO Data Block",
             "description": "Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They're not visible to users on the webpage itself, but they're used in search engine results.",
-            "imageName": "",
+            "imageName": "meta_data_block.webp",
             "components": {
               "metaDataFields": {
                 "indexNumber": 0,

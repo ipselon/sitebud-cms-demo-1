@@ -3,7 +3,7 @@ import {BlockConfig} from '@sitebud/sdk-lib';
 export const  basicSeoDataBlock: BlockConfig = {
     label: 'SEO Data Block',
     description: 'Meta data fields for SEO are crucial elements of a webpage that help search engines understand the content and context of your page. They\'re not visible to users on the webpage itself, but they\'re used in search engine results.',
-    imageName: '',
+    imageName: 'meta_data_block.webp',
     components: {
         metaDataFields: {
             indexNumber: 0,
