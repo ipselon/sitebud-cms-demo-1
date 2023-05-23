@@ -3,7 +3,7 @@ import {BlockConfig} from '@sitebud/sdk-lib';
 export const searchHeroBlock: BlockConfig = {
     label: 'Search Hero',
     description: 'The page\'s hero is a crucial element of your page design, as it captures the attention of your visitors and conveys the primary message of your content.',
-    imageName: 'search-hero-block.webp',
+    imageName: 'search_hero_block.png',
     components: {
         searchResultsListTitle: {
             indexNumber: 0,
