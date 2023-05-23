@@ -186,13 +186,13 @@
           "defaultParagraphBlock": {
             "label": "Paragraph Block",
             "description": "The paragraph is a section within the main content of a web page that contains a block of text, usually conveying a single idea or concept.",
-            "imageName": "paragraph-block.webp",
+            "imageName": "paragraph_block.png",
             "components": {
               "defaultParagraph": {
                 "indexNumber": 0,
                 "label": "Paragraph",
                 "helpText": "The paragraph is a section within the main content of a web page that contains a block of text, usually conveying a single idea or concept. It helps readers to easily digest the content by breaking it into smaller, manageable chunks.",
-                "imageName": "paragraph-block.webp",
+                "imageName": "paragraph_block.png",
                 "props": {
                   "text": {
                     "indexNumber": 0,
@@ -657,13 +657,13 @@
           "defaultParagraphBlock": {
             "label": "Paragraph Block",
             "description": "The paragraph is a section within the main content of a web page that contains a block of text, usually conveying a single idea or concept.",
-            "imageName": "paragraph-block.webp",
+            "imageName": "paragraph_block.png",
             "components": {
               "defaultParagraph": {
                 "indexNumber": 0,
                 "label": "Paragraph",
                 "helpText": "The paragraph is a section within the main content of a web page that contains a block of text, usually conveying a single idea or concept. It helps readers to easily digest the content by breaking it into smaller, manageable chunks.",
-                "imageName": "paragraph-block.webp",
+                "imageName": "paragraph_block.png",
                 "props": {
                   "text": {
                     "indexNumber": 0,
