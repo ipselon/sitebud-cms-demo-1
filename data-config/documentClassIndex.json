@@ -69,7 +69,7 @@
           },
           "authorsBylinesBlock": {
             "label": "Authors Bylines Block",
-            "description": "A brief section that attributes the content to its creator by displaying the author's name. It often appears near the beginning or end of an article or post and may include a link to the author's profile. The byline acknowledges the writer's work and offers readers an opportunity to explore more about the author and their other contributions.",
+            "description": "A brief section that attributes the content to its creator by displaying the author's name. It often appears near the beginning or end of an article or post and may include a link to the author's profile.",
             "imageName": "authors_bylines_block.png",
             "components": {
               "authorsBylines": {
@@ -99,12 +99,12 @@
           "tagsListBlock": {
             "label": "Tags List Block",
             "description": "A collection of keyword phrases that categorize and summarize the content of the webpage. Each tag is a link that, when clicked, takes you to a page showing all content associated with that tag. This makes it easier for visitors to find related content based on their interests.",
-            "imageName": "",
+            "imageName": "tags_list_block.png",
             "components": {
               "tags": {
                 "indexNumber": 0,
                 "label": "Tags List",
-                "helpText": "A collection of keyword phrases that categorize and summarize the content of the webpage. Each tag is a link that, when clicked, takes you to a page showing all content associated with that tag. This makes it easier for visitors to find related content based on their interests.",
+                "helpText": "The links to specific tag documents. When the page is rendered, these become active links to the respective tag pages.",
                 "imageName": "",
                 "props": {
                   "documentsList": {
