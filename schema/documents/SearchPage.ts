@@ -8,7 +8,7 @@ export const SearchPage: DocumentConfig = {
     defaultTitle: 'Search',
     defaultSlug: 'search',
     description: 'A search webpage is a dedicated section of a website that allows users to input keywords or phrases to find specific content within the site. It typically features a search bar or box where users enter their query, and the search engine then returns a list of relevant results, often ranked by relevance.',
-    imageName: 'search-document.webp',
+    imageName: 'search_document.png',
     documentAreas: {
         pageBody: {
             indexNumber: 0,
