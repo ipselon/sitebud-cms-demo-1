@@ -164,7 +164,7 @@
           "defaultHeadingBlock": {
             "label": "Heading Block",
             "description": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
-            "imageName": "default-heading-block.webp",
+            "imageName": "default_heading_block.png",
             "components": {
               "defaultHeading": {
                 "indexNumber": 0,
@@ -192,7 +192,7 @@
                 "indexNumber": 0,
                 "label": "Paragraph",
                 "helpText": "The paragraph is a section within the main content of a web page that contains a block of text, usually conveying a single idea or concept. It helps readers to easily digest the content by breaking it into smaller, manageable chunks.",
-                "imageName": "paragraph_block.png",
+                "imageName": "",
                 "props": {
                   "text": {
                     "indexNumber": 0,
@@ -208,13 +208,13 @@
           "defaultImageBlock": {
             "label": "Image Block",
             "description": "An image adds a visual touch to the article.",
-            "imageName": "default-image-block.webp",
+            "imageName": "default_image_block.png",
             "components": {
               "defaultImage": {
                 "indexNumber": 0,
                 "label": "Image",
                 "helpText": "An image adds a visual touch to the article. It makes the text more enjoyable to read, grabs attention, and helps explain ideas or topics by giving a picture that goes hand-in-hand with the words.",
-                "imageName": "default-image-block.webp",
+                "imageName": "",
                 "props": {
                   "image": {
                     "indexNumber": 0,
@@ -287,13 +287,13 @@
           "cardImageBlock": {
             "label": "Card View Image Block",
             "description": "A card image is a small, visually appealing picture featured on a compact preview of a webpage's content.",
-            "imageName": "card-image-block.webp",
+            "imageName": "card_image_block.png",
             "components": {
               "cardViewImage": {
                 "indexNumber": 0,
                 "label": "Card View Image",
                 "helpText": "A card image is a small, visually appealing picture featured on a compact preview of a webpage's content.",
-                "imageName": "card-image-block-card-view-image.webp",
+                "imageName": "",
                 "props": {
                   "image": {
                     "indexNumber": 0,
@@ -307,13 +307,13 @@
           "cardTitleBlock": {
             "label": "Card Title Block",
             "description": "A card title is a concise, eye-catching headline displayed on a compact preview of a webpage's content.",
-            "imageName": "card-title-block.webp",
+            "imageName": "card_title_block.png",
             "components": {
               "cardTitle": {
                 "indexNumber": 0,
                 "label": "Card Title",
                 "helpText": "A card title is a concise, eye-catching headline displayed on a compact preview of a webpage's content.",
-                "imageName": "card-title-block-card-title.webp",
+                "imageName": "",
                 "props": {
                   "text": {
                     "indexNumber": 0,
@@ -330,13 +330,13 @@
           "cardExcerptBlock": {
             "label": "Card Excerpt Block",
             "description": "A card excerpt is a brief, informative description accompanying the title on a compact preview of a webpage's content.",
-            "imageName": "card-excerpt-block.webp",
+            "imageName": "card_excerpt_block.png",
             "components": {
               "cardExcerpt": {
                 "indexNumber": 0,
                 "label": "Card Excerpt",
                 "helpText": "A card excerpt is a brief, informative description accompanying the title on a compact preview of a webpage's content.",
-                "imageName": "card-excerpt-block.webp",
+                "imageName": "",
                 "props": {
                   "text": {
                     "indexNumber": 0,
@@ -367,7 +367,7 @@
     "label": "Author Profile",
     "defaultTitle": "Author Name",
     "description": "A page that showcases the personal and professional details of a content creator or writer. It typically includes the author's name, photo, biography, social media links, and a list of their published articles or posts.",
-    "imageName": "author-profile-document.webp",
+    "imageName": "author_profile_document.png",
     "documentAreas": {
       "metaData": {
         "indexNumber": 0,
@@ -435,13 +435,13 @@
       "pageBody": {
         "indexNumber": 1,
         "label": "Page Body",
-        "helpText": "The webpage body is the central content area, containing the article's text, images, and multimedia elements. It's designed to captivate readers, providing valuable insights and ideas while encouraging interaction and fostering engagement.",
-        "imageName": "author-profile-page-body.webp",
+        "helpText": "The author's page body is the central content area, containing the author's name, photo, biography, social media links, and a list of their published articles or posts.",
+        "imageName": "",
         "blocks": {
           "authorProfileHeroBlock": {
             "label": "Hero Block",
             "description": "The page's hero is a crucial element of your page design, as it captures the attention of your visitors and conveys the primary message of your content.",
-            "imageName": "author-profile-hero-block.webp",
+            "imageName": "author_profile_hero_block.png",
             "components": {
               "authorName": {
                 "indexNumber": 0,
@@ -485,7 +485,7 @@
           "authorProfileSocialLinksBlock": {
             "label": "Social Links",
             "description": "The social links block is a designated area that contains clickable icons or links directing users to the website's or authors's social media profiles.",
-            "imageName": "author-profile-social-links-block.webp",
+            "imageName": "author_profile_social_links_block.png",
             "components": {
               "socialLinks": {
                 "isArray": true,
@@ -536,7 +536,7 @@
           "articlesGalleryBlock": {
             "label": "Gallery of Articles Block",
             "description": "A display of article thumbnails creates a visually organized collection of compact previews.",
-            "imageName": "articles-gallery-block.webp",
+            "imageName": "articles_gallery_block.png",
             "components": {
               "galleryHeading": {
                 "indexNumber": 0,
@@ -615,7 +615,7 @@
           "defaultHeadingBlock": {
             "label": "Heading Block",
             "description": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
-            "imageName": "default-heading-block.webp",
+            "imageName": "default_heading_block.png",
             "components": {
               "defaultHeading": {
                 "indexNumber": 0,
@@ -637,13 +637,13 @@
           "defaultImageBlock": {
             "label": "Image Block",
             "description": "An image adds a visual touch to the article.",
-            "imageName": "default-image-block.webp",
+            "imageName": "default_image_block.png",
             "components": {
               "defaultImage": {
                 "indexNumber": 0,
                 "label": "Image",
                 "helpText": "An image adds a visual touch to the article. It makes the text more enjoyable to read, grabs attention, and helps explain ideas or topics by giving a picture that goes hand-in-hand with the words.",
-                "imageName": "default-image-block.webp",
+                "imageName": "",
                 "props": {
                   "image": {
                     "indexNumber": 0,
@@ -663,7 +663,7 @@
                 "indexNumber": 0,
                 "label": "Paragraph",
                 "helpText": "The paragraph is a section within the main content of a web page that contains a block of text, usually conveying a single idea or concept. It helps readers to easily digest the content by breaking it into smaller, manageable chunks.",
-                "imageName": "paragraph_block.png",
+                "imageName": "",
                 "props": {
                   "text": {
                     "indexNumber": 0,
@@ -682,12 +682,12 @@
         "indexNumber": 2,
         "label": "Author Byline",
         "helpText": "A brief section that attributes the content to its creator by displaying the author's name. It often appears near the beginning or end of an article or post and may include a link to the author's profile. The byline acknowledges the writer's work and offers readers an opportunity to explore more about the author and their other contributions.",
-        "imageName": "author-profile-author-byline.webp",
+        "imageName": "",
         "blocks": {
           "authorProfileAvatarBlock": {
             "label": "Author Avatar",
             "description": "A small graphical representation, often a profile picture or an icon, used to visually represent a user, author, or member. Avatars personalize the user experience, making it easier for visitors to recognize and connect with content creators or other users in online interactions, such as in comments, forums, or author bylines.",
-            "imageName": "author-profile-avatar-block.webp",
+            "imageName": "author_profile_avatar_block.png",
             "components": {
               "avatar": {
                 "indexNumber": 0,
@@ -705,7 +705,7 @@
           "authorProfileInfoBlock": {
             "label": "Author Info",
             "description": "The author name and email",
-            "imageName": "author-profile-info-block.webp",
+            "imageName": "author_profile_info_block.png",
             "components": {
               "info": {
                 "indexNumber": 0,
@@ -738,7 +738,7 @@
     "label": "Categories",
     "defaultTitle": "Categories",
     "description": "A categories page organizes categories by topic or theme, making it easy for users to find and explore related content.",
-    "imageName": "categories-document.webp",
+    "imageName": "categories_document.png",
     "documentAreas": {
       "metaData": {
         "indexNumber": 0,
@@ -812,7 +812,7 @@
           "defaultHeadingBlock": {
             "label": "Heading Block",
             "description": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
-            "imageName": "default-heading-block.webp",
+            "imageName": "default_heading_block.png",
             "components": {
               "defaultHeading": {
                 "indexNumber": 0,
@@ -834,13 +834,13 @@
           "categoriesGalleryBlock": {
             "label": "Gallery of Categories Block",
             "description": "A display of category thumbnails, each representing a specific topic, creates a visually organized collection of compact previews. This easy-to-browse gallery allows users to quickly identify and navigate to their desired content within each category.",
-            "imageName": "categories-gallery-block.webp",
+            "imageName": "categories_gallery_block.png",
             "components": {
               "galleryListing": {
                 "indexNumber": 0,
                 "label": "Gallery of Categories",
-                "helpText": "A display of category thumbnails, each representing a specific topic, creates a visually organized collection of compact previews. This easy-to-browse gallery allows users to quickly identify and navigate to their desired content within each category.",
-                "imageName": "categories-gallery-block.webp",
+                "helpText": "The list of selected documents for a gallery is a curated collection of items, chosen based on relevance or importance, to be showcased within the gallery.",
+                "imageName": "",
                 "props": {
                   "documentsList": {
                     "indexNumber": 1,
@@ -893,7 +893,7 @@
     "label": "Category",
     "defaultTitle": "Category",
     "description": "A category page organizes articles by topic or theme, making it easy for users to find and explore related content.",
-    "imageName": "category-document.webp",
+    "imageName": "category_document.png",
     "documentAreas": {
       "metaData": {
         "indexNumber": 0,
@@ -967,7 +967,7 @@
           "defaultHeroBlock": {
             "label": "Hero Block",
             "description": "The page's hero is a crucial element of your page design, as it captures the attention of your visitors and conveys the primary message of your content.",
-            "imageName": "default-hero-block.webp",
+            "imageName": "default_hero_block.png",
             "components": {
               "heroTitle": {
                 "indexNumber": 0,
@@ -1011,7 +1011,7 @@
           "articlesGalleryBlock": {
             "label": "Gallery of Articles Block",
             "description": "A display of article thumbnails creates a visually organized collection of compact previews.",
-            "imageName": "articles-gallery-block.webp",
+            "imageName": "articles_gallery_block.png",
             "components": {
               "galleryHeading": {
                 "indexNumber": 0,
@@ -1098,13 +1098,13 @@
           "cardImageBlock": {
             "label": "Card View Image Block",
             "description": "A card image is a small, visually appealing picture featured on a compact preview of a webpage's content.",
-            "imageName": "card-image-block.webp",
+            "imageName": "card_image_block.png",
             "components": {
               "cardViewImage": {
                 "indexNumber": 0,
                 "label": "Card View Image",
                 "helpText": "A card image is a small, visually appealing picture featured on a compact preview of a webpage's content.",
-                "imageName": "card-image-block-card-view-image.webp",
+                "imageName": "",
                 "props": {
                   "image": {
                     "indexNumber": 0,
@@ -1118,13 +1118,13 @@
           "cardTitleBlock": {
             "label": "Card Title Block",
             "description": "A card title is a concise, eye-catching headline displayed on a compact preview of a webpage's content.",
-            "imageName": "card-title-block.webp",
+            "imageName": "card_title_block.png",
             "components": {
               "cardTitle": {
                 "indexNumber": 0,
                 "label": "Card Title",
                 "helpText": "A card title is a concise, eye-catching headline displayed on a compact preview of a webpage's content.",
-                "imageName": "card-title-block-card-title.webp",
+                "imageName": "",
                 "props": {
                   "text": {
                     "indexNumber": 0,
@@ -1222,7 +1222,7 @@
           "mainPageHeroBlock": {
             "label": "Hero Block",
             "description": "The Hero, featuring a captivating background image, is a critical component of your webpage design. It effectively captures your visitors' attention and conveys the primary message of your content, creating an engaging visual experience.",
-            "imageName": "main-page-hero-block.webp",
+            "imageName": "default_hero_block.png",
             "components": {
               "heroTitle": {
                 "indexNumber": 0,
@@ -1266,7 +1266,7 @@
           "categoryGalleryBlock": {
             "label": "Gallery of Categories Block",
             "description": "A display of category thumbnails, each representing a specific topic, creates a visually organized collection of compact previews.",
-            "imageName": "category-gallery-block.webp",
+            "imageName": "articles_gallery_block.png",
             "components": {
               "galleryListing": {
                 "indexNumber": 2,
@@ -1330,7 +1330,7 @@
           "articlesGalleryBlock": {
             "label": "Gallery of Articles Block",
             "description": "A display of article thumbnails creates a visually organized collection of compact previews.",
-            "imageName": "articles-gallery-block.webp",
+            "imageName": "articles_gallery_block.png",
             "components": {
               "galleryHeading": {
                 "indexNumber": 0,
@@ -1692,7 +1692,7 @@
     "label": "Tag",
     "defaultTitle": "Tag",
     "description": "A webpage dedicated to a single tag displays a gallery of articles that share the same associated keyword or topic. By grouping articles under a specific tag, the webpage enhances user experience by simplifying navigation and helping visitors discover content relevant to their interests.",
-    "imageName": "tag-document.webp",
+    "imageName": "tag_document.png",
     "documentAreas": {
       "metaData": {
         "indexNumber": 0,
@@ -1766,7 +1766,7 @@
           "defaultHeadingBlock": {
             "label": "Heading Block",
             "description": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
-            "imageName": "default-heading-block.webp",
+            "imageName": "default_heading_block.png",
             "components": {
               "defaultHeading": {
                 "indexNumber": 0,
@@ -1788,13 +1788,13 @@
           "tagArticlesGalleryBlock": {
             "label": "Gallery of Articles with Associated Tag Block",
             "description": "A display of article thumbnails creates a visually organized collection of compact previews. ",
-            "imageName": "tag-articles-gallery-block.webp",
+            "imageName": "articles_gallery_block.png",
             "components": {
               "galleryListing": {
                 "indexNumber": 0,
                 "label": "Tag associated with Documents Representing Articles",
                 "helpText": "Choose a tag that is associated with the articles you want to include in the gallery.",
-                "imageName": "tag-articles-gallery-block.webp",
+                "imageName": "articles_gallery_block.png",
                 "props": {
                   "documentList": {
                     "indexNumber": 1,
@@ -1825,13 +1825,13 @@
           "cardImageBlock": {
             "label": "Card View Image Block",
             "description": "A card image is a small, visually appealing picture featured on a compact preview of a webpage's content.",
-            "imageName": "card-image-block.webp",
+            "imageName": "card_image_block.png",
             "components": {
               "cardViewImage": {
                 "indexNumber": 0,
                 "label": "Card View Image",
                 "helpText": "A card image is a small, visually appealing picture featured on a compact preview of a webpage's content.",
-                "imageName": "card-image-block-card-view-image.webp",
+                "imageName": "",
                 "props": {
                   "image": {
                     "indexNumber": 0,
@@ -1845,13 +1845,13 @@
           "cardTitleBlock": {
             "label": "Card Title Block",
             "description": "A card title is a concise, eye-catching headline displayed on a compact preview of a webpage's content.",
-            "imageName": "card-title-block.webp",
+            "imageName": "card_title_block.png",
             "components": {
               "cardTitle": {
                 "indexNumber": 0,
                 "label": "Card Title",
                 "helpText": "A card title is a concise, eye-catching headline displayed on a compact preview of a webpage's content.",
-                "imageName": "card-title-block-card-title.webp",
+                "imageName": "",
                 "props": {
                   "text": {
                     "indexNumber": 0,
@@ -1868,13 +1868,13 @@
           "cardExcerptBlock": {
             "label": "Card Excerpt Block",
             "description": "A card excerpt is a brief, informative description accompanying the title on a compact preview of a webpage's content.",
-            "imageName": "card-excerpt-block.webp",
+            "imageName": "card_excerpt_block.png",
             "components": {
               "cardExcerpt": {
                 "indexNumber": 0,
                 "label": "Card Excerpt",
                 "helpText": "A card excerpt is a brief, informative description accompanying the title on a compact preview of a webpage's content.",
-                "imageName": "card-excerpt-block.webp",
+                "imageName": "",
                 "props": {
                   "text": {
                     "indexNumber": 0,
@@ -1905,7 +1905,7 @@
     "label": "Tags",
     "defaultTitle": "Tags",
     "description": "A tags page organizes tags, making it easy for users to find and explore related content.",
-    "imageName": "tags-document.webp",
+    "imageName": "categories_document.png",
     "documentAreas": {
       "metaData": {
         "indexNumber": 0,
@@ -1979,7 +1979,7 @@
           "defaultHeadingBlock": {
             "label": "Heading Block",
             "description": "The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.",
-            "imageName": "default-heading-block.webp",
+            "imageName": "default_heading_block.png",
             "components": {
               "defaultHeading": {
                 "indexNumber": 0,
@@ -2001,13 +2001,13 @@
           "tagsGalleryBlock": {
             "label": "Gallery of Tags Block",
             "description": "A display of tag thumbnails, each representing a specific tag, creates a visually organized collection of compact previews. This easy-to-browse gallery allows users to quickly identify and navigate to their desired content within each tag.",
-            "imageName": "tags-gallery-block.webp",
+            "imageName": "categories_gallery_block.png",
             "components": {
               "galleryListing": {
                 "indexNumber": 0,
                 "label": "Gallery of Categories",
-                "helpText": "A display of tag thumbnails, each representing a specific tag, creates a visually organized collection of compact previews. This easy-to-browse gallery allows users to quickly identify and navigate to their desired content within each tag.",
-                "imageName": "tags-gallery-block.webp",
+                "helpText": "The list of selected documents for a gallery is a curated collection of items, chosen based on relevance or importance, to be showcased within the gallery.",
+                "imageName": "",
                 "props": {
                   "documentsList": {
                     "indexNumber": 1,

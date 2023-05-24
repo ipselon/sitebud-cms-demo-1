@@ -9,7 +9,7 @@ export const defaultParagraphBlock: BlockConfig = {
             indexNumber: 0,
             label: 'Paragraph',
             helpText: 'The paragraph is a section within the main content of a web page that contains a block of text, usually conveying a single idea or concept. It helps readers to easily digest the content by breaking it into smaller, manageable chunks.',
-            imageName: 'paragraph_block.png',
+            imageName: '',
             props: {
                 text: {
                     indexNumber: 0,

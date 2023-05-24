@@ -14,7 +14,7 @@ export const AuthorProfilePage: DocumentConfig = {
     label: 'Author Profile',
     defaultTitle: 'Author Name',
     description: 'A page that showcases the personal and professional details of a content creator or writer. It typically includes the author\'s name, photo, biography, social media links, and a list of their published articles or posts.',
-    imageName: 'author-profile-document.webp',
+    imageName: 'author_profile_document.png',
     documentAreas: {
         metaData: {
             indexNumber: 0,
@@ -27,8 +27,8 @@ export const AuthorProfilePage: DocumentConfig = {
         pageBody: {
             indexNumber: 1,
             label: 'Page Body',
-            helpText: 'The webpage body is the central content area, containing the article\'s text, images, and multimedia elements. It\'s designed to captivate readers, providing valuable insights and ideas while encouraging interaction and fostering engagement.',
-            imageName: 'author-profile-page-body.webp',
+            helpText: 'The author\'s page body is the central content area, containing the author\'s name, photo, biography, social media links, and a list of their published articles or posts.',
+            imageName: '',
             blocks: {
                 authorProfileHeroBlock,
                 authorProfileSocialLinksBlock,
@@ -42,7 +42,7 @@ export const AuthorProfilePage: DocumentConfig = {
             indexNumber: 2,
             label: 'Author Byline',
             helpText: 'A brief section that attributes the content to its creator by displaying the author\'s name. It often appears near the beginning or end of an article or post and may include a link to the author\'s profile. The byline acknowledges the writer\'s work and offers readers an opportunity to explore more about the author and their other contributions.',
-            imageName: 'author-profile-author-byline.webp',
+            imageName: '',
             blocks: {
                 authorProfileAvatarBlock,
                 authorProfileInfoBlock

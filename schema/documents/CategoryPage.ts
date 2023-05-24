@@ -10,7 +10,7 @@ export const CategoryPage: DocumentConfig = {
     label: 'Category',
     defaultTitle: 'Category',
     description: 'A category page organizes articles by topic or theme, making it easy for users to find and explore related content.',
-    imageName: 'category-document.webp',
+    imageName: 'category_document.png',
     documentAreas: {
         metaData: {
             indexNumber: 0,

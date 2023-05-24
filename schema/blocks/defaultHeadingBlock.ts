@@ -3,7 +3,7 @@ import {BlockConfig} from '@sitebud/sdk-lib';
 export const defaultHeadingBlock: BlockConfig = {
     label: 'Heading Block',
     description: 'The heading is a section within the main content of a web page, used to highlight the title or heading of a chapter, section, or topic.',
-    imageName: 'default-heading-block.webp',
+    imageName: 'default_heading_block.png',
     components: {
         defaultHeading: {
             indexNumber: 0,

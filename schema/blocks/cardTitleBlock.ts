@@ -3,13 +3,13 @@ import {BlockConfig} from '@sitebud/sdk-lib';
 export const cardTitleBlock: BlockConfig = {
     label: 'Card Title Block',
     description: 'A card title is a concise, eye-catching headline displayed on a compact preview of a webpage\'s content.',
-    imageName: 'card-title-block.webp',
+    imageName: 'card_title_block.png',
     components: {
         cardTitle: {
             indexNumber: 0,
             label: 'Card Title',
             helpText: 'A card title is a concise, eye-catching headline displayed on a compact preview of a webpage\'s content.',
-            imageName: 'card-title-block-card-title.webp',
+            imageName: '',
             props: {
                 text: {
                     indexNumber: 0,

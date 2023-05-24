@@ -3,7 +3,7 @@ import {BlockConfig} from '@sitebud/sdk-lib';
 export const articlesGalleryBlock: BlockConfig = {
     label: 'Gallery of Articles Block',
     description: 'A display of article thumbnails creates a visually organized collection of compact previews.',
-    imageName: 'articles-gallery-block.webp',
+    imageName: 'articles_gallery_block.png',
     components: {
         galleryHeading: {
             indexNumber: 0,

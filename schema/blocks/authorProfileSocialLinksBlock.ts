@@ -3,7 +3,7 @@ import {BlockConfig} from '@sitebud/sdk-lib';
 export const authorProfileSocialLinksBlock: BlockConfig = {
     label: 'Social Links',
     description: 'The social links block is a designated area that contains clickable icons or links directing users to the website\'s or authors\'s social media profiles.',
-    imageName: 'author-profile-social-links-block.webp',
+    imageName: 'author_profile_social_links_block.png',
     components: {
         socialLinks: {
             isArray: true,

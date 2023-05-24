@@ -11,7 +11,7 @@ export const TagPage: DocumentConfig = {
     label: 'Tag',
     defaultTitle: 'Tag',
     description: 'A webpage dedicated to a single tag displays a gallery of articles that share the same associated keyword or topic. By grouping articles under a specific tag, the webpage enhances user experience by simplifying navigation and helping visitors discover content relevant to their interests.',
-    imageName: 'tag-document.webp',
+    imageName: 'tag_document.png',
     documentAreas: {
         metaData: {
             indexNumber: 0,

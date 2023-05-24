@@ -8,7 +8,7 @@ export const TagsPage: DocumentConfig = {
     label: 'Tags',
     defaultTitle: 'Tags',
     description: 'A tags page organizes tags, making it easy for users to find and explore related content.',
-    imageName: 'tags-document.webp',
+    imageName: 'categories_document.png',
     documentAreas: {
         metaData: {
             indexNumber: 0,

@@ -5,7 +5,7 @@ const description: string = 'The Hero, featuring a captivating background image,
 export const mainPageHeroBlock: BlockConfig = {
     label: 'Hero Block',
     description,
-    imageName: 'main-page-hero-block.webp', // block add image
+    imageName: 'default_hero_block.png',
     components: {
         heroTitle: {
             indexNumber: 0,

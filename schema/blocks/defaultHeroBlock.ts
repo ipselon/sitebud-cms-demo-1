@@ -3,7 +3,7 @@ import {BlockConfig} from '@sitebud/sdk-lib';
 export const defaultHeroBlock: BlockConfig = {
     label: 'Hero Block',
     description: 'The page\'s hero is a crucial element of your page design, as it captures the attention of your visitors and conveys the primary message of your content.',
-    imageName: 'default-hero-block.webp',
+    imageName: 'default_hero_block.png',
     components: {
         heroTitle: {
             indexNumber: 0,

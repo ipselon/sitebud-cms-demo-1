@@ -8,7 +8,7 @@ export const CategoriesPage: DocumentConfig = {
     label: 'Categories',
     defaultTitle: 'Categories',
     description: 'A categories page organizes categories by topic or theme, making it easy for users to find and explore related content.',
-    imageName: 'categories-document.webp',
+    imageName: 'categories_document.png',
     documentAreas: {
         metaData: {
             indexNumber: 0,
