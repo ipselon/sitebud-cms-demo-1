@@ -1,5 +1,5 @@
 import React from 'react';
-import {ContentAdapterProvider} from '@/adapters';
+import {AdaptedDataProvider} from '@/adapters';
 import {MainPage} from '@/components/MainPage/MainPage';
 import {CategoryPage} from '@/components/CategoryPage/CategoryPage';
 import {CategoriesPage} from '@/components/CategoriesPage/CategoriesPage';
@@ -11,7 +11,7 @@ import {SearchPage} from '@/components/SearchPage/SearchPage';
 
 export function PageFacade() {
     return (
-        <ContentAdapterProvider>
+        <AdaptedDataProvider>
             <MainPage />
             <CategoryPage />
             <CategoriesPage />
@@ -20,6 +20,6 @@ export function PageFacade() {
             <SearchPage />
             <TagPage />
             <TagsPage />
-        </ContentAdapterProvider>
+        </AdaptedDataProvider>
     );
 }

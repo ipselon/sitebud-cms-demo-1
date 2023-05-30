@@ -11,9 +11,9 @@ import {AuthorProfileImageBlock} from '@/components/AuthorProfilePage/AuthorProf
 import {AuthorProfileParagraphBlock} from '@/components/AuthorProfilePage/AuthorProfileParagraphBlock';
 
 export function AuthorProfilePage() {
-    const {authorProfilePageContent} = useAdaptedContent();
-    if (authorProfilePageContent) {
-        const {locale, documentAreas} = authorProfilePageContent;
+    const contentContext = useAdaptedContent();
+    if (contentContext?.authorProfilePageContent) {
+        const {locale, documentAreas} = contentContext.authorProfilePageContent;
         const {pageBody} = documentAreas;
         return (
             <>

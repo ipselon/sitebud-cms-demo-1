@@ -16,7 +16,6 @@ export const categoryGalleryBlock: BlockConfig = {
                     type: 'DocumentsList',
                     fieldContent: {
                         selectionMode: 'selectDocuments',
-                        selectDocumentAreas: ['card'],
                         allowedDocumentClasses: ['CategoryPage'],
                     }
                 }

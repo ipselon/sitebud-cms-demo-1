@@ -1,9 +1,4 @@
-import {
-    DocumentContentContext,
-    DocumentsListField,
-    ImageField,
-    LinkField,
-} from './types';
+import { DocumentsListField, ImageField, LinkField } from './types';
 /**
  * From TagPage_MetaData
  */
@@ -86,6 +81,5 @@ export type TagPageContent = {
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
-    baseUrl: string;
     documentAreas: TagPage_DocumentAreas;
 };

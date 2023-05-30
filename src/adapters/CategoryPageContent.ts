@@ -1,9 +1,4 @@
-import {
-    DocumentContentContext,
-    DocumentsListField,
-    ImageField,
-    LinkField,
-} from './types';
+import { DocumentsListField, ImageField, LinkField } from './types';
 /**
  * From CategoryPage_MetaData
  */
@@ -81,6 +76,5 @@ export type CategoryPageContent = {
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
-    baseUrl: string;
     documentAreas: CategoryPage_DocumentAreas;
 };

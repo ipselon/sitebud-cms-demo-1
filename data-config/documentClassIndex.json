@@ -86,9 +86,6 @@
                       "selectionMode": "selectDocuments",
                       "allowedDocumentClasses": [
                         "AuthorProfilePage"
-                      ],
-                      "selectDocumentAreas": [
-                        "authorByline"
                       ]
                     }
                   }
@@ -567,10 +564,6 @@
                       "selectionMode": "selectDocuments",
                       "allowedDocumentClasses": [
                         "ArticlePage"
-                      ],
-                      "selectDocumentAreas": [
-                        "card",
-                        "metaData"
                       ]
                     },
                     "fieldContentVariants": [
@@ -583,10 +576,6 @@
                           ],
                           "allowedDocumentClasses": [
                             "ArticlePage"
-                          ],
-                          "selectDocumentAreas": [
-                            "card",
-                            "metaData"
                           ]
                         }
                       },
@@ -594,10 +583,6 @@
                         "label": "Select By Parent Documents",
                         "fieldContent": {
                           "selectionMode": "selectChildrenDocuments",
-                          "selectDocumentAreas": [
-                            "card",
-                            "metaData"
-                          ],
                           "selectDocumentClasses": [
                             "ArticlePage"
                           ],
@@ -851,9 +836,6 @@
                       "selectionMode": "selectDocuments",
                       "allowedDocumentClasses": [
                         "CategoryPage"
-                      ],
-                      "selectDocumentAreas": [
-                        "card"
                       ]
                     },
                     "fieldContentVariants": [
@@ -863,19 +845,13 @@
                           "selectionMode": "selectDocuments",
                           "allowedDocumentClasses": [
                             "CategoryPage"
-                          ],
-                          "selectDocumentAreas": [
-                            "card"
                           ]
                         }
                       },
                       {
                         "label": "Select By Parent Documents",
                         "fieldContent": {
-                          "selectionMode": "selectChildrenDocuments",
-                          "selectDocumentAreas": [
-                            "card"
-                          ]
+                          "selectionMode": "selectChildrenDocuments"
                         }
                       }
                     ]
@@ -1042,10 +1018,6 @@
                       "selectionMode": "selectDocuments",
                       "allowedDocumentClasses": [
                         "ArticlePage"
-                      ],
-                      "selectDocumentAreas": [
-                        "card",
-                        "metaData"
                       ]
                     },
                     "fieldContentVariants": [
@@ -1058,10 +1030,6 @@
                           ],
                           "allowedDocumentClasses": [
                             "ArticlePage"
-                          ],
-                          "selectDocumentAreas": [
-                            "card",
-                            "metaData"
                           ]
                         }
                       },
@@ -1069,10 +1037,6 @@
                         "label": "Select By Parent Documents",
                         "fieldContent": {
                           "selectionMode": "selectChildrenDocuments",
-                          "selectDocumentAreas": [
-                            "card",
-                            "metaData"
-                          ],
                           "selectDocumentClasses": [
                             "ArticlePage"
                           ],
@@ -1279,9 +1243,6 @@
                     "type": "DocumentsList",
                     "fieldContent": {
                       "selectionMode": "selectDocuments",
-                      "selectDocumentAreas": [
-                        "card"
-                      ],
                       "allowedDocumentClasses": [
                         "CategoryPage"
                       ]
@@ -1361,10 +1322,6 @@
                       "selectionMode": "selectDocuments",
                       "allowedDocumentClasses": [
                         "ArticlePage"
-                      ],
-                      "selectDocumentAreas": [
-                        "card",
-                        "metaData"
                       ]
                     },
                     "fieldContentVariants": [
@@ -1377,10 +1334,6 @@
                           ],
                           "allowedDocumentClasses": [
                             "ArticlePage"
-                          ],
-                          "selectDocumentAreas": [
-                            "card",
-                            "metaData"
                           ]
                         }
                       },
@@ -1388,10 +1341,6 @@
                         "label": "Select By Parent Documents",
                         "fieldContent": {
                           "selectionMode": "selectChildrenDocuments",
-                          "selectDocumentAreas": [
-                            "card",
-                            "metaData"
-                          ],
                           "selectDocumentClasses": [
                             "ArticlePage"
                           ],
@@ -1802,10 +1751,6 @@
                     "isRequired": true,
                     "fieldContent": {
                       "selectionMode": "selectDocuments",
-                      "selectDocumentAreas": [
-                        "card",
-                        "metaData"
-                      ],
                       "allowedDocumentClasses": [
                         "ArticlePage"
                       ]
@@ -2015,9 +1960,6 @@
                     "label": "",
                     "fieldContent": {
                       "selectionMode": "selectDocuments",
-                      "selectDocumentAreas": [
-                        "card"
-                      ],
                       "allowedDocumentClasses": [
                         "TagPage"
                       ]
@@ -2027,9 +1969,6 @@
                         "label": "Select Documents",
                         "fieldContent": {
                           "selectionMode": "selectDocuments",
-                          "selectDocumentAreas": [
-                            "card"
-                          ],
                           "allowedDocumentClasses": [
                             "TagPage"
                           ]
@@ -2038,10 +1977,7 @@
                       {
                         "label": "Select By Parent Documents",
                         "fieldContent": {
-                          "selectionMode": "selectChildrenDocuments",
-                          "selectDocumentAreas": [
-                            "card"
-                          ]
+                          "selectionMode": "selectChildrenDocuments"
                         }
                       }
                     ]

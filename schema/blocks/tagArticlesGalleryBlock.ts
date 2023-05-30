@@ -17,7 +17,6 @@ export const tagArticlesGalleryBlock: BlockConfig = {
                     isRequired: true,
                     fieldContent: {
                         selectionMode: 'selectDocuments',
-                        selectDocumentAreas: ['card', 'metaData'],
                         allowedDocumentClasses: ['ArticlePage']
                     }
                 }

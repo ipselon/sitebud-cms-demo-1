@@ -2,7 +2,7 @@ import { ContentAdapter } from '@sitebud/bridge-lib';
 import { SearchPageContent, SearchPage_DocumentAreas } from './types';
 export class SearchPageContentAdapter extends ContentAdapter<SearchPageContent> {
     adapt(): SearchPageContent {
-        const { content, hasRestrictedAreas, baseUrl, path, locale } =
+        const { hasRestrictedAreas, content, path, locale } =
             this._documentData;
         const result: SearchPageContent = {
             title: content?.title || 'undefined',
@@ -12,7 +12,6 @@ export class SearchPageContentAdapter extends ContentAdapter<SearchPageContent> 
             path: path || '',
             locale: locale || '',
             hasRestrictedAreas: !!hasRestrictedAreas,
-            baseUrl: baseUrl || '',
             documentAreas: {
                 pageBody: [],
             },

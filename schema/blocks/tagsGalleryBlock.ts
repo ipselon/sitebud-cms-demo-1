@@ -17,7 +17,6 @@ export const tagsGalleryBlock: BlockConfig = {
                     label: '',
                     fieldContent: {
                         selectionMode: 'selectDocuments',
-                        selectDocumentAreas: ['card'],
                         allowedDocumentClasses: ['TagPage'],
                     },
                     fieldContentVariants: [
@@ -25,7 +24,6 @@ export const tagsGalleryBlock: BlockConfig = {
                             label: 'Select Documents',
                             fieldContent: {
                                 selectionMode: 'selectDocuments',
-                                selectDocumentAreas: ['card'],
                                 allowedDocumentClasses: ['TagPage'],
                             }
                         },
@@ -33,7 +31,6 @@ export const tagsGalleryBlock: BlockConfig = {
                             label: 'Select By Parent Documents',
                             fieldContent: {
                                 selectionMode: 'selectChildrenDocuments',
-                                selectDocumentAreas: ['card'],
                             }
                         }
                     ]

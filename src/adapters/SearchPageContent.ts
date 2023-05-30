@@ -1,9 +1,4 @@
-import {
-    DocumentContentContext,
-    DocumentsListField,
-    ImageField,
-    LinkField,
-} from './types';
+import { DocumentsListField, ImageField, LinkField } from './types';
 /**
  * From SearchPage_PageBody
  */
@@ -35,6 +30,5 @@ export type SearchPageContent = {
     path: string;
     locale?: string;
     hasRestrictedAreas?: boolean;
-    baseUrl: string;
     documentAreas: SearchPage_DocumentAreas;
 };

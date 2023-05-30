@@ -1,5 +1,5 @@
 import React from 'react';
-import {Site_Footer_MenuDocumentsBlock} from '@/adapters';
+import {Site_Footer_MenuDocumentsBlock, useAdaptedDataUtils} from '@/adapters';
 import {FooterDocumentLinkLayout} from './FooterDocumentLinkLayout';
 
 interface FooterMenuDocumentsBlockProps {
@@ -16,8 +16,9 @@ export function FooterMenuDocumentsBlock(props: FooterMenuDocumentsBlockProps) {
     },
         locale
     } = props;
+    const {getDocumentContentContextList} = useAdaptedDataUtils();
     let menuLinksElements: Array<JSX.Element> = [];
-    documentsList.entries?.forEach((documentLinkItem, idx) => {
+    getDocumentContentContextList(documentsList).forEach((documentLinkItem, idx) => {
         menuLinksElements.push(
             <FooterDocumentLinkLayout key={`documentLinkItem_${idx}`} content={documentLinkItem} locale={locale} />
         );

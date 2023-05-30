@@ -2,7 +2,7 @@ import { ContentAdapter } from '@sitebud/bridge-lib';
 import { TagPageContent, TagPage_DocumentAreas } from './types';
 export class TagPageContentAdapter extends ContentAdapter<TagPageContent> {
     adapt(): TagPageContent {
-        const { content, hasRestrictedAreas, baseUrl, path, locale } =
+        const { hasRestrictedAreas, content, path, locale } =
             this._documentData;
         const result: TagPageContent = {
             title: content?.title || 'undefined',
@@ -12,7 +12,6 @@ export class TagPageContentAdapter extends ContentAdapter<TagPageContent> {
             path: path || '',
             locale: locale || '',
             hasRestrictedAreas: !!hasRestrictedAreas,
-            baseUrl: baseUrl || '',
             documentAreas: {
                 metaData: [],
                 pageBody: [],

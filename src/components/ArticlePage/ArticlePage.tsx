@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
-import {useAdaptedContent, DocumentContentContext} from '@/adapters';
+import {useAdaptedContent, DocumentContentContext, useAdaptedDataUtils} from '@/adapters';
 import {ArticlePageHead} from '@/components/ArticlePage/ArticlePageHead';
 import {ArticleHeroBlock} from '@/components/ArticlePage/ArticleHeroBlock';
 import {MainMenuLayout} from '@/components/Site/MainMenu/MainMenuLayout';
@@ -25,9 +25,10 @@ function getLastAuthor(
 
 
 export function ArticlePage() {
-    const {articlePageContent} = useAdaptedContent();
-    if (articlePageContent) {
-        const {documentAreas, authors, dateUpdated, locale} = articlePageContent;
+    const contentContext = useAdaptedContent();
+    const {getDocumentContentContextList} = useAdaptedDataUtils();
+    if (contentContext?.articlePageContent) {
+        const {documentAreas, authors, dateUpdated, locale} = contentContext.articlePageContent;
         const {pageBody, metaData} = documentAreas;
 
         let authorDocumentContent: DocumentContentContext | undefined = undefined;
@@ -35,10 +36,12 @@ export function ArticlePage() {
         if (metaData && metaData.length > 0) {
             for (const metaDataItem of metaData) {
                 const {authorsBylinesBlock, tagsListBlock} = metaDataItem;
-                if (authorsBylinesBlock?.authorsBylines.documentsList.entries) {
-                    authorDocumentContent = authorsBylinesBlock?.authorsBylines.documentsList.entries[0];
+                if (authorsBylinesBlock) {
+                    authorDocumentContent = getDocumentContentContextList(authorsBylinesBlock.authorsBylines.documentsList)[0];
                 }
-                tagDocumentContentContexts = tagsListBlock?.tags.documentsList.entries;
+                if (tagsListBlock) {
+                    tagDocumentContentContexts = getDocumentContentContextList(tagsListBlock.tags.documentsList);
+                }
             }
         }
         return (

@@ -6,9 +6,9 @@ import {SearchPageHead} from './SearchPageHead';
 import {SearchHeroBlock} from './SearchHeroBlock';
 
 export function SearchPage() {
-    const {searchPageContent} = useAdaptedContent();
-    if (searchPageContent) {
-        const {documentAreas} = searchPageContent;
+    const contentContext = useAdaptedContent();
+    if (contentContext?.searchPageContent) {
+        const {documentAreas} = contentContext.searchPageContent;
         const {pageBody} = documentAreas;
         return (
             <>

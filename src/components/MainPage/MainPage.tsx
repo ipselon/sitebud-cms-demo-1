@@ -5,15 +5,16 @@ import {MainCategoryGalleryBlock} from '@/components/MainPage/MainCategoryGaller
 import {MainMenuLayout} from '@/components/Site/MainMenu/MainMenuLayout';
 import {MainArticlesGalleryBlock} from '@/components/MainPage/MainArticlesGalleryBlock';
 import {FooterLayout} from '@/components/Site/Footer/FooterLayout';
-import {useAdaptedContent} from '@/adapters';
+import {useAdaptedContent, useDocumentsTree} from '@/adapters';
 
 export function MainPage() {
-    const {mainPageContent} = useAdaptedContent();
-    if (mainPageContent) {
+    const documentContentContext = useAdaptedContent();
+    const siteNodes = useDocumentsTree();
+    if (documentContentContext?.mainPageContent) {
         const {
             locale,
             documentAreas
-        } = mainPageContent;
+        } = documentContentContext.mainPageContent;
         const {pageBody} = documentAreas;
         return (
             <>

@@ -17,8 +17,7 @@ export const authorsBylinesBlock: BlockConfig = {
                     isRequired: true,
                     fieldContent: {
                         selectionMode: 'selectDocuments',
-                        allowedDocumentClasses: ['AuthorProfilePage'],
-                        selectDocumentAreas: ['authorByline']
+                        allowedDocumentClasses: ['AuthorProfilePage']
                     }
                 },
             }

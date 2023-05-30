@@ -1,9 +1,4 @@
-import {
-    DocumentContentContext,
-    DocumentsListField,
-    ImageField,
-    LinkField,
-} from './types';
+import { DocumentsListField, ImageField, LinkField } from './types';
 /**
  * From Site_MetaData
  */
@@ -89,7 +84,5 @@ export type Site_DocumentAreas = {
  */
 export type SiteContent = {
     hasRestrictedAreas?: boolean;
-    baseUrl: string;
-    availableLocales: Array<string>;
     documentAreas: Site_DocumentAreas;
 };

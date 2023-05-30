@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import {MainPage_PageBody_CategoryGalleryBlock} from '@/adapters';
+import {MainPage_PageBody_CategoryGalleryBlock, useAdaptedDataUtils} from '@/adapters';
 import {CategoryCardLayout} from '@/components/CategoryPage/CategoryCardLayout';
 
 interface MainPageCategoryGalleryBlockProps {
@@ -19,6 +19,7 @@ export function MainCategoryGalleryBlock(props: MainPageCategoryGalleryBlockProp
         },
         locale
     } = props;
+    const {getDocumentContentContextList} = useAdaptedDataUtils();
     return (
         <section className="w-full pb-10">
             <div className="container">
@@ -27,7 +28,7 @@ export function MainCategoryGalleryBlock(props: MainPageCategoryGalleryBlockProp
                         <div dangerouslySetInnerHTML={{__html: galleryHeading.text}}/>
                     </div>
                     <div>
-                        {fullGalleryLink.link.entries?.map((documentContentContextItem, idx) => {
+                        {getDocumentContentContextList(fullGalleryLink.link).map((documentContentContextItem, idx) => {
                             if (documentContentContextItem.categoriesPageContent) {
                                 const {path, title} = documentContentContextItem.categoriesPageContent;
                                 return (
@@ -46,7 +47,7 @@ export function MainCategoryGalleryBlock(props: MainPageCategoryGalleryBlockProp
                     </div>
                 </div>
                 <div className="grid grid-cols-1 gap-8 xl:gap-12 md:grid-cols-3 lg:grid-cols-4 auto-rows-fr">
-                    {documentsList.entries?.map((documentContentContextItem, idx) => {
+                    {getDocumentContentContextList(documentsList).map((documentContentContextItem, idx) => {
                         if (documentContentContextItem.categoryPageContent) {
                             return (
                                 <CategoryCardLayout key={`categoryPageContent_${idx}`}

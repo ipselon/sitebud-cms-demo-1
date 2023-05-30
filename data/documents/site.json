@@ -1,1 +1,404 @@
-{"id":"site","type":"site","documentClass":"Site","contents":{"en-US":{"title":"Site","slug":"@site","statusMap":{},"isCustomSlug":true,"documentAreas":[{"name":"metaData","blocks":[{"id":"Q9J6vbJ1lLPxUmfZNee9k","name":"menuLogoBlock","components":[{"name":"logoImage","instances":[{"id":"9Ort_paMyo2J-1fIFSez5","props":[{"name":"image","type":"Image","fieldContent":{"isRequired":true,"src":"/_assets/images/logo.png","alt":"Logo"}}]}]},{"name":"logoTitle","instances":[{"id":"D69k1bRD16k-y9LQKuGb0","props":[{"name":"text","type":"StringValue","fieldContent":{"isRequired":true,"value":"Wildlife Whispers"}}]}]}]}]},{"name":"mainMenu","blocks":[{"id":"SBb0H8oev03v0Ueqfmpdn","name":"menuDocumentsBlock","components":[{"name":"menuDocuments","instances":[{"id":"uesu3Eer_TXzIx03GKqpA","props":[{"name":"documentsList","type":"DocumentsList","fieldContent":{"isRequired":true,"selectionMode":"selectDocuments","documentsIds":["main_page","Il0HwVCpXNp5TJsD51H90","hcgtfm5-a1l-J7UlOxce8","BXkHevkIXVq8Yw7kbnz_j"]}}]}]}]}]},{"name":"footer","blocks":[{"id":"ZP4oafixaiJaWDFvp0UsR","name":"paragraphBlock","components":[{"name":"paragraph","instances":[{"id":"jDg2UHwXlmmZ_HkeY1yw9","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<h4 style=\"text-align: center\">Wildlife Whispers</h4>"}}]}]}]},{"id":"h0BYjtN90pnxhU0V-ZW6A","name":"copyrightBlock","components":[{"name":"copyright","instances":[{"id":"QNroZPUeExhu98CuzRykC","props":[{"name":"year","type":"StringValue","fieldContent":{"isRequired":true,"value":"2023"}},{"name":"text","type":"StringValue","fieldContent":{"isRequired":true,"value":"Jonh Doe"}},{"name":"link","type":"Link","fieldContent":{"isRequired":false,"href":""}}]}]}]},{"id":"N19MD3RJpQgJokRSNJgvY","name":"menuDocumentsBlock","components":[{"name":"menuDocuments","instances":[{"id":"I7jClRiuA7UQ1sHm6dk6J","props":[{"name":"documentsList","type":"DocumentsList","fieldContent":{"isRequired":true,"selectionMode":"selectDocuments","documentsIds":["main_page"]}}]}]}]}]}],"authors":{"apustovalov@gmail.com":1684234525332,"demo@demo.com":1684910697731},"dateUpdated":1684910697731,"dataFields":[],"tags":{}},"es-ES":{"title":"Site","slug":"@site","statusMap":{},"isCustomSlug":true,"tags":{},"dataFields":[{"name":"siteTitle","value":"Susurros de la Vida Salvaje","type":"string"},{"name":"siteLogo","value":"/_assets/images/logo.png","type":"string"}],"documentAreas":[{"name":"metaData","blocks":[{"id":"EOBc5EN3CLqSSi0ZHIeLW","name":"menuLogoBlock","components":[{"name":"logoImage","instances":[{"id":"vCyIIC2yz5APVm5x6IEzo","props":[{"name":"image","type":"Image","fieldContent":{"isRequired":true,"src":"/_assets/images/logo.png","alt":"Susurros de la Vida Salvaje"}}]}]},{"name":"logoTitle","instances":[{"id":"pMqaxFpZYuhSoZlbCXWFp","props":[{"name":"text","type":"StringValue","fieldContent":{"isRequired":true,"value":"Susurros de la Vida Salvaje"}}]}]}]}]},{"name":"mainMenu","blocks":[{"id":"sNGsHW7l1QJXJfDG0x29B","name":"menuDocumentsBlock","components":[{"name":"menuDocuments","instances":[{"id":"DyaDqaZI6VTp20K8w-hmr","props":[{"name":"documentsList","type":"DocumentsList","fieldContent":{"isRequired":true,"selectionMode":"selectDocuments","documentsIds":["main_page","Il0HwVCpXNp5TJsD51H90","hcgtfm5-a1l-J7UlOxce8","BXkHevkIXVq8Yw7kbnz_j"]}}]}]}]}]},{"name":"footer","blocks":[{"id":"XH5XzpbiNt87xTIk7vxLS","name":"paragraphBlock","components":[{"name":"paragraph","instances":[{"id":"9KYQ73T1hKUKVMKFVFAeq","props":[{"name":"text","type":"ParagraphText","fieldContent":{"htmlText":"<h4 style=\"text-align: center\">Susurros de la Vida Salvaje</h4>"}}]}]}]},{"id":"rrE83fKxzIn4KFkxwXEqw","name":"copyrightBlock","components":[{"name":"copyright","instances":[{"id":"LVME6S_1JvyxS6-loV8bO","props":[{"name":"year","type":"StringValue","fieldContent":{"isRequired":true,"value":"2023"}},{"name":"text","type":"StringValue","fieldContent":{"isRequired":true,"value":"Juan Pérez"}},{"name":"link","type":"Link","fieldContent":{"isRequired":false,"href":""}}]}]}]},{"id":"WOSJpalZ45unNfbib6w1R","name":"menuDocumentsBlock","components":[{"name":"menuDocuments","instances":[{"id":"7Q_A0rKsjhZwB-73rjhku","props":[{"name":"documentsList","type":"DocumentsList","fieldContent":{"isRequired":true,"selectionMode":"selectDocuments","documentsIds":["main_page"]}}]}]}]}]}],"authors":{"apustovalov@gmail.com":1684255413136,"demo@demo.com":1684910724831},"dateUpdated":1684910724831}}}
+{
+  "id": "site",
+  "type": "site",
+  "documentClass": "Site",
+  "contents": {
+    "en-US": {
+      "title": "Site",
+      "slug": "@site",
+      "statusMap": {},
+      "isCustomSlug": true,
+      "documentAreas": [
+        {
+          "name": "metaData",
+          "blocks": [
+            {
+              "id": "Q9J6vbJ1lLPxUmfZNee9k",
+              "name": "menuLogoBlock",
+              "components": [
+                {
+                  "name": "logoImage",
+                  "instances": [
+                    {
+                      "id": "9Ort_paMyo2J-1fIFSez5",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "src": "/_assets/images/logo.png",
+                            "alt": "Logo"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "logoTitle",
+                  "instances": [
+                    {
+                      "id": "D69k1bRD16k-y9LQKuGb0",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "Wildlife Whispers"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mainMenu",
+          "blocks": [
+            {
+              "id": "SBb0H8oev03v0Ueqfmpdn",
+              "name": "menuDocumentsBlock",
+              "components": [
+                {
+                  "name": "menuDocuments",
+                  "instances": [
+                    {
+                      "id": "uesu3Eer_TXzIx03GKqpA",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "selectionMode": "selectDocuments",
+                            "documentsIds": [
+                              "main_page",
+                              "Il0HwVCpXNp5TJsD51H90",
+                              "hcgtfm5-a1l-J7UlOxce8",
+                              "BXkHevkIXVq8Yw7kbnz_j"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "footer",
+          "blocks": [
+            {
+              "id": "ZP4oafixaiJaWDFvp0UsR",
+              "name": "paragraphBlock",
+              "components": [
+                {
+                  "name": "paragraph",
+                  "instances": [
+                    {
+                      "id": "jDg2UHwXlmmZ_HkeY1yw9",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<h4 style=\"text-align: center\">Wildlife Whispers</h4>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "h0BYjtN90pnxhU0V-ZW6A",
+              "name": "copyrightBlock",
+              "components": [
+                {
+                  "name": "copyright",
+                  "instances": [
+                    {
+                      "id": "QNroZPUeExhu98CuzRykC",
+                      "props": [
+                        {
+                          "name": "year",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "2023"
+                          }
+                        },
+                        {
+                          "name": "text",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "Jonh Doe"
+                          }
+                        },
+                        {
+                          "name": "link",
+                          "type": "Link",
+                          "fieldContent": {
+                            "isRequired": false,
+                            "href": ""
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "N19MD3RJpQgJokRSNJgvY",
+              "name": "menuDocumentsBlock",
+              "components": [
+                {
+                  "name": "menuDocuments",
+                  "instances": [
+                    {
+                      "id": "I7jClRiuA7UQ1sHm6dk6J",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "selectionMode": "selectDocuments",
+                            "documentsIds": [
+                              "main_page"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "authors": {
+        "apustovalov@gmail.com": 1684234525332,
+        "demo@demo.com": 1684910697731
+      },
+      "dateUpdated": 1684910697731,
+      "dataFields": [],
+      "tags": {}
+    },
+    "es-ES": {
+      "title": "Site",
+      "slug": "@site",
+      "statusMap": {},
+      "isCustomSlug": true,
+      "tags": {},
+      "dataFields": [
+        {
+          "name": "siteTitle",
+          "value": "Susurros de la Vida Salvaje",
+          "type": "string"
+        },
+        {
+          "name": "siteLogo",
+          "value": "/_assets/images/logo.png",
+          "type": "string"
+        }
+      ],
+      "documentAreas": [
+        {
+          "name": "metaData",
+          "blocks": [
+            {
+              "id": "EOBc5EN3CLqSSi0ZHIeLW",
+              "name": "menuLogoBlock",
+              "components": [
+                {
+                  "name": "logoImage",
+                  "instances": [
+                    {
+                      "id": "vCyIIC2yz5APVm5x6IEzo",
+                      "props": [
+                        {
+                          "name": "image",
+                          "type": "Image",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "src": "/_assets/images/logo.png",
+                            "alt": "Susurros de la Vida Salvaje"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "logoTitle",
+                  "instances": [
+                    {
+                      "id": "pMqaxFpZYuhSoZlbCXWFp",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "Susurros de la Vida Salvaje"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "mainMenu",
+          "blocks": [
+            {
+              "id": "sNGsHW7l1QJXJfDG0x29B",
+              "name": "menuDocumentsBlock",
+              "components": [
+                {
+                  "name": "menuDocuments",
+                  "instances": [
+                    {
+                      "id": "DyaDqaZI6VTp20K8w-hmr",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "selectionMode": "selectDocuments",
+                            "documentsIds": [
+                              "main_page",
+                              "Il0HwVCpXNp5TJsD51H90",
+                              "hcgtfm5-a1l-J7UlOxce8",
+                              "BXkHevkIXVq8Yw7kbnz_j"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "footer",
+          "blocks": [
+            {
+              "id": "XH5XzpbiNt87xTIk7vxLS",
+              "name": "paragraphBlock",
+              "components": [
+                {
+                  "name": "paragraph",
+                  "instances": [
+                    {
+                      "id": "9KYQ73T1hKUKVMKFVFAeq",
+                      "props": [
+                        {
+                          "name": "text",
+                          "type": "ParagraphText",
+                          "fieldContent": {
+                            "htmlText": "<h4 style=\"text-align: center\">Susurros de la Vida Salvaje</h4>"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rrE83fKxzIn4KFkxwXEqw",
+              "name": "copyrightBlock",
+              "components": [
+                {
+                  "name": "copyright",
+                  "instances": [
+                    {
+                      "id": "LVME6S_1JvyxS6-loV8bO",
+                      "props": [
+                        {
+                          "name": "year",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "2023"
+                          }
+                        },
+                        {
+                          "name": "text",
+                          "type": "StringValue",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "value": "Juan Pérez"
+                          }
+                        },
+                        {
+                          "name": "link",
+                          "type": "Link",
+                          "fieldContent": {
+                            "isRequired": false,
+                            "href": ""
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "WOSJpalZ45unNfbib6w1R",
+              "name": "menuDocumentsBlock",
+              "components": [
+                {
+                  "name": "menuDocuments",
+                  "instances": [
+                    {
+                      "id": "7Q_A0rKsjhZwB-73rjhku",
+                      "props": [
+                        {
+                          "name": "documentsList",
+                          "type": "DocumentsList",
+                          "fieldContent": {
+                            "isRequired": true,
+                            "selectionMode": "selectDocuments",
+                            "documentsIds": [
+                              "main_page"
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "authors": {
+        "apustovalov@gmail.com": 1684255413136,
+        "demo@demo.com": 1684910724831
+      },
+      "dateUpdated": 1684910724831
+    }
+  }
+}

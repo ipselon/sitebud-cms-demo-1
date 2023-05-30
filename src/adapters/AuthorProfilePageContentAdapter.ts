@@ -5,7 +5,7 @@ import {
 } from './types';
 export class AuthorProfilePageContentAdapter extends ContentAdapter<AuthorProfilePageContent> {
     adapt(): AuthorProfilePageContent {
-        const { content, hasRestrictedAreas, baseUrl, path, locale } =
+        const { hasRestrictedAreas, content, path, locale } =
             this._documentData;
         const result: AuthorProfilePageContent = {
             title: content?.title || 'undefined',
@@ -15,7 +15,6 @@ export class AuthorProfilePageContentAdapter extends ContentAdapter<AuthorProfil
             path: path || '',
             locale: locale || '',
             hasRestrictedAreas: !!hasRestrictedAreas,
-            baseUrl: baseUrl || '',
             documentAreas: {
                 metaData: [],
                 pageBody: [],

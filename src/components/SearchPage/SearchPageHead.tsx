@@ -1,26 +1,19 @@
 import React from 'react';
 import Head from 'next/head';
 import {useAdaptedContent} from '@/adapters';
+import {useSiteTitle} from '@/hooks/useTitle';
 
 export function SearchPageHead() {
-    const {searchPageContent, siteContent} = useAdaptedContent();
-    if (searchPageContent && siteContent) {
+    const contentContext = useAdaptedContent();
+    const siteTitle: string = useSiteTitle();
+    if (contentContext?.searchPageContent) {
         const {
             title,
             locale,
-            baseUrl
-        } = searchPageContent;
-        let pageTitle: string = title;
-        if (siteContent.documentAreas.metaData) {
-            for(const metaDataItem of siteContent.documentAreas.metaData) {
-                const {menuLogoBlock} = metaDataItem;
-                if (menuLogoBlock?.logoTitle.text) {
-                    pageTitle += ' | ' + menuLogoBlock?.logoTitle.text;
-                }
-            }
-        }
+            documentAreas
+        } = contentContext.searchPageContent;
+        const pageTitle: string = siteTitle ? `${title} | ${siteTitle}` : title;
         let metaDescription: string = pageTitle;
-
         return (
             <>
                 <Head>

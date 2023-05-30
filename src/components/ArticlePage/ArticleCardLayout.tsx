@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
-import {ArticlePageContent, DocumentContentContext} from '@/adapters';
+import {ArticlePageContent, DocumentContentContext, useAdaptedDataUtils} from '@/adapters';
 import {AuthorProfileAuthorBylineLayout} from '@/components/AuthorProfilePage/AuthorProfileAuthorBylineLayout';
 import {useRouter} from 'next/router';
 
@@ -21,15 +21,18 @@ export function ArticleCardLayout(props: ArticleCardViewLayoutProps) {
         }
     } = props;
     const {locale} = useRouter();
+    const {getDocumentContentContextList} = useAdaptedDataUtils();
     let authorDocumentContent: DocumentContentContext | undefined = undefined;
     let tagDocumentContentContexts: Array<DocumentContentContext> | undefined = undefined;
     if (metaData && metaData.length > 0) {
         for (const metaDataItem of metaData) {
             const {authorsBylinesBlock, tagsListBlock} = metaDataItem;
-            if (authorsBylinesBlock?.authorsBylines.documentsList.entries) {
-                authorDocumentContent = authorsBylinesBlock?.authorsBylines.documentsList.entries[0];
+            if (authorsBylinesBlock) {
+                authorDocumentContent = getDocumentContentContextList(authorsBylinesBlock.authorsBylines.documentsList)[0];
             }
-            tagDocumentContentContexts = tagsListBlock?.tags.documentsList.entries;
+            if (tagsListBlock) {
+                tagDocumentContentContexts = getDocumentContentContextList(tagsListBlock.tags.documentsList);
+            }
         }
     }
     return (

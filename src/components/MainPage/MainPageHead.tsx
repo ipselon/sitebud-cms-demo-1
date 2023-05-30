@@ -1,28 +1,22 @@
 import React from 'react';
 import Head from 'next/head';
 import {useAdaptedContent} from '@/adapters';
+import {useSiteTitle} from '@/hooks/useTitle';
 
 export function MainPageHead() {
-    const {mainPageContent, siteContent} = useAdaptedContent();
-    if (mainPageContent && siteContent) {
+    const contentContext = useAdaptedContent();
+    const siteTitle: string = useSiteTitle();
+    if (contentContext?.mainPageContent) {
         const {
             title,
             locale,
-            baseUrl
-        } = mainPageContent;
-        let pageTitle: string = title;
-        if (siteContent.documentAreas.metaData) {
-            for(const metaDataItem of siteContent.documentAreas.metaData) {
-                const {menuLogoBlock} = metaDataItem;
-                if (menuLogoBlock?.logoTitle.text) {
-                    pageTitle += ' | ' + menuLogoBlock?.logoTitle.text;
-                }
-            }
-        }
+            documentAreas
+        } = contentContext.mainPageContent;
+        const pageTitle: string = siteTitle ? `${title} | ${siteTitle}` : title;
         let metaDescription: string = '';
         let metaRobots: string = '';
-        if (mainPageContent.documentAreas.metaData) {
-            for (const metaDataItem of mainPageContent.documentAreas.metaData) {
+        if (documentAreas.metaData) {
+            for (const metaDataItem of documentAreas.metaData) {
                 const {basicSeoDataBlock} = metaDataItem;
                 if (basicSeoDataBlock?.metaDataFields) {
                     metaDescription += basicSeoDataBlock.metaDataFields.description + ' ';

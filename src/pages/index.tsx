@@ -5,12 +5,12 @@ import {GetStaticPropsContext, InferGetStaticPropsType} from 'next';
 import {useRouter} from 'next/router';
 import Script from 'next/script';
 import {
-    DocumentData,
     PreviewDataProvider,
     RawDataProvider,
     RequestOptions,
     fetchRawData,
     initExternalModules,
+    Data
 } from '@sitebud/bridge-lib';
 import NotFound from './404';
 import {PageFacade} from '@/PageFacade';
@@ -24,11 +24,10 @@ export async function getStaticProps(context: GetStaticPropsContext) {
     try {
         if (!preview) {
             initExternalModules({fsExtra: fs, path});
-            const {pageData, siteData} = await fetchRawData(requestOptions, context.locale);
+            const data: Data = await fetchRawData(requestOptions, context.locale);
             return {
                 props: {
-                    pageData,
-                    siteData,
+                    data
                 },
                 // Next.js will attempt to re-generate the page:
                 // - When a request comes in
@@ -38,8 +37,6 @@ export async function getStaticProps(context: GetStaticPropsContext) {
         }
         return {
             props: {
-                pageData: {} as DocumentData,
-                siteData: {} as DocumentData,
                 isPreview: true
             },
             // Next.js will attempt to re-generate the page:
@@ -58,17 +55,22 @@ export async function getStaticProps(context: GetStaticPropsContext) {
 }
 
 const Home = (props: InferGetStaticPropsType<typeof getStaticProps> & { children?: React.ReactNode }) => {
-    const {pageData, siteData, isPreview} = props;
+    const {data, isPreview} = props;
     const {locale, defaultLocale} = useRouter();
     if (isPreview) {
         return (
-            <PreviewDataProvider Script={Script} custom404={<NotFound/>} requestOptions={requestOptions} locale={locale || defaultLocale || ''}>
+            <PreviewDataProvider
+                Script={Script}
+                custom404={<NotFound/>}
+                requestOptions={requestOptions}
+                locale={locale || defaultLocale || ''}
+            >
                 <PageFacade />
             </PreviewDataProvider>
         );
     }
     return (
-        <RawDataProvider siteData={siteData} pageData={pageData} custom404={<NotFound/>}>
+        <RawDataProvider data={data} custom404={<NotFound/>}>
             <PageFacade />
         </RawDataProvider>
     );

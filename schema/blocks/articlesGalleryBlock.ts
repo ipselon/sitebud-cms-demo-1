@@ -32,8 +32,7 @@ export const articlesGalleryBlock: BlockConfig = {
                     label: '',
                     fieldContent: {
                         selectionMode: 'selectDocuments',
-                        allowedDocumentClasses: ['ArticlePage'],
-                        selectDocumentAreas: ['card', 'metaData'],
+                        allowedDocumentClasses: ['ArticlePage']
                     },
                     fieldContentVariants: [
                         {
@@ -41,15 +40,13 @@ export const articlesGalleryBlock: BlockConfig = {
                             fieldContent: {
                                 selectionMode: 'selectDocuments',
                                 selectDocumentClasses: ['ArticlePage'],
-                                allowedDocumentClasses: ['ArticlePage'],
-                                selectDocumentAreas: ['card', 'metaData'],
+                                allowedDocumentClasses: ['ArticlePage']
                             }
                         },
                         {
                             label: 'Select By Parent Documents',
                             fieldContent: {
                                 selectionMode: 'selectChildrenDocuments',
-                                selectDocumentAreas: ['card', 'metaData'],
                                 selectDocumentClasses: ['ArticlePage'],
                                 allowedDocumentClasses: ['CategoryPage']
                             }

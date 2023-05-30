@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    TagPage_PageBody_TagArticlesGalleryBlock
+    TagPage_PageBody_TagArticlesGalleryBlock, useAdaptedDataUtils
 } from '@/adapters';
 import {ArticleCardLayout} from '@/components/ArticlePage/ArticleCardLayout';
 
@@ -14,11 +14,12 @@ export function TagArticlesGalleryBlock(props: TagArticlesGalleryBlockProps) {
             documentList
         }
     }} = props;
+    const {getDocumentContentContextList} = useAdaptedDataUtils();
     return (
         <section id="blog-posts-gallery" className="w-full">
             <div className="container flex flex-col justify-start">
                 <div className="grid grid-cols-1 gap-8 xl:gap-12 md:grid-cols-2 xl:grid-cols-3 auto-rows-fr">
-                    {documentList.entries?.map((documentContentItem, idx) => {
+                    {getDocumentContentContextList(documentList).map((documentContentItem, idx) => {
                         if (documentContentItem.articlePageContent) {
                             return (
                                 <ArticleCardLayout

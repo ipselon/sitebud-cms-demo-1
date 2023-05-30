@@ -7,9 +7,9 @@ import {MainMenuLayout} from '@/components/Site/MainMenu/MainMenuLayout';
 import {FooterLayout} from '@/components/Site/Footer/FooterLayout';
 
 export function CategoryPage() {
-    const {categoryPageContent} = useAdaptedContent();
-    if (categoryPageContent) {
-        const {documentAreas} = categoryPageContent;
+    const contentContext = useAdaptedContent();
+    if (contentContext?.categoryPageContent) {
+        const {documentAreas} = contentContext.categoryPageContent;
         const {pageBody} = documentAreas;
         return (
             <>

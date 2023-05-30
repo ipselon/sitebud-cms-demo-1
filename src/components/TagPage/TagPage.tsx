@@ -7,9 +7,9 @@ import {TagHeadingBlock} from './TagHeadingBlock';
 import {TagArticlesGalleryBlock} from './TagArticlesGalleryBlock';
 
 export function TagPage() {
-    const {tagPageContent} = useAdaptedContent();
-    if (tagPageContent) {
-        const {documentAreas} = tagPageContent;
+    const contentContext = useAdaptedContent();
+    if (contentContext?.tagPageContent) {
+        const {documentAreas} = contentContext.tagPageContent;
         const {pageBody} = documentAreas;
         return (
             <>

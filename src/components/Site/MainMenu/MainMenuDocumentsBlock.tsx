@@ -1,5 +1,5 @@
 import React from 'react';
-import {Site_MainMenu_MenuDocumentsBlock} from '@/adapters';
+import {Site_MainMenu_MenuDocumentsBlock, useAdaptedDataUtils} from '@/adapters';
 import {MainMenuDocumentLinkLayout} from '@/components/Site/MainMenu/MainMenuDocumentLinkLayout';
 
 interface MenuDocumentsBlockProps {
@@ -14,9 +14,10 @@ export function MainMenuDocumentsBlock(props: MenuDocumentsBlockProps) {
             }
         },
     } = props;
+    const {getDocumentContentContextList} = useAdaptedDataUtils();
 
     let menuLinksElements: Array<JSX.Element> = [];
-    documentsList.entries?.forEach((documentLinkItem, idx) => {
+    getDocumentContentContextList(documentsList).forEach((documentLinkItem, idx) => {
         menuLinksElements.push(
             <MainMenuDocumentLinkLayout key={`documentLinkItem_${idx}`} content={documentLinkItem}/>
         );

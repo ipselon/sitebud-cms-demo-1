@@ -1,5 +1,5 @@
 import React from 'react';
-import {MainPage_PageBody_ArticlesGalleryBlock} from '@/adapters';
+import {MainPage_PageBody_ArticlesGalleryBlock, useAdaptedDataUtils} from '@/adapters';
 import {CategoryCardLayout} from '@/components/CategoryPage/CategoryCardLayout';
 import {ArticleCardLayout} from '@/components/ArticlePage/ArticleCardLayout';
 
@@ -14,6 +14,7 @@ export function MainArticlesGalleryBlock(props: MainPageArticlesGalleryBlockProp
             documentsList
         }
     }} = props;
+    const {getDocumentContentContextList} = useAdaptedDataUtils();
     return (
         <section className="w-full pb-10">
             <div className="container flex flex-col justify-start">
@@ -21,7 +22,7 @@ export function MainArticlesGalleryBlock(props: MainPageArticlesGalleryBlockProp
                     <div dangerouslySetInnerHTML={{__html: galleryHeading.text}} />
                 </div>
                 <div className="grid grid-cols-1 gap-8 xl:gap-12 md:grid-cols-2 xl:grid-cols-3 auto-rows-fr">
-                    {documentsList.entries?.map((documentContentContextItem, idx) => {
+                    {getDocumentContentContextList(documentsList).map((documentContentContextItem, idx) => {
                         if (documentContentContextItem.categoryPageContent) {
                             return (
                                 <CategoryCardLayout key={`categoryPageContent_${idx}`} content={documentContentContextItem.categoryPageContent} />

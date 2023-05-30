@@ -6,9 +6,9 @@ import {MainMenuLayout} from '@/components/Site/MainMenu/MainMenuLayout';
 import {FooterLayout} from '@/components/Site/Footer/FooterLayout';
 
 export function CategoriesPage() {
-    const {categoriesPageContent} = useAdaptedContent();
-    if (categoriesPageContent) {
-        const {documentAreas} = categoriesPageContent;
+    const contentContext = useAdaptedContent();
+    if (contentContext?.categoriesPageContent) {
+        const {documentAreas} = contentContext.categoriesPageContent;
         const {pageBody} = documentAreas;
         return (
             <>

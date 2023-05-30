@@ -16,7 +16,18 @@ export * from './SearchPageContent';
 export * from './SiteContent';
 export * from './TagPageContent';
 export * from './TagsPageContent';
-export type DataFieldType = 'string' | 'number';
+
+export type DocumentClass =
+    | 'ArticlePage'
+    | 'AuthorProfilePage'
+    | 'CategoriesPage'
+    | 'CategoryPage'
+    | 'MainPage'
+    | 'SearchPage'
+    | 'Site'
+    | 'TagPage'
+    | 'TagsPage';
+
 export type DocumentContentContext = {
     articlePageContent?: ArticlePageContent;
     authorProfilePageContent?: AuthorProfilePageContent;
@@ -28,17 +39,26 @@ export type DocumentContentContext = {
     tagPageContent?: TagPageContent;
     tagsPageContent?: TagsPageContent;
 };
-export type DocumentsListField = {
-    entriesByParent?: Array<{
-        portion: Array<DocumentContentContext>;
-        portionOrigin: any;
-    }>;
-    entries?: Array<DocumentContentContext>;
+
+export type DocumentNode = {
+    id: string;
+    path: string;
+    name: string;
+    documentClass: DocumentClass;
+    documentContentContext: DocumentContentContext;
+    children: Array<DocumentNode>;
 };
+
+export type DocumentsListField = {
+    parentDocumentIds?: Array<string>;
+    documentIds?: Array<string>;
+};
+
 export type ImageField = {
     src: string;
     alt: string;
     focusX?: number;
     focusY?: number;
 };
+
 export type LinkField = { href: string; target: string };
