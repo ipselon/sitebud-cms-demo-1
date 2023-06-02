@@ -13,8 +13,8 @@
     "@aws-sdk/client-s3": "3.332.0",
     "@aws-sdk/s3-request-presigner": "3.332.0",
     "@headlessui/react": "1.7.14",
-    "@sitebud/bridge-lib": "1.0.0-alpha.17",
-    "@sitebud/domain-lib": "1.0.0-alpha.17",
+    "@sitebud/bridge-lib": "1.0.0-alpha.18",
+    "@sitebud/domain-lib": "1.0.0-alpha.18",
     "@tailwindcss/typography": "0.5.9",
     "@types/fs-extra": "11.0.1",
     "@types/js-cookie": "3.0.3",
@@ -40,7 +40,7 @@
     "typescript": "5.0.3"
   },
   "devDependencies": {
-    "@sitebud/sdk-lib": "1.0.0-alpha.17",
+    "@sitebud/sdk-lib": "1.0.0-alpha.18",
     "del-cli": "5.0.0",
     "nanoid": "3.3.6",
     "ts-node": "10.9.1"
